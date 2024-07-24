@@ -541,6 +541,20 @@ it, please enter the types and the actual numbers or codes.</hint>
           <hint>If the item has any alternative titles, please enter them here.</hint>
         </field>
       </row>
+
+      <row>
+        <field>
+          <dc-schema>datacite</dc-schema>
+          <dc-element>resourceType</dc-element>
+          <label>Tipo de Recurso</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required>You must enter a resource Type.</required>
+          <hint>Enter vocabulario COAR resource Type.</hint>
+          <vocabulary>tipo_recurso</vocabulary>
+        </field>
+      </row>
+
       <row>
         <field>
           <dc-schema>dc</dc-schema>
