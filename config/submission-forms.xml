@@ -542,18 +542,7 @@ it, please enter the types and the actual numbers or codes.</hint>
         </field>
       </row>
 
-      <row>
-        <field>
-          <dc-schema>datacite</dc-schema>
-          <dc-element>resourceType</dc-element>
-          <label>Tipo de Recurso</label>
-          <input-type>onebox</input-type>
-          <repeatable>false</repeatable>
-          <required>You must enter a resource Type.</required>
-          <hint>Enter vocabulario COAR resource Type.</hint>
-          <vocabulary>tipo_recurso</vocabulary>
-        </field>
-      </row>
+
 
       <row>
         <field>
@@ -605,6 +594,53 @@ it, please enter the types and the actual numbers or codes.</hint>
           <vocabulary>publication-coar-types</vocabulary>
         </field>
       </row>
+
+      <row>
+        <field>
+          <dc-schema>datacite</dc-schema>
+          <dc-element>resourceType</dc-element>
+          <label>Tipo de Recurso</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required>You must enter a resource Type.</required>
+          <hint>Enter vocabulario COAR resource Type.</hint>
+          <vocabulary>tipo_recurso</vocabulary>
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>datacite</dc-schema>
+          <dc-element>rights</dc-element>
+          <label>Derecho de Acceso</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required>You must enter a access right.</required>
+          <hint>Enter vocabulario COAR access right.</hint>
+          <vocabulary>derecho_acceso</vocabulary>
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>oire</dc-schema>
+          <dc-element>fundingReference</dc-element>
+          <label>Referencia de Financiamiento</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>datacite</dc-schema>
+          <dc-element>date</dc-element>
+          <label>Fecha Periodo de Embargo</label>
+          <input-type>date</input-type>
+          <repeatable>false</repeatable>
+        </field>
+      </row>
+
     </form>
     <form name="publication_indexing">
       <row>
