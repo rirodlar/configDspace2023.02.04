@@ -526,7 +526,7 @@ it, please enter the types and the actual numbers or codes.</hint>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
           <required>You must enter a main title for this item.</required>
-          <hint>Enter the main title of the item..</hint>
+          <hint>Enter the main title of the item.</hint>
         </field>
       </row>
       <row>
