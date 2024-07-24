@@ -623,7 +623,7 @@ it, please enter the types and the actual numbers or codes.</hint>
 
       <row>
         <field>
-          <dc-schema>oire</dc-schema>
+          <dc-schema>oaire</dc-schema>
           <dc-element>fundingReference</dc-element>
           <label>Referencia de Financiamiento</label>
           <input-type>onebox</input-type>
