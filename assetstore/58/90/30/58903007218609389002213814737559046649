@@ -1,0 +1,15 @@
+2024-07-22 21:19:10.112 INFO metadata-import - 70 @ The script has started
+2024-07-22 21:19:10.185 ERROR metadata-import - 70 @ null
+2024-07-22 21:19:10.186 ERROR metadata-import - 70 @ java.lang.NumberFormatException: For input string: "publication-coar-types:c_6947"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.valueOf(Integer.java:983)
+	at org.dspace.app.bulkedit.MetadataImport.getBulkEditValueFromCSV(MetadataImport.java:1172)
+	at org.dspace.app.bulkedit.MetadataImport.add(MetadataImport.java:1112)
+	at org.dspace.app.bulkedit.MetadataImport.runImport(MetadataImport.java:486)
+	at org.dspace.app.bulkedit.MetadataImport.internalRun(MetadataImport.java:213)
+	at org.dspace.scripts.DSpaceRunnable.run(DSpaceRunnable.java:154)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+

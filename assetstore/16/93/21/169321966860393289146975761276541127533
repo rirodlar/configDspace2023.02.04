@@ -1,0 +1,77 @@
+2024-07-17 00:25:09.318 INFO import - 36 @ **Test Run** - not actually importing items.
+2024-07-17 00:25:09.367 INFO import - 36 @ The script has started
+2024-07-17 00:25:09.371 INFO import - 36 @ Destination collections:
+2024-07-17 00:25:09.375 INFO import - 36 @ Owning Collection: Publication
+2024-07-17 00:25:09.638 ERROR import - 36 @ '/opt/dspace-cris7/imports' as defined by the key 'org.dspace.app.batchitemimport.work.dir' in dspace.cfg is not a valid directory
+2024-07-17 00:25:09.639 INFO import - 36 @ Extracting file: __MACOSX/._saf-export
+2024-07-17 00:25:09.639 INFO import - 36 @ Extracting file: saf-export/.DS_Store
+2024-07-17 00:25:09.640 INFO import - 36 @ Extracting file: __MACOSX/saf-export/._.DS_Store
+2024-07-17 00:25:09.641 INFO import - 36 @ Extracting file: __MACOSX/saf-export/._1
+2024-07-17 00:25:09.641 INFO import - 36 @ Extracting file: __MACOSX/saf-export/._2
+2024-07-17 00:25:09.642 INFO import - 36 @ Extracting file: saf-export/1/contents
+2024-07-17 00:25:09.642 INFO import - 36 @ Extracting file: __MACOSX/saf-export/1/._contents
+2024-07-17 00:25:09.643 INFO import - 36 @ Extracting file: saf-export/1/metadata_cris.xml
+2024-07-17 00:25:09.643 INFO import - 36 @ Extracting file: __MACOSX/saf-export/1/._metadata_cris.xml
+2024-07-17 00:25:09.644 INFO import - 36 @ Extracting file: saf-export/1/handle
+2024-07-17 00:25:09.644 INFO import - 36 @ Extracting file: __MACOSX/saf-export/1/._handle
+2024-07-17 00:25:09.645 INFO import - 36 @ Extracting file: saf-export/1/metadata_oairecerif.xml
+2024-07-17 00:25:09.645 INFO import - 36 @ Extracting file: __MACOSX/saf-export/1/._metadata_oairecerif.xml
+2024-07-17 00:25:09.646 INFO import - 36 @ Extracting file: saf-export/1/metadata_dspace.xml
+2024-07-17 00:25:09.646 INFO import - 36 @ Extracting file: __MACOSX/saf-export/1/._metadata_dspace.xml
+2024-07-17 00:25:09.647 INFO import - 36 @ Extracting file: saf-export/1/dublin_core.xml
+2024-07-17 00:25:09.647 INFO import - 36 @ Extracting file: __MACOSX/saf-export/1/._dublin_core.xml
+2024-07-17 00:25:09.648 INFO import - 36 @ Extracting file: saf-export/1/6a0535e6-8597-495c-8618-8afa3f6473ce copy.numbers
+2024-07-17 00:25:09.649 INFO import - 36 @ Extracting file: __MACOSX/saf-export/1/._6a0535e6-8597-495c-8618-8afa3f6473ce copy.numbers
+2024-07-17 00:25:09.650 INFO import - 36 @ Extracting file: saf-export/1/license.txt
+2024-07-17 00:25:09.650 INFO import - 36 @ Extracting file: __MACOSX/saf-export/1/._license.txt
+2024-07-17 00:25:09.651 INFO import - 36 @ Extracting file: saf-export/1/collections
+2024-07-17 00:25:09.652 INFO import - 36 @ Extracting file: __MACOSX/saf-export/1/._collections
+2024-07-17 00:25:09.652 INFO import - 36 @ Extracting file: saf-export/2/contents
+2024-07-17 00:25:09.653 INFO import - 36 @ Extracting file: __MACOSX/saf-export/2/._contents
+2024-07-17 00:25:09.653 INFO import - 36 @ Extracting file: saf-export/2/metadata_cris.xml
+2024-07-17 00:25:09.654 INFO import - 36 @ Extracting file: __MACOSX/saf-export/2/._metadata_cris.xml
+2024-07-17 00:25:09.654 INFO import - 36 @ Extracting file: saf-export/2/handle
+2024-07-17 00:25:09.655 INFO import - 36 @ Extracting file: __MACOSX/saf-export/2/._handle
+2024-07-17 00:25:09.655 INFO import - 36 @ Extracting file: saf-export/2/metadata_oairecerif.xml
+2024-07-17 00:25:09.656 INFO import - 36 @ Extracting file: __MACOSX/saf-export/2/._metadata_oairecerif.xml
+2024-07-17 00:25:09.656 INFO import - 36 @ Extracting file: saf-export/2/metadata_dspace.xml
+2024-07-17 00:25:09.656 INFO import - 36 @ Extracting file: __MACOSX/saf-export/2/._metadata_dspace.xml
+2024-07-17 00:25:09.657 INFO import - 36 @ Extracting file: saf-export/2/dublin_core.xml
+2024-07-17 00:25:09.657 INFO import - 36 @ Extracting file: __MACOSX/saf-export/2/._dublin_core.xml
+2024-07-17 00:25:09.658 INFO import - 36 @ Extracting file: saf-export/2/collections
+2024-07-17 00:25:09.658 INFO import - 36 @ Extracting file: __MACOSX/saf-export/2/._collections
+2024-07-17 00:25:09.658 INFO import - 36 @ Set sourceDir using path inside of Zip: /opt/dspace-cris7/imports/importSAF/067a0e16-72bb-455f-b63c-a85974979023/saf-export 3.zip-067a0e16-72bb-455f-b63c-a85974979023/__MACOSX
+2024-07-17 00:25:09.677 INFO import - 36 @ Started: 1721190309367
+2024-07-17 00:25:09.677 INFO import - 36 @ Ended: 1721190309676
+2024-07-17 00:25:09.678 INFO import - 36 @ Elapsed time: 0 secs (309 msecs)
+2024-07-17 00:25:09.681 ERROR import - 36 @ null
+2024-07-17 00:25:09.686 ERROR import - 36 @ java.lang.Exception: Error committing changes to database: /opt/dspace-cris7/imports/importSAF/067a0e16-72bb-455f-b63c-a85974979023/saf-export 3.zip-067a0e16-72bb-455f-b63c-a85974979023/__MACOSX/saf-export/dublin_core.xml (No such file or directory), aborting most recent changes
+	at org.dspace.app.itemimport.ItemImport.internalRun(ItemImport.java:233)
+	at org.dspace.scripts.DSpaceRunnable.run(DSpaceRunnable.java:154)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.FileNotFoundException: /opt/dspace-cris7/imports/importSAF/067a0e16-72bb-455f-b63c-a85974979023/saf-export 3.zip-067a0e16-72bb-455f-b63c-a85974979023/__MACOSX/saf-export/dublin_core.xml (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:112)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.connect(FileURLConnection.java:86)
+	at java.base/sun.net.www.protocol.file.FileURLConnection.getInputStream(FileURLConnection.java:184)
+	at org.apache.xerces.impl.XMLEntityManager.setupCurrentEntity(Unknown Source)
+	at org.apache.xerces.impl.XMLVersionDetector.determineDocVersion(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XML11Configuration.parse(Unknown Source)
+	at org.apache.xerces.parsers.XMLParser.parse(Unknown Source)
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.apache.xerces.jaxp.DocumentBuilderImpl.parse(Unknown Source)
+	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:206)
+	at org.dspace.app.itemimport.ItemImportServiceImpl.loadXML(ItemImportServiceImpl.java:1892)
+	at org.dspace.app.itemimport.ItemImportServiceImpl.loadDublinCore(ItemImportServiceImpl.java:915)
+	at org.dspace.app.itemimport.ItemImportServiceImpl.loadMetadata(ItemImportServiceImpl.java:902)
+	at org.dspace.app.itemimport.ItemImportServiceImpl.addItem(ItemImportServiceImpl.java:746)
+	at org.dspace.app.itemimport.ItemImportServiceImpl.addItems(ItemImportServiceImpl.java:313)
+	at org.dspace.app.itemimport.ItemImport.process(ItemImport.java:311)
+	at org.dspace.app.itemimport.ItemImport.internalRun(ItemImport.java:226)
+	... 4 more
+

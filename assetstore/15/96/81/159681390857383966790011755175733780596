@@ -1,0 +1,8 @@
+2024-07-22 20:06:11.562 INFO bulk-import - 63 @ The script has started
+2024-07-22 20:06:12.171 INFO bulk-import - 63 @ Start reading all the metadata group rows
+2024-07-22 20:06:12.186 INFO bulk-import - 63 @ Found 1 metadata groups to process
+2024-07-22 20:06:12.186 INFO bulk-import - 63 @ Start reading all the bitstream rows
+2024-07-22 20:06:12.189 INFO bulk-import - 63 @ Found 0 bitstreams to process
+2024-07-22 20:06:12.221 ERROR bulk-import - 63 @ Sheet items - Row 2 - Invalid ID +
+2024-07-22 20:06:12.222 INFO bulk-import - 63 @ Found 0 items to process
+2024-07-22 20:06:12.229 INFO bulk-import - 63 @ The script has completed

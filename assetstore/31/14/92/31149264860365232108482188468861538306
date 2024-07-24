@@ -1,0 +1,66 @@
+2024-07-22 21:19:53.617 INFO metadata-import - 71 @ The script has started
+2024-07-22 21:19:53.656 INFO metadata-import - 71 @ -----------------------------------------------------------
+2024-07-22 21:19:53.656 INFO metadata-import - 71 @ New item: 
+2024-07-22 21:19:53.657 INFO metadata-import - 71 @  + New owning collection (123456789/23): 
+2024-07-22 21:19:53.657 INFO metadata-import - 71 @ Publication
+2024-07-22 21:19:53.658 INFO metadata-import - 71 @  + Add    (cris.virtual.department): 
+2024-07-22 21:19:53.658 INFO metadata-import - 71 @ Departamento de Ingeniería Química y Bioprocesos
+2024-07-22 21:19:53.659 INFO metadata-import - 71 @ , authority = c4ff4913-51b5-4937-9bbe-a11409ffee37
+2024-07-22 21:19:53.659 INFO metadata-import - 71 @ , confidence = 600
+2024-07-22 21:19:53.660 INFO metadata-import - 71 @  + Add    (cris.virtual.orcid): 
+2024-07-22 21:19:53.660 INFO metadata-import - 71 @ #PLACEHOLDER_PARENT_METADATA_VALUE#
+2024-07-22 21:19:53.660 INFO metadata-import - 71 @  + Add    (cris.virtualsource.department): 
+2024-07-22 21:19:53.660 INFO metadata-import - 71 @ f847ce86-c863-467e-b34d-ee165630eca8
+2024-07-22 21:19:53.661 INFO metadata-import - 71 @  + Add    (cris.virtualsource.orcid): 
+2024-07-22 21:19:53.661 INFO metadata-import - 71 @ f847ce86-c863-467e-b34d-ee165630eca8
+2024-07-22 21:19:53.661 INFO metadata-import - 71 @  + Add    (dc.contributor.author): 
+2024-07-22 21:19:53.661 INFO metadata-import - 71 @ Orellana, Rodrigo
+2024-07-22 21:19:53.661 INFO metadata-import - 71 @ , authority = f847ce86-c863-467e-b34d-ee165630eca8
+2024-07-22 21:19:53.662 INFO metadata-import - 71 @ , confidence = 600
+2024-07-22 21:19:53.662 INFO metadata-import - 71 @  + Add    (dc.date.issued): 
+2024-07-22 21:19:53.662 INFO metadata-import - 71 @ 2019
+2024-07-22 21:19:53.662 INFO metadata-import - 71 @  + Add    (dc.identifier.doi): 
+2024-07-22 21:19:53.662 INFO metadata-import - 71 @ 1233
+2024-07-22 21:19:53.663 INFO metadata-import - 71 @  + Add    (dc.title): 
+2024-07-22 21:19:53.663 INFO metadata-import - 71 @ TEST IMPORT 3333
+2024-07-22 21:19:53.663 INFO metadata-import - 71 @  + Add    (dspace.entity.type): 
+2024-07-22 21:19:53.663 INFO metadata-import - 71 @ Publication
+2024-07-22 21:19:53.664 INFO metadata-import - 71 @  + Add    (oairecerif.author.affiliation): 
+2024-07-22 21:19:53.664 INFO metadata-import - 71 @ Departamento de Ingeniería Química y Bioprocesos
+2024-07-22 21:19:53.664 INFO metadata-import - 71 @ , authority = c4ff4913-51b5-4937-9bbe-a11409ffee37
+2024-07-22 21:19:53.664 INFO metadata-import - 71 @ , confidence = 600
+2024-07-22 21:19:53.665 INFO metadata-import - 71 @ 
+1 item(s) will be changed
+
+2024-07-22 21:19:54.542 INFO metadata-import - 71 @ -----------------------------------------------------------
+2024-07-22 21:19:54.543 INFO metadata-import - 71 @ New item: 
+2024-07-22 21:19:54.543 INFO metadata-import - 71 @ ec1ba07e-0d0f-428d-81bf-7a425a25e69b (123456789/58)
+2024-07-22 21:19:54.544 INFO metadata-import - 71 @  + New owning collection  (123456789/23): 
+2024-07-22 21:19:54.544 INFO metadata-import - 71 @ Publication
+2024-07-22 21:19:54.544 INFO metadata-import - 71 @  + Added   (cris.virtual.department): 
+2024-07-22 21:19:54.545 INFO metadata-import - 71 @ Departamento de Ingeniería Química y Bioprocesos
+2024-07-22 21:19:54.545 INFO metadata-import - 71 @ , authority = c4ff4913-51b5-4937-9bbe-a11409ffee37
+2024-07-22 21:19:54.545 INFO metadata-import - 71 @ , confidence = 600
+2024-07-22 21:19:54.545 INFO metadata-import - 71 @  + Added   (cris.virtual.orcid): 
+2024-07-22 21:19:54.545 INFO metadata-import - 71 @ #PLACEHOLDER_PARENT_METADATA_VALUE#
+2024-07-22 21:19:54.545 INFO metadata-import - 71 @  + Added   (cris.virtualsource.department): 
+2024-07-22 21:19:54.546 INFO metadata-import - 71 @ f847ce86-c863-467e-b34d-ee165630eca8
+2024-07-22 21:19:54.546 INFO metadata-import - 71 @  + Added   (cris.virtualsource.orcid): 
+2024-07-22 21:19:54.546 INFO metadata-import - 71 @ f847ce86-c863-467e-b34d-ee165630eca8
+2024-07-22 21:19:54.546 INFO metadata-import - 71 @  + Added   (dc.contributor.author): 
+2024-07-22 21:19:54.546 INFO metadata-import - 71 @ Orellana, Rodrigo
+2024-07-22 21:19:54.547 INFO metadata-import - 71 @ , authority = f847ce86-c863-467e-b34d-ee165630eca8
+2024-07-22 21:19:54.547 INFO metadata-import - 71 @ , confidence = 600
+2024-07-22 21:19:54.547 INFO metadata-import - 71 @  + Added   (dc.date.issued): 
+2024-07-22 21:19:54.547 INFO metadata-import - 71 @ 2019
+2024-07-22 21:19:54.548 INFO metadata-import - 71 @  + Added   (dc.identifier.doi): 
+2024-07-22 21:19:54.548 INFO metadata-import - 71 @ 1233
+2024-07-22 21:19:54.548 INFO metadata-import - 71 @  + Added   (dc.title): 
+2024-07-22 21:19:54.548 INFO metadata-import - 71 @ TEST IMPORT 3333
+2024-07-22 21:19:54.548 INFO metadata-import - 71 @  + Added   (dspace.entity.type): 
+2024-07-22 21:19:54.549 INFO metadata-import - 71 @ Publication
+2024-07-22 21:19:54.549 INFO metadata-import - 71 @  + Added   (oairecerif.author.affiliation): 
+2024-07-22 21:19:54.549 INFO metadata-import - 71 @ Departamento de Ingeniería Química y Bioprocesos
+2024-07-22 21:19:54.549 INFO metadata-import - 71 @ , authority = c4ff4913-51b5-4937-9bbe-a11409ffee37
+2024-07-22 21:19:54.549 INFO metadata-import - 71 @ , confidence = 600
+2024-07-22 21:19:54.552 INFO metadata-import - 71 @ The script has completed

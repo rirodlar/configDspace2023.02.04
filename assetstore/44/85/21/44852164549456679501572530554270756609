@@ -1,0 +1,49 @@
+2024-07-17 00:21:59.465 INFO import - 35 @ **Test Run** - not actually importing items.
+2024-07-17 00:21:59.466 INFO import - 35 @ No collections given. Assuming 'collections' file inside item directory
+2024-07-17 00:21:59.511 INFO import - 35 @ The script has started
+2024-07-17 00:22:00.793 ERROR import - 35 @ '/opt/dspace-cris7/imports' as defined by the key 'org.dspace.app.batchitemimport.work.dir' in dspace.cfg is not a valid directory
+2024-07-17 00:22:00.802 INFO import - 35 @ Extracting file: __MACOSX/._saf-export
+2024-07-17 00:22:00.804 INFO import - 35 @ Extracting file: saf-export/.DS_Store
+2024-07-17 00:22:00.804 INFO import - 35 @ Extracting file: __MACOSX/saf-export/._.DS_Store
+2024-07-17 00:22:00.806 INFO import - 35 @ Extracting file: __MACOSX/saf-export/._1
+2024-07-17 00:22:00.806 INFO import - 35 @ Extracting file: __MACOSX/saf-export/._2
+2024-07-17 00:22:00.807 INFO import - 35 @ Extracting file: saf-export/1/contents
+2024-07-17 00:22:00.808 INFO import - 35 @ Extracting file: __MACOSX/saf-export/1/._contents
+2024-07-17 00:22:00.809 INFO import - 35 @ Extracting file: saf-export/1/metadata_cris.xml
+2024-07-17 00:22:00.810 INFO import - 35 @ Extracting file: __MACOSX/saf-export/1/._metadata_cris.xml
+2024-07-17 00:22:00.810 INFO import - 35 @ Extracting file: saf-export/1/handle
+2024-07-17 00:22:00.811 INFO import - 35 @ Extracting file: __MACOSX/saf-export/1/._handle
+2024-07-17 00:22:00.812 INFO import - 35 @ Extracting file: saf-export/1/metadata_oairecerif.xml
+2024-07-17 00:22:00.812 INFO import - 35 @ Extracting file: __MACOSX/saf-export/1/._metadata_oairecerif.xml
+2024-07-17 00:22:00.813 INFO import - 35 @ Extracting file: saf-export/1/metadata_dspace.xml
+2024-07-17 00:22:00.814 INFO import - 35 @ Extracting file: __MACOSX/saf-export/1/._metadata_dspace.xml
+2024-07-17 00:22:00.814 INFO import - 35 @ Extracting file: saf-export/1/dublin_core.xml
+2024-07-17 00:22:00.815 INFO import - 35 @ Extracting file: __MACOSX/saf-export/1/._dublin_core.xml
+2024-07-17 00:22:00.815 INFO import - 35 @ Extracting file: saf-export/1/6a0535e6-8597-495c-8618-8afa3f6473ce copy.numbers
+2024-07-17 00:22:00.817 INFO import - 35 @ Extracting file: __MACOSX/saf-export/1/._6a0535e6-8597-495c-8618-8afa3f6473ce copy.numbers
+2024-07-17 00:22:00.817 INFO import - 35 @ Extracting file: saf-export/1/license.txt
+2024-07-17 00:22:00.818 INFO import - 35 @ Extracting file: __MACOSX/saf-export/1/._license.txt
+2024-07-17 00:22:00.819 INFO import - 35 @ Extracting file: saf-export/1/collections
+2024-07-17 00:22:00.819 INFO import - 35 @ Extracting file: __MACOSX/saf-export/1/._collections
+2024-07-17 00:22:00.820 INFO import - 35 @ Extracting file: saf-export/2/contents
+2024-07-17 00:22:00.820 INFO import - 35 @ Extracting file: __MACOSX/saf-export/2/._contents
+2024-07-17 00:22:00.821 INFO import - 35 @ Extracting file: saf-export/2/metadata_cris.xml
+2024-07-17 00:22:00.821 INFO import - 35 @ Extracting file: __MACOSX/saf-export/2/._metadata_cris.xml
+2024-07-17 00:22:00.822 INFO import - 35 @ Extracting file: saf-export/2/handle
+2024-07-17 00:22:00.822 INFO import - 35 @ Extracting file: __MACOSX/saf-export/2/._handle
+2024-07-17 00:22:00.823 INFO import - 35 @ Extracting file: saf-export/2/metadata_oairecerif.xml
+2024-07-17 00:22:00.823 INFO import - 35 @ Extracting file: __MACOSX/saf-export/2/._metadata_oairecerif.xml
+2024-07-17 00:22:00.824 INFO import - 35 @ Extracting file: saf-export/2/metadata_dspace.xml
+2024-07-17 00:22:00.824 INFO import - 35 @ Extracting file: __MACOSX/saf-export/2/._metadata_dspace.xml
+2024-07-17 00:22:00.825 INFO import - 35 @ Extracting file: saf-export/2/dublin_core.xml
+2024-07-17 00:22:00.825 INFO import - 35 @ Extracting file: __MACOSX/saf-export/2/._dublin_core.xml
+2024-07-17 00:22:00.826 INFO import - 35 @ Extracting file: saf-export/2/collections
+2024-07-17 00:22:00.826 INFO import - 35 @ Extracting file: __MACOSX/saf-export/2/._collections
+2024-07-17 00:22:00.827 INFO import - 35 @ Set sourceDir using path inside of Zip: /opt/dspace-cris7/imports/importSAF/067a0e16-72bb-455f-b63c-a85974979023/saf-export 2.zip-067a0e16-72bb-455f-b63c-a85974979023/__MACOSX
+2024-07-17 00:22:00.834 INFO import - 35 @ Processing collections file: collections
+2024-07-17 00:22:00.835 ERROR import - 35 @ No collections specified for item saf-export. Skipping.
+2024-07-17 00:22:00.864 INFO import - 35 @ ***End of Test Run***
+2024-07-17 00:22:00.875 INFO import - 35 @ Started: 1721190119511
+2024-07-17 00:22:00.875 INFO import - 35 @ Ended: 1721190120869
+2024-07-17 00:22:00.881 INFO import - 35 @ Elapsed time: 1 secs (1358 msecs)
+2024-07-17 00:22:00.885 INFO import - 35 @ The script has completed

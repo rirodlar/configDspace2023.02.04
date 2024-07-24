@@ -1,0 +1,14 @@
+{
+	"name": "Departamento de Ingenier\u00EDa Qu\u00EDmica y Bioprocesos",
+	"acronym": "DIQB",
+	"type": "https:\/\/w3id.org\/cerif\/vocab\/OrganisationTypes#HigherEducation",
+	"parentOrganization": {
+	},
+	"identifiers": [
+	],
+	"url-identifiers": [
+	],
+	"People": [
+		"Orellana, Rodrigo"
+	]
+}

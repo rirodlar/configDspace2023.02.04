@@ -1,0 +1,22 @@
+2024-07-17 00:32:28.843 INFO export - 38 @ The script has started
+2024-07-17 00:32:28.856 INFO export - 38 @ Exporting from collection: b8a0ec10-7a5f-4bbc-8476-7dc236682067
+2024-07-17 00:32:28.858 INFO export - 38 @ Beginning export
+2024-07-17 00:32:28.860 INFO export - 38 @ Exporting item to 1
+2024-07-17 00:32:28.861 INFO export - 38 @ Exporting Item 36506ca1-d6dd-47af-b11e-2515fde78297, handle 123456789/25 to /opt/dspace-cris7/exports/saf-export-067a0e16-72bb-455f-b63c-a85974979023.zip/1
+2024-07-17 00:32:28.861 INFO export - 38 @ Attempting to create file /opt/dspace-cris7/exports/saf-export-067a0e16-72bb-455f-b63c-a85974979023.zip/1/metadata_dspace.xml
+2024-07-17 00:32:28.862 INFO export - 38 @ Attempting to create file /opt/dspace-cris7/exports/saf-export-067a0e16-72bb-455f-b63c-a85974979023.zip/1/dublin_core.xml
+2024-07-17 00:32:28.867 INFO export - 38 @ Exporting item to 2
+2024-07-17 00:32:28.868 INFO export - 38 @ Exporting Item 8675a6a6-a3d4-4d3d-92ea-f34b95cf0add, handle 123456789/26 to /opt/dspace-cris7/exports/saf-export-067a0e16-72bb-455f-b63c-a85974979023.zip/2
+2024-07-17 00:32:28.868 INFO export - 38 @ Attempting to create file /opt/dspace-cris7/exports/saf-export-067a0e16-72bb-455f-b63c-a85974979023.zip/2/metadata_dspace.xml
+2024-07-17 00:32:28.869 INFO export - 38 @ Attempting to create file /opt/dspace-cris7/exports/saf-export-067a0e16-72bb-455f-b63c-a85974979023.zip/2/dublin_core.xml
+2024-07-17 00:32:28.873 INFO export - 38 @ Exporting item to 3
+2024-07-17 00:32:28.873 INFO export - 38 @ Exporting Item d4a88ff0-e204-49e5-83f6-04463853f7d9, handle 123456789/27 to /opt/dspace-cris7/exports/saf-export-067a0e16-72bb-455f-b63c-a85974979023.zip/3
+2024-07-17 00:32:28.874 INFO export - 38 @ Attempting to create file /opt/dspace-cris7/exports/saf-export-067a0e16-72bb-455f-b63c-a85974979023.zip/3/metadata_dspace.xml
+2024-07-17 00:32:28.874 INFO export - 38 @ Attempting to create file /opt/dspace-cris7/exports/saf-export-067a0e16-72bb-455f-b63c-a85974979023.zip/3/dublin_core.xml
+2024-07-17 00:32:28.878 INFO export - 38 @ Exporting item to 4
+2024-07-17 00:32:28.879 INFO export - 38 @ Exporting Item d8d903f6-eac9-4825-a383-bd192157fc12, handle 123456789/24 to /opt/dspace-cris7/exports/saf-export-067a0e16-72bb-455f-b63c-a85974979023.zip/4
+2024-07-17 00:32:28.879 INFO export - 38 @ Attempting to create file /opt/dspace-cris7/exports/saf-export-067a0e16-72bb-455f-b63c-a85974979023.zip/4/metadata_cris.xml
+2024-07-17 00:32:28.879 INFO export - 38 @ Attempting to create file /opt/dspace-cris7/exports/saf-export-067a0e16-72bb-455f-b63c-a85974979023.zip/4/metadata_oairecerif.xml
+2024-07-17 00:32:28.880 INFO export - 38 @ Attempting to create file /opt/dspace-cris7/exports/saf-export-067a0e16-72bb-455f-b63c-a85974979023.zip/4/metadata_dspace.xml
+2024-07-17 00:32:28.880 INFO export - 38 @ Attempting to create file /opt/dspace-cris7/exports/saf-export-067a0e16-72bb-455f-b63c-a85974979023.zip/4/dublin_core.xml
+2024-07-17 00:32:29.440 INFO export - 38 @ The script has completed

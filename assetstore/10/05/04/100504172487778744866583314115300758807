@@ -1,0 +1,208 @@
+2024-07-16 14:14:09.849 INFO metadata-import - 25 @ The script has started
+2024-07-16 14:14:09.900 INFO metadata-import - 25 @ -----------------------------------------------------------
+2024-07-16 14:14:09.902 INFO metadata-import - 25 @ New item: 
+2024-07-16 14:14:09.904 INFO metadata-import - 25 @  + New owning collection (123456789/7): 
+2024-07-16 14:14:09.905 INFO metadata-import - 25 @ Publication
+2024-07-16 14:14:09.905 INFO metadata-import - 25 @  + Add    (cris.virtual.department): 
+2024-07-16 14:14:09.906 INFO metadata-import - 25 @ Departamento Biologia
+2024-07-16 14:14:09.906 INFO metadata-import - 25 @ , authority = d66231b5-4a2d-451a-9cf1-47b138c0585c
+2024-07-16 14:14:09.906 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:09.907 INFO metadata-import - 25 @  + Add    (cris.virtual.orcid): 
+2024-07-16 14:14:09.907 INFO metadata-import - 25 @ #PLACEHOLDER_PARENT_METADATA_VALUE#
+2024-07-16 14:14:09.907 INFO metadata-import - 25 @  + Add    (cris.virtualsource.department): 
+2024-07-16 14:14:09.907 INFO metadata-import - 25 @ 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:09.908 INFO metadata-import - 25 @  + Add    (cris.virtualsource.orcid): 
+2024-07-16 14:14:09.908 INFO metadata-import - 25 @ 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:09.908 INFO metadata-import - 25 @  + Add    (dc.contributor.author): 
+2024-07-16 14:14:09.908 INFO metadata-import - 25 @ ricaro rodriguez, rodriguez
+2024-07-16 14:14:09.909 INFO metadata-import - 25 @ , authority = 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:09.909 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:09.909 INFO metadata-import - 25 @  + Add    (dc.date.issued): 
+2024-07-16 14:14:09.909 INFO metadata-import - 25 @ 2024
+2024-07-16 14:14:09.910 INFO metadata-import - 25 @  + Add    (dc.description): 
+2024-07-16 14:14:09.910 INFO metadata-import - 25 @ d1
+2024-07-16 14:14:09.910 INFO metadata-import - 25 @  + Add    (dc.identifier.doi): 
+2024-07-16 14:14:09.911 INFO metadata-import - 25 @ 11
+2024-07-16 14:14:09.911 INFO metadata-import - 25 @  + Add    (dc.title): 
+2024-07-16 14:14:09.911 INFO metadata-import - 25 @ Import 1
+2024-07-16 14:14:09.912 INFO metadata-import - 25 @  + Add    (dspace.entity.type): 
+2024-07-16 14:14:09.912 INFO metadata-import - 25 @ Publication
+2024-07-16 14:14:09.912 INFO metadata-import - 25 @  + Add    (oairecerif.author.affiliation): 
+2024-07-16 14:14:09.912 INFO metadata-import - 25 @ Departamento Biologia
+2024-07-16 14:14:09.913 INFO metadata-import - 25 @ , authority = d66231b5-4a2d-451a-9cf1-47b138c0585c
+2024-07-16 14:14:09.913 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:09.913 INFO metadata-import - 25 @ -----------------------------------------------------------
+2024-07-16 14:14:09.913 INFO metadata-import - 25 @ New item: 
+2024-07-16 14:14:09.914 INFO metadata-import - 25 @  + New owning collection (123456789/7): 
+2024-07-16 14:14:09.914 INFO metadata-import - 25 @ Publication
+2024-07-16 14:14:09.914 INFO metadata-import - 25 @  + Add    (cris.virtual.department): 
+2024-07-16 14:14:09.914 INFO metadata-import - 25 @ Departamento Biologia
+2024-07-16 14:14:09.915 INFO metadata-import - 25 @ , authority = d66231b5-4a2d-451a-9cf1-47b138c0585c
+2024-07-16 14:14:09.915 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:09.915 INFO metadata-import - 25 @  + Add    (cris.virtual.orcid): 
+2024-07-16 14:14:09.915 INFO metadata-import - 25 @ #PLACEHOLDER_PARENT_METADATA_VALUE#
+2024-07-16 14:14:09.915 INFO metadata-import - 25 @  + Add    (cris.virtualsource.department): 
+2024-07-16 14:14:09.916 INFO metadata-import - 25 @ 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:09.916 INFO metadata-import - 25 @  + Add    (cris.virtualsource.orcid): 
+2024-07-16 14:14:09.916 INFO metadata-import - 25 @ 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:09.916 INFO metadata-import - 25 @  + Add    (dc.contributor.author): 
+2024-07-16 14:14:09.917 INFO metadata-import - 25 @ ricaro rodriguez, rodriguez
+2024-07-16 14:14:09.917 INFO metadata-import - 25 @ , authority = 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:09.917 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:09.917 INFO metadata-import - 25 @  + Add    (dc.date.issued): 
+2024-07-16 14:14:09.917 INFO metadata-import - 25 @ 2022
+2024-07-16 14:14:09.918 INFO metadata-import - 25 @  + Add    (dc.description): 
+2024-07-16 14:14:09.918 INFO metadata-import - 25 @ d2
+2024-07-16 14:14:09.918 INFO metadata-import - 25 @  + Add    (dc.identifier.doi): 
+2024-07-16 14:14:09.919 INFO metadata-import - 25 @ 22
+2024-07-16 14:14:09.919 INFO metadata-import - 25 @  + Add    (dc.title): 
+2024-07-16 14:14:09.919 INFO metadata-import - 25 @ Import 2
+2024-07-16 14:14:09.919 INFO metadata-import - 25 @  + Add    (dspace.entity.type): 
+2024-07-16 14:14:09.920 INFO metadata-import - 25 @ Publication
+2024-07-16 14:14:09.920 INFO metadata-import - 25 @  + Add    (oairecerif.author.affiliation): 
+2024-07-16 14:14:09.920 INFO metadata-import - 25 @ Departamento Biologia
+2024-07-16 14:14:09.920 INFO metadata-import - 25 @ , authority = d66231b5-4a2d-451a-9cf1-47b138c0585c
+2024-07-16 14:14:09.921 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:09.921 INFO metadata-import - 25 @ -----------------------------------------------------------
+2024-07-16 14:14:09.921 INFO metadata-import - 25 @ New item: 
+2024-07-16 14:14:09.921 INFO metadata-import - 25 @  + New owning collection (123456789/7): 
+2024-07-16 14:14:09.921 INFO metadata-import - 25 @ Publication
+2024-07-16 14:14:09.922 INFO metadata-import - 25 @  + Add    (cris.virtual.department): 
+2024-07-16 14:14:09.922 INFO metadata-import - 25 @ Departamento Biologia
+2024-07-16 14:14:09.922 INFO metadata-import - 25 @ , authority = d66231b5-4a2d-451a-9cf1-47b138c0585c
+2024-07-16 14:14:09.922 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:09.922 INFO metadata-import - 25 @  + Add    (cris.virtual.orcid): 
+2024-07-16 14:14:09.923 INFO metadata-import - 25 @ #PLACEHOLDER_PARENT_METADATA_VALUE#
+2024-07-16 14:14:09.923 INFO metadata-import - 25 @  + Add    (cris.virtualsource.department): 
+2024-07-16 14:14:09.923 INFO metadata-import - 25 @ 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:09.923 INFO metadata-import - 25 @  + Add    (cris.virtualsource.orcid): 
+2024-07-16 14:14:09.924 INFO metadata-import - 25 @ 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:09.924 INFO metadata-import - 25 @  + Add    (dc.contributor.author): 
+2024-07-16 14:14:09.924 INFO metadata-import - 25 @ ricaro rodriguez, rodriguez
+2024-07-16 14:14:09.924 INFO metadata-import - 25 @ , authority = 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:09.924 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:09.925 INFO metadata-import - 25 @  + Add    (dc.date.issued): 
+2024-07-16 14:14:09.925 INFO metadata-import - 25 @ 2022
+2024-07-16 14:14:09.925 INFO metadata-import - 25 @  + Add    (dc.description): 
+2024-07-16 14:14:09.925 INFO metadata-import - 25 @ d3
+2024-07-16 14:14:09.926 INFO metadata-import - 25 @  + Add    (dc.identifier.doi): 
+2024-07-16 14:14:09.926 INFO metadata-import - 25 @ 33
+2024-07-16 14:14:09.926 INFO metadata-import - 25 @  + Add    (dc.relation.project): 
+2024-07-16 14:14:09.926 INFO metadata-import - 25 @ Proyecto X
+2024-07-16 14:14:09.926 INFO metadata-import - 25 @ , authority = e221441e-be33-47c9-ace8-cc02790b1756
+2024-07-16 14:14:09.926 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:09.927 INFO metadata-import - 25 @  + Add    (dc.title): 
+2024-07-16 14:14:09.927 INFO metadata-import - 25 @ Import 3
+2024-07-16 14:14:09.927 INFO metadata-import - 25 @  + Add    (dspace.entity.type): 
+2024-07-16 14:14:09.927 INFO metadata-import - 25 @ Publication
+2024-07-16 14:14:09.928 INFO metadata-import - 25 @  + Add    (oairecerif.author.affiliation): 
+2024-07-16 14:14:09.928 INFO metadata-import - 25 @ Departamento Biologia
+2024-07-16 14:14:09.928 INFO metadata-import - 25 @ , authority = d66231b5-4a2d-451a-9cf1-47b138c0585c
+2024-07-16 14:14:09.928 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:09.929 INFO metadata-import - 25 @ 
+3 item(s) will be changed
+
+2024-07-16 14:14:12.252 INFO metadata-import - 25 @ -----------------------------------------------------------
+2024-07-16 14:14:12.253 INFO metadata-import - 25 @ New item: 
+2024-07-16 14:14:12.253 INFO metadata-import - 25 @ 50355f29-21dc-4dd4-9d8a-6772fca735ea (123456789/20)
+2024-07-16 14:14:12.254 INFO metadata-import - 25 @  + New owning collection  (123456789/7): 
+2024-07-16 14:14:12.254 INFO metadata-import - 25 @ Publication
+2024-07-16 14:14:12.255 INFO metadata-import - 25 @  + Added   (cris.virtual.department): 
+2024-07-16 14:14:12.255 INFO metadata-import - 25 @ Departamento Biologia
+2024-07-16 14:14:12.255 INFO metadata-import - 25 @ , authority = d66231b5-4a2d-451a-9cf1-47b138c0585c
+2024-07-16 14:14:12.256 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:12.256 INFO metadata-import - 25 @  + Added   (cris.virtual.orcid): 
+2024-07-16 14:14:12.256 INFO metadata-import - 25 @ #PLACEHOLDER_PARENT_METADATA_VALUE#
+2024-07-16 14:14:12.257 INFO metadata-import - 25 @  + Added   (cris.virtualsource.department): 
+2024-07-16 14:14:12.257 INFO metadata-import - 25 @ 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:12.257 INFO metadata-import - 25 @  + Added   (cris.virtualsource.orcid): 
+2024-07-16 14:14:12.258 INFO metadata-import - 25 @ 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:12.258 INFO metadata-import - 25 @  + Added   (dc.contributor.author): 
+2024-07-16 14:14:12.258 INFO metadata-import - 25 @ ricaro rodriguez, rodriguez
+2024-07-16 14:14:12.258 INFO metadata-import - 25 @ , authority = 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:12.259 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:12.259 INFO metadata-import - 25 @  + Added   (dc.date.issued): 
+2024-07-16 14:14:12.259 INFO metadata-import - 25 @ 2024
+2024-07-16 14:14:12.259 INFO metadata-import - 25 @  + Added   (dc.description): 
+2024-07-16 14:14:12.260 INFO metadata-import - 25 @ d1
+2024-07-16 14:14:12.260 INFO metadata-import - 25 @  + Added   (dc.identifier.doi): 
+2024-07-16 14:14:12.260 INFO metadata-import - 25 @ 11
+2024-07-16 14:14:12.261 INFO metadata-import - 25 @  + Added   (dc.title): 
+2024-07-16 14:14:12.261 INFO metadata-import - 25 @ Import 1
+2024-07-16 14:14:12.261 INFO metadata-import - 25 @  + Added   (dspace.entity.type): 
+2024-07-16 14:14:12.261 INFO metadata-import - 25 @ Publication
+2024-07-16 14:14:12.262 INFO metadata-import - 25 @  + Added   (oairecerif.author.affiliation): 
+2024-07-16 14:14:12.262 INFO metadata-import - 25 @ Departamento Biologia
+2024-07-16 14:14:12.262 INFO metadata-import - 25 @ , authority = d66231b5-4a2d-451a-9cf1-47b138c0585c
+2024-07-16 14:14:12.262 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:12.263 INFO metadata-import - 25 @ -----------------------------------------------------------
+2024-07-16 14:14:12.263 INFO metadata-import - 25 @ New item: 
+2024-07-16 14:14:12.263 INFO metadata-import - 25 @ 22c5f82d-ced3-40e4-8fb4-3e8cbe374ccd (123456789/21)
+2024-07-16 14:14:12.263 INFO metadata-import - 25 @  + New owning collection  (123456789/7): 
+2024-07-16 14:14:12.263 INFO metadata-import - 25 @ Publication
+2024-07-16 14:14:12.264 INFO metadata-import - 25 @  + Added   (cris.virtual.department): 
+2024-07-16 14:14:12.264 INFO metadata-import - 25 @ Departamento Biologia
+2024-07-16 14:14:12.264 INFO metadata-import - 25 @ , authority = d66231b5-4a2d-451a-9cf1-47b138c0585c
+2024-07-16 14:14:12.264 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:12.265 INFO metadata-import - 25 @  + Added   (cris.virtual.orcid): 
+2024-07-16 14:14:12.265 INFO metadata-import - 25 @ #PLACEHOLDER_PARENT_METADATA_VALUE#
+2024-07-16 14:14:12.265 INFO metadata-import - 25 @  + Added   (cris.virtualsource.department): 
+2024-07-16 14:14:12.266 INFO metadata-import - 25 @ 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:12.266 INFO metadata-import - 25 @  + Added   (cris.virtualsource.orcid): 
+2024-07-16 14:14:12.266 INFO metadata-import - 25 @ 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:12.267 INFO metadata-import - 25 @  + Added   (dc.contributor.author): 
+2024-07-16 14:14:12.267 INFO metadata-import - 25 @ ricaro rodriguez, rodriguez
+2024-07-16 14:14:12.267 INFO metadata-import - 25 @ , authority = 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:12.267 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:12.268 INFO metadata-import - 25 @  + Added   (dc.date.issued): 
+2024-07-16 14:14:12.268 INFO metadata-import - 25 @ 2022
+2024-07-16 14:14:12.268 INFO metadata-import - 25 @  + Added   (dc.description): 
+2024-07-16 14:14:12.269 INFO metadata-import - 25 @ d2
+2024-07-16 14:14:12.269 INFO metadata-import - 25 @  + Added   (dc.identifier.doi): 
+2024-07-16 14:14:12.269 INFO metadata-import - 25 @ 22
+2024-07-16 14:14:12.269 INFO metadata-import - 25 @  + Added   (dc.title): 
+2024-07-16 14:14:12.269 INFO metadata-import - 25 @ Import 2
+2024-07-16 14:14:12.270 INFO metadata-import - 25 @  + Added   (dspace.entity.type): 
+2024-07-16 14:14:12.270 INFO metadata-import - 25 @ Publication
+2024-07-16 14:14:12.270 INFO metadata-import - 25 @  + Added   (oairecerif.author.affiliation): 
+2024-07-16 14:14:12.270 INFO metadata-import - 25 @ Departamento Biologia
+2024-07-16 14:14:12.271 INFO metadata-import - 25 @ , authority = d66231b5-4a2d-451a-9cf1-47b138c0585c
+2024-07-16 14:14:12.271 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:12.271 INFO metadata-import - 25 @ -----------------------------------------------------------
+2024-07-16 14:14:12.271 INFO metadata-import - 25 @ New item: 
+2024-07-16 14:14:12.271 INFO metadata-import - 25 @ e249e2c5-e899-4e11-97a9-3da0c2faf378 (123456789/22)
+2024-07-16 14:14:12.271 INFO metadata-import - 25 @  + New owning collection  (123456789/7): 
+2024-07-16 14:14:12.272 INFO metadata-import - 25 @ Publication
+2024-07-16 14:14:12.272 INFO metadata-import - 25 @  + Added   (cris.virtual.department): 
+2024-07-16 14:14:12.272 INFO metadata-import - 25 @ Departamento Biologia
+2024-07-16 14:14:12.273 INFO metadata-import - 25 @ , authority = d66231b5-4a2d-451a-9cf1-47b138c0585c
+2024-07-16 14:14:12.273 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:12.273 INFO metadata-import - 25 @  + Added   (cris.virtual.orcid): 
+2024-07-16 14:14:12.273 INFO metadata-import - 25 @ #PLACEHOLDER_PARENT_METADATA_VALUE#
+2024-07-16 14:14:12.274 INFO metadata-import - 25 @  + Added   (cris.virtualsource.department): 
+2024-07-16 14:14:12.274 INFO metadata-import - 25 @ 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:12.274 INFO metadata-import - 25 @  + Added   (cris.virtualsource.orcid): 
+2024-07-16 14:14:12.274 INFO metadata-import - 25 @ 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:12.274 INFO metadata-import - 25 @  + Added   (dc.contributor.author): 
+2024-07-16 14:14:12.275 INFO metadata-import - 25 @ ricaro rodriguez, rodriguez
+2024-07-16 14:14:12.275 INFO metadata-import - 25 @ , authority = 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-16 14:14:12.275 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:12.275 INFO metadata-import - 25 @  + Added   (dc.date.issued): 
+2024-07-16 14:14:12.275 INFO metadata-import - 25 @ 2022
+2024-07-16 14:14:12.276 INFO metadata-import - 25 @  + Added   (dc.description): 
+2024-07-16 14:14:12.276 INFO metadata-import - 25 @ d3
+2024-07-16 14:14:12.276 INFO metadata-import - 25 @  + Added   (dc.identifier.doi): 
+2024-07-16 14:14:12.276 INFO metadata-import - 25 @ 33
+2024-07-16 14:14:12.276 INFO metadata-import - 25 @  + Added   (dc.relation.project): 
+2024-07-16 14:14:12.277 INFO metadata-import - 25 @ Proyecto X
+2024-07-16 14:14:12.277 INFO metadata-import - 25 @ , authority = e221441e-be33-47c9-ace8-cc02790b1756
+2024-07-16 14:14:12.277 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:12.277 INFO metadata-import - 25 @  + Added   (dc.title): 
+2024-07-16 14:14:12.277 INFO metadata-import - 25 @ Import 3
+2024-07-16 14:14:12.278 INFO metadata-import - 25 @  + Added   (dspace.entity.type): 
+2024-07-16 14:14:12.278 INFO metadata-import - 25 @ Publication
+2024-07-16 14:14:12.278 INFO metadata-import - 25 @  + Added   (oairecerif.author.affiliation): 
+2024-07-16 14:14:12.278 INFO metadata-import - 25 @ Departamento Biologia
+2024-07-16 14:14:12.279 INFO metadata-import - 25 @ , authority = d66231b5-4a2d-451a-9cf1-47b138c0585c
+2024-07-16 14:14:12.279 INFO metadata-import - 25 @ , confidence = 600
+2024-07-16 14:14:12.283 INFO metadata-import - 25 @ The script has completed

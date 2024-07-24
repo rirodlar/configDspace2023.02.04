@@ -1,0 +1,10 @@
+2024-07-22 21:18:38.178 INFO metadata-import - 69 @ The script has started
+2024-07-22 21:18:38.207 ERROR metadata-import - 69 @ null
+2024-07-22 21:18:38.219 ERROR metadata-import - 69 @ org.dspace.app.bulkedit.MetadataImportException: Unknown item ID 0190dd26-5063-7b16-b8ec-fc877e504728
+	at org.dspace.app.bulkedit.MetadataImport.runImport(MetadataImport.java:377)
+	at org.dspace.app.bulkedit.MetadataImport.internalRun(MetadataImport.java:213)
+	at org.dspace.scripts.DSpaceRunnable.run(DSpaceRunnable.java:154)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+

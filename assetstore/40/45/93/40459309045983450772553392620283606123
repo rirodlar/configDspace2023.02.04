@@ -1,0 +1,20 @@
+2024-07-23 15:53:26.654 INFO bulk-import - 82 @ The script has started
+2024-07-23 15:53:26.763 INFO bulk-import - 82 @ Start reading all the metadata group rows
+2024-07-23 15:53:26.873 INFO bulk-import - 82 @ Found 21 metadata groups to process
+2024-07-23 15:53:26.873 INFO bulk-import - 82 @ Start reading all the bitstream rows
+2024-07-23 15:53:26.893 INFO bulk-import - 82 @ Found 6 bitstreams to process
+2024-07-23 15:53:26.935 INFO bulk-import - 82 @ Found 7 items to process
+2024-07-23 15:53:26.993 INFO bulk-import - 82 @ Sheet bitstream-metadata - Row 2 - Bitstream updated successfully - ID: b230d89a-b72c-4066-9571-12ae9d3e613a
+2024-07-23 15:53:26.993 INFO bulk-import - 82 @ Row 2 - Item updated successfully - ID: 3b341611-b475-47a3-ab6b-5b5121bac4b1
+2024-07-23 15:53:27.517 INFO bulk-import - 82 @ Sheet bitstream-metadata - Row 3 - Bitstream updated successfully - ID: 18da788a-f232-42d9-a827-dc06e5af6808
+2024-07-23 15:53:27.518 INFO bulk-import - 82 @ Row 3 - Item updated successfully - ID: 63b18242-82bc-45cb-aa26-bd0cfb03400e
+2024-07-23 15:53:27.952 INFO bulk-import - 82 @ Sheet bitstream-metadata - Row 4 - Bitstream updated successfully - ID: b5115e3e-e942-4bcc-8ecc-af4617db1994
+2024-07-23 15:53:27.953 INFO bulk-import - 82 @ Row 4 - Item updated successfully - ID: 75febab3-e5e1-484c-b495-b2427cca6e0f
+2024-07-23 15:53:28.356 INFO bulk-import - 82 @ Sheet bitstream-metadata - Row 5 - Bitstream updated successfully - ID: 7632c90b-3d9d-4764-8fae-74e086366393
+2024-07-23 15:53:28.356 INFO bulk-import - 82 @ Row 5 - Item updated successfully - ID: 9ed0a543-b58e-497d-a598-e19e64e6ee3b
+2024-07-23 15:53:28.770 INFO bulk-import - 82 @ Sheet bitstream-metadata - Row 6 - Bitstream updated successfully - ID: 1d60d275-8154-4349-8b58-4dc57603ac67
+2024-07-23 15:53:28.770 INFO bulk-import - 82 @ Row 6 - Item updated successfully - ID: ae63ca45-7202-4b8e-8dad-05d345f6d830
+2024-07-23 15:53:29.204 INFO bulk-import - 82 @ Sheet bitstream-metadata - Row 7 - Bitstream updated successfully - ID: aaf591d2-3251-4899-a501-1d189fdcebd3
+2024-07-23 15:53:29.204 INFO bulk-import - 82 @ Row 7 - Item updated successfully - ID: b18264b0-5ce2-4e5d-886b-79517f3bfe3b
+2024-07-23 15:53:29.723 INFO bulk-import - 82 @ Row 8 - Item updated successfully - ID: f847ce86-c863-467e-b34d-ee165630eca8
+2024-07-23 15:53:30.185 INFO bulk-import - 82 @ The script has completed

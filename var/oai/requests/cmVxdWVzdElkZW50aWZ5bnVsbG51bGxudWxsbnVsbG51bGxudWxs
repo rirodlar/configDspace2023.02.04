@@ -1,0 +1,12 @@
+<request verb="Identify">https://sic.vriic.usach.cl/server/oai/request</request><Identify><repositoryName>DSpace at My University (CRIS)</repositoryName><baseURL>https://sic.vriic.usach.cl/server/oai/request</baseURL><protocolVersion>2.0</protocolVersion><adminEmail>dspace-help@myu.edu</adminEmail><earliestDatestamp>2024-07-06T01:55:00Z</earliestDatestamp><deletedRecord>transient</deletedRecord><granularity>YYYY-MM-DDThh:mm:ssZ</granularity><description><oai-identifier xmlns="http://www.openarchives.org/OAI/2.0/oai-identifier" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai-identifier http://www.openarchives.org/OAI/2.0/oai-identifier.xsd">
+<scheme>oai</scheme>
+<repositoryIdentifier>sic.vriic.usach.cl</repositoryIdentifier>
+<delimiter>:</delimiter>
+<sampleIdentifier>oai:sic.vriic.usach.cl:123456789/1234</sampleIdentifier>
+</oai-identifier></description><description><Service xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="123456789/0">
+	<Compatibility xmlns="https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility">https://www.openaire.eu/cerif-profile/vocab/OpenAIRE_Service_Compatibility#1.1</Compatibility>
+	<Name xml:lang="en">DSpace at My University (CRIS)</Name>
+	<Description xml:lang="en">An example CRIS that complies with the OpenAIRE Guidelines for CRIS Managers v.1.1.</Description>
+	<WebsiteURL>https://sic.vriic.usach.cl</WebsiteURL>
+	<OAIPMHBaseURL>https://sic.vriic.usach.cl/server/oai/openairecris</OAIPMHBaseURL>
+</Service></description></Identify></OAI-PMH>

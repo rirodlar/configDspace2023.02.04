@@ -1,0 +1,9 @@
+2024-07-22 20:38:41.744 INFO bulk-import - 66 @ The script has started
+2024-07-22 20:38:41.863 INFO bulk-import - 66 @ Start reading all the metadata group rows
+2024-07-22 20:38:41.866 ERROR bulk-import - 66 @ Sheet dc.contributor.author - Row 2 - Invalid PARENT-ID: 1
+2024-07-22 20:38:41.867 INFO bulk-import - 66 @ Found 0 metadata groups to process
+2024-07-22 20:38:41.867 INFO bulk-import - 66 @ Start reading all the bitstream rows
+2024-07-22 20:38:41.879 INFO bulk-import - 66 @ Found 1 bitstreams to process
+2024-07-22 20:38:41.885 ERROR bulk-import - 66 @ Sheet items - Row 2 - Invalid ID 1
+2024-07-22 20:38:41.885 INFO bulk-import - 66 @ Found 0 items to process
+2024-07-22 20:38:41.893 INFO bulk-import - 66 @ The script has completed

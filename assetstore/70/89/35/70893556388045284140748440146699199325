@@ -1,0 +1,3 @@
+2024-07-23 15:40:46.879 INFO curate - 80 @ The script has started
+2024-07-23 15:40:46.981 INFO curate - 80 @ Curation task: noop performed on: 123456789/66 with status: 0. Result: 'No operation performed on 123456789/66'
+2024-07-23 15:40:46.999 INFO curate - 80 @ The script has completed

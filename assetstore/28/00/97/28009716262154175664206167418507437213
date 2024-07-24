@@ -1,0 +1,34 @@
+2024-07-17 00:53:57.510 INFO import - 41 @ **Test Run** - not actually importing items.
+2024-07-17 00:53:57.555 INFO import - 41 @ The script has started
+2024-07-17 00:53:57.558 INFO import - 41 @ Destination collections:
+2024-07-17 00:53:57.559 INFO import - 41 @ Owning Collection: Publication
+2024-07-17 00:53:57.744 ERROR import - 41 @ '/opt/dspace-cris7/imports' as defined by the key 'org.dspace.app.batchitemimport.work.dir' in dspace.cfg is not a valid directory
+2024-07-17 00:53:57.745 INFO import - 41 @ Extracting file: saf-export/1/collections
+2024-07-17 00:53:57.745 INFO import - 41 @ Extracting file: saf-export/1/contents
+2024-07-17 00:53:57.746 INFO import - 41 @ Extracting file: saf-export/1/dublin_core.xml
+2024-07-17 00:53:57.746 INFO import - 41 @ Extracting file: saf-export/1/handle
+2024-07-17 00:53:57.746 INFO import - 41 @ Extracting file: saf-export/1/metadata_dspace.xml
+2024-07-17 00:53:57.747 INFO import - 41 @ Set sourceDir using path inside of Zip: /opt/dspace-cris7/imports/importSAF/067a0e16-72bb-455f-b63c-a85974979023/saf-export (2).zip-067a0e16-72bb-455f-b63c-a85974979023/saf-export
+2024-07-17 00:53:57.757 INFO import - 41 @ 	Loading dublin core from /opt/dspace-cris7/imports/importSAF/067a0e16-72bb-455f-b63c-a85974979023/saf-export (2).zip-067a0e16-72bb-455f-b63c-a85974979023/saf-export/1/dublin_core.xml
+2024-07-17 00:53:57.757 INFO import - 41 @ 	Schema: dc Element: date Qualifier: accessioned Value: 2024-07-17T03:56:11Z
+2024-07-17 00:53:57.759 INFO import - 41 @ 	Schema: dc Element: date Qualifier: available Value: 2024-07-17T03:56:11Z
+2024-07-17 00:53:57.760 INFO import - 41 @ 	Schema: dc Element: date Qualifier: issued Value: 2023
+2024-07-17 00:53:57.760 INFO import - 41 @ 	Schema: dc Element: identifier Qualifier: doi Value: 421
+2024-07-17 00:53:57.761 INFO import - 41 @ 	Schema: dc Element: identifier Qualifier: uri Value: https://sic.vriic.usach.cl/handle/123456789/25
+2024-07-17 00:53:57.761 INFO import - 41 @ 	Schema: dc Element: description Qualifier: provenance Value: Submitted by dspace dspace (ricardo.rodriguez.lara@gmail.com) on 2024-07-17T03:56:11Z workflow start=Step: checkcorrectionstep - action:noUserSelectionAction
+No. of bitstreams: 0
+2024-07-17 00:53:57.761 INFO import - 41 @ 	Schema: dc Element: description Qualifier: provenance Value: Made available in DSpace on 2024-07-17T03:56:11Z (GMT). No. of bitstreams: 0
+  Previous issue date: 2023
+2024-07-17 00:53:57.762 INFO import - 41 @ 	Schema: dc Element: title Qualifier: none Value: IMPORT DATA 2
+2024-07-17 00:53:57.762 INFO import - 41 @ 	Schema: dc Element: type Qualifier: none Value: other
+2024-07-17 00:53:57.766 INFO import - 41 @ 	Loading dublin core from /opt/dspace-cris7/imports/importSAF/067a0e16-72bb-455f-b63c-a85974979023/saf-export (2).zip-067a0e16-72bb-455f-b63c-a85974979023/saf-export/1/metadata_dspace.xml
+2024-07-17 00:53:57.766 INFO import - 41 @ 	Schema: dspace Element: entity Qualifier: type Value: Publication
+2024-07-17 00:53:57.766 INFO import - 41 @ 	Processing contents file: /opt/dspace-cris7/imports/importSAF/067a0e16-72bb-455f-b63c-a85974979023/saf-export (2).zip-067a0e16-72bb-455f-b63c-a85974979023/saf-export/1/contents
+2024-07-17 00:53:57.767 INFO import - 41 @ Processing handle file: handle
+2024-07-17 00:53:57.767 INFO import - 41 @ read handle: '123456789/25'
+2024-07-17 00:53:57.767 INFO import - 41 @ 0 1
+2024-07-17 00:53:57.796 INFO import - 41 @ ***End of Test Run***
+2024-07-17 00:53:57.798 INFO import - 41 @ Started: 1721192037555
+2024-07-17 00:53:57.798 INFO import - 41 @ Ended: 1721192037798
+2024-07-17 00:53:57.798 INFO import - 41 @ Elapsed time: 0 secs (243 msecs)
+2024-07-17 00:53:57.800 INFO import - 41 @ The script has completed

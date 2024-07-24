@@ -1,0 +1,8 @@
+2024-07-22 20:48:29.319 INFO bulk-import - 67 @ The script has started
+2024-07-22 20:48:29.402 INFO bulk-import - 67 @ Start reading all the metadata group rows
+2024-07-22 20:48:29.405 INFO bulk-import - 67 @ Found 1 metadata groups to process
+2024-07-22 20:48:29.405 INFO bulk-import - 67 @ Start reading all the bitstream rows
+2024-07-22 20:48:29.411 INFO bulk-import - 67 @ Found 1 bitstreams to process
+2024-07-22 20:48:29.427 INFO bulk-import - 67 @ Found 1 items to process
+2024-07-22 20:48:29.679 INFO bulk-import - 67 @ Row 2 - WorkflowItem created successfully - ID: 2b65918d-f3ef-4ccd-8964-84795dbcf56a
+2024-07-22 20:48:30.734 INFO bulk-import - 67 @ The script has completed

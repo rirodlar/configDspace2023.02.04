@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.4.0
+Build-Jdk-Spec: 11
+Specification-Title: DSpace Server Webapp:: Tomcat deployable WAR
+Specification-Version: 0.0
+Specification-Vendor: 4Science
+Implementation-Title: DSpace Server Webapp:: Tomcat deployable WAR
+Implementation-Version: cris-2023.02.04
+Implementation-Vendor: 4Science
+

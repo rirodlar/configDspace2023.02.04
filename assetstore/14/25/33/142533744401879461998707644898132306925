@@ -1,0 +1,16 @@
+<Funding xmlns="https://www.openaire.eu/cerif-profile/1.1/" id="f5469495-8394-45e0-b9ba-fb3860097d4a">
+	<Name>FONDECYT REGULAR</Name>
+    <Amount>
+    </Amount>
+	<Funder>
+	</Funder>
+    <PartOf>
+        <Funding>
+            <Name>FONDECYT</Name>
+        </Funding>
+    </PartOf>
+	<Duration 
+	/>
+	<OAMandate 
+	/>
+</Funding>

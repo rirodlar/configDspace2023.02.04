@@ -1,0 +1,89 @@
+2024-07-17 00:06:59.497 INFO metadata-import - 32 @ The script has started
+2024-07-17 00:06:59.579 INFO metadata-import - 32 @ -----------------------------------------------------------
+2024-07-17 00:06:59.579 INFO metadata-import - 32 @ New item: 
+2024-07-17 00:06:59.581 INFO metadata-import - 32 @  + New owning collection (123456789/23): 
+2024-07-17 00:06:59.581 INFO metadata-import - 32 @ Publication
+2024-07-17 00:06:59.582 INFO metadata-import - 32 @  + Add    (dc.date.accessioned): 
+2024-07-17 00:06:59.582 INFO metadata-import - 32 @ 2024-07-17T03:56:11Z
+2024-07-17 00:06:59.583 INFO metadata-import - 32 @  + Add    (dc.date.available): 
+2024-07-17 00:06:59.583 INFO metadata-import - 32 @ 2024-07-17T03:56:11Z
+2024-07-17 00:06:59.583 INFO metadata-import - 32 @  + Add    (dc.date.issued): 
+2024-07-17 00:06:59.583 INFO metadata-import - 32 @ 2023
+2024-07-17 00:06:59.584 INFO metadata-import - 32 @  + Add    (dc.description.provenance[en]): 
+2024-07-17 00:06:59.585 INFO metadata-import - 32 @ Submitted by dspace dspace (ricardo.rodriguez.lara@gmail.com) on 2024-07-17T03:56:11Z workflow start=Step: checkcorrectionstep - action:noUserSelectionAction
+No. of bitstreams: 0
+2024-07-17 00:06:59.585 INFO metadata-import - 32 @  + Add    (dc.description.provenance[en]): 
+2024-07-17 00:06:59.585 INFO metadata-import - 32 @ Made available in DSpace on 2024-07-17T03:56:11Z (GMT). No. of bitstreams: 0
+  Previous issue date: 2023
+2024-07-17 00:06:59.586 INFO metadata-import - 32 @  + Add    (dc.identifier.doi): 
+2024-07-17 00:06:59.586 INFO metadata-import - 32 @ 421
+2024-07-17 00:06:59.586 INFO metadata-import - 32 @  + Add    (dc.identifier.uri): 
+2024-07-17 00:06:59.587 INFO metadata-import - 32 @ https://sic.vriic.usach.cl/handle/123456789/25
+2024-07-17 00:06:59.587 INFO metadata-import - 32 @  + Add    (dc.title): 
+2024-07-17 00:06:59.587 INFO metadata-import - 32 @ Import 1
+2024-07-17 00:06:59.587 INFO metadata-import - 32 @  + Add    (dspace.entity.type): 
+2024-07-17 00:06:59.588 INFO metadata-import - 32 @ Publication
+2024-07-17 00:06:59.588 INFO metadata-import - 32 @ -----------------------------------------------------------
+2024-07-17 00:06:59.588 INFO metadata-import - 32 @ New item: 
+2024-07-17 00:06:59.589 INFO metadata-import - 32 @  + New owning collection (123456789/23): 
+2024-07-17 00:06:59.589 INFO metadata-import - 32 @ Publication
+2024-07-17 00:06:59.589 INFO metadata-import - 32 @  + Add    (dc.date.accessioned): 
+2024-07-17 00:06:59.589 INFO metadata-import - 32 @ 2024-07-17T04:03:23Z
+2024-07-17 00:06:59.590 INFO metadata-import - 32 @  + Add    (dc.date.available): 
+2024-07-17 00:06:59.590 INFO metadata-import - 32 @ 2024-07-17T04:03:23Z
+2024-07-17 00:06:59.590 INFO metadata-import - 32 @  + Add    (dc.date.issued): 
+2024-07-17 00:06:59.591 INFO metadata-import - 32 @ 2022
+2024-07-17 00:06:59.591 INFO metadata-import - 32 @  + Add    (dc.description.provenance[en]): 
+2024-07-17 00:06:59.591 INFO metadata-import - 32 @ Submitted by dspace dspace (ricardo.rodriguez.lara@gmail.com) on 2024-07-17T04:03:23Z workflow start=Step: checkcorrectionstep - action:noUserSelectionAction
+No. of bitstreams: 0
+2024-07-17 00:06:59.591 INFO metadata-import - 32 @  + Add    (dc.description.provenance[en]): 
+2024-07-17 00:06:59.592 INFO metadata-import - 32 @ Made available in DSpace on 2024-07-17T04:03:23Z (GMT). No. of bitstreams: 0
+  Previous issue date: 2022
+2024-07-17 00:06:59.592 INFO metadata-import - 32 @  + Add    (dc.identifier.uri): 
+2024-07-17 00:06:59.592 INFO metadata-import - 32 @ https://sic.vriic.usach.cl/handle/123456789/26
+2024-07-17 00:06:59.593 INFO metadata-import - 32 @  + Add    (dc.title): 
+2024-07-17 00:06:59.593 INFO metadata-import - 32 @ Import 2
+2024-07-17 00:06:59.593 INFO metadata-import - 32 @  + Add    (dspace.entity.type): 
+2024-07-17 00:06:59.593 INFO metadata-import - 32 @ Publication
+2024-07-17 00:06:59.594 INFO metadata-import - 32 @ -----------------------------------------------------------
+2024-07-17 00:06:59.594 INFO metadata-import - 32 @ New item: 
+2024-07-17 00:06:59.594 INFO metadata-import - 32 @  + New owning collection (123456789/23): 
+2024-07-17 00:06:59.595 INFO metadata-import - 32 @ Publication
+2024-07-17 00:06:59.595 INFO metadata-import - 32 @  + Add    (cris.virtual.department): 
+2024-07-17 00:06:59.595 INFO metadata-import - 32 @ Departamento Biologia
+2024-07-17 00:06:59.596 INFO metadata-import - 32 @ , authority = d66231b5-4a2d-451a-9cf1-47b138c0585c
+2024-07-17 00:06:59.596 INFO metadata-import - 32 @ , confidence = 600
+2024-07-17 00:06:59.596 INFO metadata-import - 32 @  + Add    (cris.virtual.orcid): 
+2024-07-17 00:06:59.597 INFO metadata-import - 32 @ #PLACEHOLDER_PARENT_METADATA_VALUE#
+2024-07-17 00:06:59.597 INFO metadata-import - 32 @  + Add    (cris.virtualsource.department): 
+2024-07-17 00:06:59.597 INFO metadata-import - 32 @ 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-17 00:06:59.597 INFO metadata-import - 32 @  + Add    (cris.virtualsource.orcid): 
+2024-07-17 00:06:59.598 INFO metadata-import - 32 @ 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-17 00:06:59.598 INFO metadata-import - 32 @  + Add    (dc.contributor.author): 
+2024-07-17 00:06:59.598 INFO metadata-import - 32 @ Rodriguez, Ricardo
+2024-07-17 00:06:59.599 INFO metadata-import - 32 @ , authority = 25847347-a5d8-4cb0-9d38-1cd9c53e5e9f
+2024-07-17 00:06:59.599 INFO metadata-import - 32 @ , confidence = 600
+2024-07-17 00:06:59.599 INFO metadata-import - 32 @  + Add    (dc.date.accessioned): 
+2024-07-17 00:06:59.599 INFO metadata-import - 32 @ 2024-07-17T03:43:44Z
+2024-07-17 00:06:59.600 INFO metadata-import - 32 @  + Add    (dc.date.available): 
+2024-07-17 00:06:59.600 INFO metadata-import - 32 @ 2024-07-17T03:43:44Z
+2024-07-17 00:06:59.600 INFO metadata-import - 32 @  + Add    (dc.date.issued): 
+2024-07-17 00:06:59.601 INFO metadata-import - 32 @ 2024
+2024-07-17 00:06:59.601 INFO metadata-import - 32 @  + Add    (dc.description.provenance[en]): 
+2024-07-17 00:06:59.601 INFO metadata-import - 32 @ Submitted by dspace dspace (ricardo.rodriguez.lara@gmail.com) on 2024-07-17T03:43:44Z workflow start=Step: checkcorrectionstep - action:noUserSelectionAction
+No. of bitstreams: 0
+2024-07-17 00:06:59.602 INFO metadata-import - 32 @  + Add    (dc.description.provenance[en]): 
+2024-07-17 00:06:59.602 INFO metadata-import - 32 @ Made available in DSpace on 2024-07-17T03:43:44Z (GMT). No. of bitstreams: 0
+  Previous issue date: 2024
+2024-07-17 00:06:59.602 INFO metadata-import - 32 @  + Add    (dc.identifier.uri): 
+2024-07-17 00:06:59.602 INFO metadata-import - 32 @ https://sic.vriic.usach.cl/handle/123456789/24
+2024-07-17 00:06:59.603 INFO metadata-import - 32 @  + Add    (dc.title): 
+2024-07-17 00:06:59.603 INFO metadata-import - 32 @ Import 3
+2024-07-17 00:06:59.603 INFO metadata-import - 32 @  + Add    (dspace.entity.type): 
+2024-07-17 00:06:59.603 INFO metadata-import - 32 @ Publication
+2024-07-17 00:06:59.604 INFO metadata-import - 32 @  + Add    (oairecerif.author.affiliation): 
+2024-07-17 00:06:59.604 INFO metadata-import - 32 @ Departamento Biologia
+2024-07-17 00:06:59.604 INFO metadata-import - 32 @ , authority = d66231b5-4a2d-451a-9cf1-47b138c0585c
+2024-07-17 00:06:59.605 INFO metadata-import - 32 @ , confidence = 600
+2024-07-17 00:06:59.605 INFO metadata-import - 32 @ There were no changes detected
+2024-07-17 00:06:59.610 INFO metadata-import - 32 @ The script has completed

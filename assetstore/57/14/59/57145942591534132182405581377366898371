@@ -1,0 +1,35 @@
+{
+	"title":"Proyecto X",
+	"openaireid": [
+	],
+	"url": [
+	],
+	"status":"READY",
+	"consortium": {
+		"coordinators": [
+		],
+		"partners": [
+		],
+		"members": [
+			{
+				"name":"Departamento Biologia"
+			}
+		]
+	},
+	"team": {
+		"principalInvestigator": "ricaro rodriguez, rodriguez",
+		"members": [
+		]
+	},
+	"uses": {
+		"equipment": [
+		]
+	},
+	"funded": [
+	],
+	"keywords": [
+	],
+	"abstract": "test test ....",
+	"OAMandate": {
+	}
+}

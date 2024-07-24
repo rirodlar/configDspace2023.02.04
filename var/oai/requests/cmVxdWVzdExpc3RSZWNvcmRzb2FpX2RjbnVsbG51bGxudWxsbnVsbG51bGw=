@@ -1,0 +1,59 @@
+<request verb="ListRecords" metadataPrefix="oai_dc">https://sic.vriic.usach.cl/server/oai/request</request><ListRecords><record><header><identifier>oai:sic.vriic.usach.cl:123456789/13</identifier><datestamp>2024-05-05T03:45:41Z</datestamp><setSpec>com_123456789_1</setSpec><setSpec>col_123456789_7</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+   <dc:title>TEst metadato personalizado</dc:title>
+   <dc:date>2024-05-05T03:45:40Z</dc:date>
+   <dc:date>2024-05-05T03:45:40Z</dc:date>
+   <dc:date>2023</dc:date>
+   <dc:type>text::bibliography</dc:type>
+   <dc:identifier>1234</dc:identifier>
+   <dc:identifier>https://sic.vriic.usach.cl/handle/123456789/13</dc:identifier>
+   <dc:format>application/pdf</dc:format>
+   <dc:source>source Usach 123</dc:source>
+</oai_dc:dc></metadata></record><record><header><identifier>oai:sic.vriic.usach.cl:123456789/41</identifier><datestamp>2024-05-15T19:24:05Z</datestamp><setSpec>com_123456789_23</setSpec><setSpec>col_123456789_25</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+   <dc:title>Prueba publicación sin departamento</dc:title>
+   <dc:creator>Gómez, A</dc:creator>
+   <dc:date>2024-05-15T19:19:03Z</dc:date>
+   <dc:date>2024-05-15T19:19:03Z</dc:date>
+   <dc:date>2023</dc:date>
+   <dc:type>text::journal::journal article::research article</dc:type>
+   <dc:identifier>https://sic.vriic.usach.cl/handle/123456789/41</dc:identifier>
+</oai_dc:dc></metadata></record><record><header><identifier>oai:sic.vriic.usach.cl:123456789/14</identifier><datestamp>2024-05-06T03:29:58Z</datestamp><setSpec>com_123456789_1</setSpec><setSpec>col_123456789_7</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+   <dc:title>test publicacion sin archivo</dc:title>
+   <dc:creator>Simon</dc:creator>
+   <dc:creator>rodriguez lara, ricardo</dc:creator>
+   <dc:date>2024-05-05T03:57:33Z</dc:date>
+   <dc:date>2024-05-05T03:57:33Z</dc:date>
+   <dc:date>2024</dc:date>
+   <dc:type>text::annotation</dc:type>
+   <dc:identifier>65432</dc:identifier>
+   <dc:identifier>https://sic.vriic.usach.cl/handle/123456789/14</dc:identifier>
+   <dc:source>text::other periodical</dc:source>
+</oai_dc:dc></metadata></record><record><header><identifier>oai:sic.vriic.usach.cl:123456789/22</identifier><datestamp>2024-05-14T16:44:36Z</datestamp><setSpec>com_123456789_1</setSpec><setSpec>col_123456789_7</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+   <dc:title>test vocabulario</dc:title>
+   <dc:date>2024-05-14T15:40:49Z</dc:date>
+   <dc:date>2024-05-14T15:40:49Z</dc:date>
+   <dc:date>2024</dc:date>
+   <dc:type>text::blog post</dc:type>
+</oai_dc:dc></metadata></record><record><header><identifier>oai:sic.vriic.usach.cl:123456789/17</identifier><datestamp>2024-05-14T03:30:53Z</datestamp><setSpec>com_123456789_1</setSpec><setSpec>col_123456789_7</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+   <dc:title>test relaciones</dc:title>
+   <dc:creator>rodriguez lara, ricardo</dc:creator>
+   <dc:contributor>Simon</dc:contributor>
+   <dc:date>2024-05-05T21:26:35Z</dc:date>
+   <dc:date>2024-05-05T21:26:35Z</dc:date>
+   <dc:date>2024</dc:date>
+   <dc:type>text::musical notation</dc:type>
+   <dc:identifier>1122334455</dc:identifier>
+   <dc:identifier>https://sic.vriic.usach.cl/handle/123456789/17</dc:identifier>
+   <dc:source>text::bibliography</dc:source>
+</oai_dc:dc></metadata></record><record><header><identifier>oai:sic.vriic.usach.cl:123456789/28</identifier><datestamp>2024-05-15T14:49:17Z</datestamp><setSpec>com_123456789_23</setSpec><setSpec>col_123456789_25</setSpec></header><metadata><oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+   <dc:title>Prueba de publicación mayo 2024</dc:title>
+   <dc:creator>Orellana, Rodrigo</dc:creator>
+   <dc:creator>Pérez, Sergio</dc:creator>
+   <dc:date>2024-05-15T01:01:47Z</dc:date>
+   <dc:date>2024-05-15T01:01:47Z</dc:date>
+   <dc:date>2024</dc:date>
+   <dc:type>text::journal::journal article::research article</dc:type>
+   <dc:identifier>https://sic.vriic.usach.cl/handle/123456789/28</dc:identifier>
+   <dc:relation>23; 3</dc:relation>
+   <dc:relation>Revsita 1</dc:relation>
+   <dc:relation>2223-3456</dc:relation>
+</oai_dc:dc></metadata></record></ListRecords></OAI-PMH>
