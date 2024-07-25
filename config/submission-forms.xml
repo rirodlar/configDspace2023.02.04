@@ -702,8 +702,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Ubicación del archivo</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
-          <required />
-          <hint>URL</hint>
         </field>
       </row>
 
@@ -714,8 +712,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Identificador alternativo</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
-          <required />
-          <hint>identificador alternativo.</hint>
         </field>
       </row>
 
@@ -747,7 +743,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <dc-element>source</dc-element>
           <label>Fuente</label>
           <input-type>onebox</input-type>
-          <repeatable>true</repeatable>
         </field>
       </row>
       <row>
@@ -756,7 +751,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <dc-element>licenseCondition</dc-element>
           <label>Condición de la licencia</label>
           <input-type>onebox</input-type>
-          <repeatable>true</repeatable>
         </field>
       </row>
       <row>
@@ -765,7 +759,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <dc-element>coverage</dc-element>
           <label>Cobertura</label>
           <input-type>onebox</input-type>
-          <repeatable>true</repeatable>
         </field>
       </row>
 
