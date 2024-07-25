@@ -685,6 +685,19 @@ it, please enter the types and the actual numbers or codes.</hint>
       <row>
         <field>
           <dc-schema>oaire</dc-schema>
+          <dc-element>version</dc-element>
+          <label>Versión del recurso</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required>You must version del recurso.</required>
+          <hint>Enter vocabulario COAR version de recurso.</hint>
+          <vocabulary>version_recurso</vocabulary>
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
           <dc-element>file</dc-element>
           <label>Ubicación del archivo</label>
           <input-type>onebox</input-type>
@@ -726,8 +739,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Formato</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
-          <required />
-          <hint>format.</hint>
         </field>
       </row>
       <row>
@@ -737,8 +748,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Fuente</label>
           <input-type>onebox</input-type>
           <repeatable>true</repeatable>
-          <required />
-          <hint>Fuente.</hint>
         </field>
       </row>
       <row>
@@ -748,8 +757,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Condición de la licencia</label>
           <input-type>onebox</input-type>
           <repeatable>true</repeatable>
-          <required />
-          <hint>Condición de la licencia.</hint>
         </field>
       </row>
       <row>
@@ -759,22 +766,9 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Cobertura</label>
           <input-type>onebox</input-type>
           <repeatable>true</repeatable>
-          <required />
-          <hint>Cobertura.</hint>
         </field>
       </row>
-      <row>
-        <field>
-          <dc-schema>oaire</dc-schema>
-          <dc-element>version</dc-element>
-          <label>Versión del recurso</label>
-          <input-type>onebox</input-type>
-          <repeatable>false</repeatable>
-          <required>You must version del recurso.</required>
-          <hint>Enter vocabulario COAR version de recurso.</hint>
-          <vocabulary>version_recurso</vocabulary>
-        </field>
-      </row>
+
 
       <row>
         <field>
@@ -783,7 +777,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Título de la cita</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
-          <required />
         </field>
       </row>
 
@@ -794,7 +787,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Volumen de la cita</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
-          <required />
         </field>
       </row>
 
@@ -816,8 +808,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Página de inicio de la cita</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
-          <required />
-          <hint>Enter Página de inicio de la cita.</hint>
         </field>
       </row>
 
@@ -828,7 +818,16 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Página de inicio de la cita</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
-          <required />
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>citationEdition</dc-element>
+          <label>Edición de la cita</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
         </field>
       </row>
 
@@ -840,18 +839,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
           <required />
-        </field>
-      </row>
-
-      <row>
-        <field>
-          <dc-schema>oaire</dc-schema>
-          <dc-element>citationEdition</dc-element>
-          <label>Edición de la cita</label>
-          <input-type>onebox</input-type>
-          <repeatable>false</repeatable>
-          <required />
-          <hint>Enter Edición de la cita.</hint>
         </field>
       </row>
 
