@@ -641,18 +641,19 @@ it, please enter the types and the actual numbers or codes.</hint>
         </field>
       </row>
 
-      <row>
-        <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>language</dc-element>
-          <dc-qualifier>iso</dc-qualifier>
-          <label>Idioma</label>
-          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
-          <repeatable>false</repeatable>
-          <required/>
-          <hint>Select the language of the main content of the item. If the language does not appear in the list, please select 'Other'.  If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>
-        </field>
-      </row>
+      <!--ya exist en section publication indexingv -->
+<!--      <row>-->
+<!--        <field>-->
+<!--          <dc-schema>dc</dc-schema>-->
+<!--          <dc-element>language</dc-element>-->
+<!--          <dc-qualifier>iso</dc-qualifier>-->
+<!--          <label>Idioma</label>-->
+<!--          <input-type value-pairs-name="common_iso_languages">dropdown</input-type>-->
+<!--          <repeatable>false</repeatable>-->
+<!--          <required/>-->
+<!--          <hint>Select the language of the main content of the item. If the language does not appear in the list, please select 'Other'.  If the content does not really have a language (for example, if it is a dataset or an image) please select 'N/A'.</hint>-->
+<!--        </field>-->
+<!--      </row>-->
 
       <row>
         <field>
@@ -702,6 +703,205 @@ it, please enter the types and the actual numbers or codes.</hint>
           <repeatable>false</repeatable>
           <required />
           <hint>identificador alternativo.</hint>
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>datacite</dc-schema>
+          <dc-element>relatedIdentifier</dc-element>
+          <label>Identificador relacionado</label>
+          <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+          <repeatable>true</repeatable>
+          <required />
+          <hint>If the item has any  relatedIdentifier numbers or codes associated with
+            it, please enter the types and the actual numbers or codes.</hint>
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>dc</dc-schema>
+          <dc-element>format</dc-element>
+          <label>Formato</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required />
+          <hint>format.</hint>
+        </field>
+      </row>
+      <row>
+        <field>
+          <dc-schema>dc</dc-schema>
+          <dc-element>source</dc-element>
+          <label>Fuente</label>
+          <input-type>onebox</input-type>
+          <repeatable>true</repeatable>
+          <required />
+          <hint>Fuente.</hint>
+        </field>
+      </row>
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>licenseCondition</dc-element>
+          <label>Condición de la licencia</label>
+          <input-type>onebox</input-type>
+          <repeatable>true</repeatable>
+          <required />
+          <hint>Condición de la licencia.</hint>
+        </field>
+      </row>
+      <row>
+        <field>
+          <dc-schema>dc</dc-schema>
+          <dc-element>coverage</dc-element>
+          <label>Cobertura</label>
+          <input-type>onebox</input-type>
+          <repeatable>true</repeatable>
+          <required />
+          <hint>Cobertura.</hint>
+        </field>
+      </row>
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>version</dc-element>
+          <label>Versión del recurso</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required>You must version del recurso.</required>
+          <hint>Enter vocabulario COAR version de recurso.</hint>
+          <vocabulary>version_recurso</vocabulary>
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>citationTitle</dc-element>
+          <label>Título de la cita</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required />
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>citationVolume</dc-element>
+          <label>Volumen de la cita</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required />
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>citationIssue</dc-element>
+          <label>Número de la cita</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required />
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>citationStartPage</dc-element>
+          <label>Página de inicio de la cita</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required />
+          <hint>Enter Página de inicio de la cita.</hint>
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>citationEndPage</dc-element>
+          <label>Página de inicio de la cita</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required />
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>citationEdition</dc-element>
+          <label>Edición de la cita</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required />
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>citationEdition</dc-element>
+          <label>Edición de la cita</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required />
+          <hint>Enter Edición de la cita.</hint>
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>citationConferencePlace</dc-element>
+          <label>Lugar de la conferencia de la cita</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>citationConferenceDate</dc-element>
+          <label>Fecha de la conferencia de la cita</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>datacite</dc-schema>
+          <dc-element>size</dc-element>
+          <label>Tamaño</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>datacite</dc-schema>
+          <dc-element>geoLocation</dc-element>
+          <label>Ubicación geografica</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+        </field>
+      </row>
+
+      <row>
+        <field>
+          <dc-schema>dcterms</dc-schema>
+          <dc-element>audience</dc-element>
+          <label>Audiencia</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
         </field>
       </row>
     </form>
