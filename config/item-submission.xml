@@ -253,7 +253,7 @@
 
     <submission-process name="Tesis">
       <step id="collection" />
-      <step id="orgunit" />
+      <step id="tesis" />
       <step id="correction" />
       <step id="detect-duplicate" />
       <step id="upload" />
