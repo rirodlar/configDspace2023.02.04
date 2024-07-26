@@ -13,7 +13,16 @@
   <!-- for handle "default". -->
   <submission-map>
     <!-- Default submission process -->
-    <name-map collection-handle="default" submission-name="publication"/>
+<!--    <name-map collection-handle="default" submission-name="publication"/>-->
+
+    <name-map collection-entity-type="Publication" submission-name="Publication"/>
+    <name-map collection-entity-type="Person" submission-name="Person"/>
+    <name-map collection-entity-type="Project" submission-name="Project"/>
+    <name-map collection-entity-type="OrgUnit" submission-name="OrgUnit"/>
+    <name-map collection-entity-type="Journal" submission-name="Journal"/>
+    <name-map collection-entity-type="JournalVolume" submission-name="JournalVolume"/>
+    <name-map collection-entity-type="JournalIssue" submission-name="JournalIssue"/>
+    <name-map collection-entity-type="Tesis" submission-name="Tesis"/>
 
     <!-- Sample Entities Collection configuration based on the demo Entities dataset available at:
          https://github.com/DSpace-Labs/AIP-Files/releases/tag/demo-entities-data
