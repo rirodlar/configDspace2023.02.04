@@ -1974,6 +1974,20 @@ it, please enter the types and the actual numbers or codes.</hint>
         </field>
       </row>
     </form>
+    <form name="tesis">
+    <row>
+      <field>
+        <dc-schema>dc</dc-schema>
+        <dc-element>title</dc-element>
+        <label>Organization name</label>
+        <input-type>onebox</input-type>
+        <repeatable>false</repeatable>
+        <required>You must enter the oganization name.</required>
+        <hint />
+      </field>
+    </row>
+    </form>
+
     <form name="orgunit">
       <row>
         <field>
