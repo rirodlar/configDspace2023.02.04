@@ -19,10 +19,10 @@
     <name-map collection-entity-type="Person" submission-name="Person"/>
     <name-map collection-entity-type="Project" submission-name="Project"/>
     <name-map collection-entity-type="OrgUnit" submission-name="OrgUnit"/>
-    <name-map collection-entity-type="Journal" submission-name="Journal"/>
+    <name-map collection-entity-type="Journal"       submission-name="Journal"/>
     <name-map collection-entity-type="JournalVolume" submission-name="JournalVolume"/>
-    <name-map collection-entity-type="JournalIssue" submission-name="JournalIssue"/>
-    <name-map collection-entity-type="Tesis" submission-name="Tesis"/>
+    <name-map collection-entity-type="JournalIssue"  submission-name="JournalIssue"/>
+    <name-map collection-entity-type="Tesis"         submission-name="Tesis"/>
 
     <!-- Sample Entities Collection configuration based on the demo Entities dataset available at:
          https://github.com/DSpace-Labs/AIP-Files/releases/tag/demo-entities-data
@@ -251,7 +251,7 @@
  <!--     <step id="license" /> -->
     </submission-process>
 
-    <submission-process name="Tesis">
+    <submission-process name="tesis">
       <step id="collection" />
       <step id="tesis" />
       <step id="correction" />
