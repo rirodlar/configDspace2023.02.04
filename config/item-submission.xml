@@ -98,6 +98,13 @@
       <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
       <type>submission-form</type>
     </step-definition>
+
+    <step-definition id="Tesis" mandatory="true">
+      <heading>submit.progressbar.describe.Tesis</heading>
+      <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+      <type>submission-form</type>
+    </step-definition>
+
     <step-definition id="patent" mandatory="true">
       <heading>submit.progressbar.describe.patent</heading>
       <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
@@ -243,6 +250,16 @@
       <step id="upload" />
  <!--     <step id="license" /> -->
     </submission-process>
+
+    <submission-process name="Tesis">
+      <step id="collection" />
+      <step id="orgunit" />
+      <step id="correction" />
+      <step id="detect-duplicate" />
+      <step id="upload" />
+      <!--     <step id="license" /> -->
+    </submission-process>
+
     <submission-process name="orgunit-edit">
       <step id="orgunit" />
       <step id="upload" />
