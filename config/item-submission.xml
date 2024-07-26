@@ -99,8 +99,8 @@
       <type>submission-form</type>
     </step-definition>
 
-    <step-definition id="Tesis" mandatory="true">
-      <heading>submit.progressbar.describe.Tesis</heading>
+    <step-definition id="tesis" mandatory="true">
+      <heading>submit.progressbar.describe.tesis</heading>
       <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
       <type>submission-form</type>
     </step-definition>
