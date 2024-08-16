@@ -1310,7 +1310,7 @@
             <list>
                 <!--Only find related items. The placeholder {0} will be replaced with scope (UUID of item)-->
 <!--                <value>author_authority:{0} AND search.resourcetype:Item</value>-->
-                <value>dc.contributor.author:{0} AND search.resourcetype:Item</value>
+                <value>dc.contributor:{0} AND search.resourcetype:Item</value>
 
 <!--                <value>author_authority:{0} AND search.resourcetype:Item</value>-->
                 <value>-withdrawn:true AND -discoverable:false</value>
