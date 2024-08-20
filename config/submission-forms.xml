@@ -1572,7 +1572,7 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Patent History</label>
           <input-type>inline-group</input-type>
           <repeatable>true</repeatable>
-          <required />
+<!--          <required />-->
           <hint />
         </field>
       </row>
