@@ -1338,8 +1338,8 @@
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
-                <ref bean="graphPublicationByType" />
-                <ref bean="graphPublicationByDate" />
+<!--                <ref bean="graphPublicationByType" />-->
+<!--                <ref bean="graphPublicationByDate" />-->
                 <ref bean="searchFilterIssued" />
                 <ref bean="searchFilterAuthor" />
                 <ref bean="searchFilterEditor" />
