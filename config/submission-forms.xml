@@ -3345,11 +3345,19 @@ it, please enter the types and the actual numbers or codes.</hint>
         <stored-value>m</stored-value>
       </pair>
       <pair>
-        <displayed-value>Woman</displayed-value>
+        <displayed-value>Famale</displayed-value>
         <stored-value>f</stored-value>
       </pair>
       <pair>
-        <displayed-value>Unspecified</displayed-value>
+        <displayed-value>Género diverso</displayed-value>
+        <stored-value>d</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Persona trans</displayed-value>
+        <stored-value>t</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Prefiero no decirlo</displayed-value>
         <stored-value>n/a</stored-value>
       </pair>
     </value-pairs>
