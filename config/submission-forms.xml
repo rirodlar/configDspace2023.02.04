@@ -3341,11 +3341,11 @@ it, please enter the types and the actual numbers or codes.</hint>
     </value-pairs>
     <value-pairs value-pairs-name="gender" dc-term="gender">
       <pair>
-        <displayed-value>Male</displayed-value>
+        <displayed-value>Masculino</displayed-value>
         <stored-value>m</stored-value>
       </pair>
       <pair>
-        <displayed-value>Famale</displayed-value>
+        <displayed-value>Femenino</displayed-value>
         <stored-value>f</stored-value>
       </pair>
       <pair>
