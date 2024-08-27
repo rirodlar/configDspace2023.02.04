@@ -2123,6 +2123,17 @@ it, please enter the types and the actual numbers or codes.</hint>
       </row>
       <row>
         <field>
+          <dc-schema>usach</dc-schema>
+          <dc-element>typeProject</dc-element>
+          <label>Tipo Proyecto</label>
+          <input-type value-pairs-name="typeProject">dropdown</input-type>
+          <repeatable>false</repeatable>
+          <required />
+          <hint />
+        </field>
+      </row>
+      <row>
+        <field>
           <dc-schema>oairecerif</dc-schema>
           <dc-element>acronym</dc-element>
           <label>Project Acronym</label>
@@ -3322,6 +3333,16 @@ it, please enter the types and the actual numbers or codes.</hint>
       <pair>
         <displayed-value>Pound sterling</displayed-value>
         <stored-value>Pound sterling</stored-value>
+      </pair>
+    </value-pairs>
+    <value-pairs value-pairs-name="typeProject" dc-term="typeProject">
+      <pair>
+        <displayed-value>Proyecto interno</displayed-value>
+        <stored-value>p_interno</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Proyecto externo</displayed-value>
+        <stored-value>p_externo</stored-value>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="gender" dc-term="gender">
