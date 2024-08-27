@@ -142,13 +142,13 @@
                             <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
                                 <property name="discoveryConfigurationName" value="researchoutputs"/>
                                 <property name="label" value="publications"/>
-                                <property name="icon" value="fas fa-file-alt fa-3x"/>
+                                <property name="icon" value="fas fa-book-open fa-3x"/>
                                 <property name="link" value="/explore/researchoutputs"/>
                             </bean>
                             <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
                                 <property name="discoveryConfigurationName" value="project_funding"/>
                                 <property name="label" value="project_funding"/>
-                                <property name="icon" value="fas fa-cogs fa-3x"/>
+                                <property name="icon" value="fas fa-lightbulb fa-3x"/>
                                 <property name="link" value="/explore/fundings_and_projects"/>
                             </bean>
                             <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
