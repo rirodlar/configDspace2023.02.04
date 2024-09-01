@@ -508,11 +508,11 @@
     <form name="publication">
       <row>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>datacite</dc-schema>
           <dc-element>identifier</dc-element>
-          <label>Identifiers</label>
+          <label>Identificador del recurso</label>
           <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
-          <repeatable>true</repeatable>
+          <repeatable>false</repeatable>
           <required />
           <hint>If the item has any identification numbers or codes associated with
 it, please enter the types and the actual numbers or codes.</hint>
@@ -520,13 +520,13 @@ it, please enter the types and the actual numbers or codes.</hint>
       </row>
       <row>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>datacite</dc-schema>
           <dc-element>title</dc-element>
           <label>Title</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
           <required>You must enter a main title for this item.</required>
-          <hint>Enter the main title of the item.</hint>
+          <hint>EPista informativa.</hint>
         </field>
       </row>
       <row>
@@ -537,8 +537,7 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Other Titles</label>
           <input-type>onebox</input-type>
           <repeatable>true</repeatable>
-          <required />
-          <hint>If the item has any alternative titles, please enter them here.</hint>
+          <hint>Por favor, en caso de existir un título alternativo, ingresar aquí.</hint>
         </field>
       </row>
 
@@ -546,16 +545,14 @@ it, please enter the types and the actual numbers or codes.</hint>
 
       <row>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>datacite</dc-schema>
           <dc-element>date</dc-element>
           <dc-qualifier>issued</dc-qualifier>
-          <label>Date of Issue</label>
+          <label>Fecha de publicación</label>
           <input-type>date</input-type>
           <repeatable>false</repeatable>
-          <required>You must enter at least the year.</required>
-          <hint>Please give the date of previous publication or public distribution.
-                        You can leave out the day and/or month if they aren't
-                        applicable.</hint>
+          <required>Ingresar mínimamente año.</required>
+          <hint>Por favor, indicar fecha de publicación o distribución .</hint>
         </field>
       </row>
       <row>
