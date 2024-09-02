@@ -583,37 +583,37 @@ it, please enter the types and the actual numbers or codes.</hint>
         <field>
           <dc-schema>dc</dc-schema>
           <dc-element>type</dc-element>
-          <label>Type</label>
+          <label>Tipo de recurso</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
 <!--          <required>You must select a publication type</required>-->
-          <hint>Select the type(s) of content of the item.</hint>
+          <hint>Tipo de producción científica manifestada en el recurso .</hint>
           <vocabulary>publication-coar-types</vocabulary>
         </field>
       </row>
 
-      <row>
-        <field>
-          <dc-schema>datacite</dc-schema>
-          <dc-element>resourceType</dc-element>
-          <label>Tipo de Recurso</label>
-          <input-type>onebox</input-type>
-          <repeatable>false</repeatable>
-          <required>You must enter a resource Type.</required>
-          <hint>Enter vocabulario COAR resource Type.</hint>
-          <vocabulary>tipo_recurso</vocabulary>
-        </field>
-      </row>
+<!--      <row>-->
+<!--        <field>-->
+<!--          <dc-schema>oaire</dc-schema>-->
+<!--          <dc-element>resourceType</dc-element>-->
+<!--          <label>Tipo de Recurso</label>-->
+<!--          <input-type>onebox</input-type>-->
+<!--          <repeatable>false</repeatable>-->
+<!--          <required>You must enter a resource Type.</required>-->
+<!--          <hint>Tipo de producción científica manifestada en el recurso .</hint>-->
+<!--          <vocabulary>tipo_recurso</vocabulary>-->
+<!--        </field>-->
+<!--      </row>-->
 
       <row>
         <field>
           <dc-schema>datacite</dc-schema>
           <dc-element>rights</dc-element>
-          <label>Derecho de Acceso</label>
+          <label>Derechos de Acceso</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
-          <required>You must enter a access right.</required>
-          <hint>Enter vocabulario COAR access right.</hint>
+          <required>Ingresar derechos de acceso del recurso.</required>
+          <hint>Ingresar vocabulario controlado COAR sobre derechos de acceso.</hint>
           <vocabulary>derecho_acceso</vocabulary>
         </field>
       </row>
@@ -622,7 +622,7 @@ it, please enter the types and the actual numbers or codes.</hint>
         <field>
           <dc-schema>oaire</dc-schema>
           <dc-element>fundingReference</dc-element>
-          <label>Referencia de Financiamiento</label>
+          <label>Referencia de financiamiento</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
         </field>
@@ -632,9 +632,10 @@ it, please enter the types and the actual numbers or codes.</hint>
         <field>
           <dc-schema>datacite</dc-schema>
           <dc-element>date</dc-element>
-          <label>Fecha Periodo de Embargo</label>
+          <label>Fecha de publicación</label>
           <input-type>date</input-type>
           <repeatable>false</repeatable>
+          <required>fecha asociada con la creación o disponibilidad del recurso, se sugiere seguir el formato AAAA-MM-DD</required>
         </field>
       </row>
 
@@ -647,7 +648,7 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Descripción</label>
           <input-type>textarea</input-type>
           <repeatable>false</repeatable>
-          <required />
+          <required>Indicar reseña del contenido del recurso</required>
           <hint />
         </field>
       </row>
@@ -660,7 +661,7 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Materia</label>
           <input-type>onebox</input-type>
           <repeatable>true</repeatable>
-          <required />
+          <required/>Ingresar materia, palabra clave, código de clasificación o frase clave que describe el recurso<required />
           <hint />
           <vocabulary closed="true">oecd</vocabulary>
         </field>
@@ -792,7 +793,7 @@ it, please enter the types and the actual numbers or codes.</hint>
         <field>
           <dc-schema>oaire</dc-schema>
           <dc-element>citationEndPage</dc-element>
-          <label>Página de inicio de la cita</label>
+          <label>Página de final de la cita</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
         </field>
@@ -808,16 +809,7 @@ it, please enter the types and the actual numbers or codes.</hint>
         </field>
       </row>
 
-      <row>
-        <field>
-          <dc-schema>oaire</dc-schema>
-          <dc-element>citationEdition</dc-element>
-          <label>Edición de la cita</label>
-          <input-type>onebox</input-type>
-          <repeatable>false</repeatable>
-          <required />
-        </field>
-      </row>
+
 
       <row>
         <field>
@@ -853,7 +845,7 @@ it, please enter the types and the actual numbers or codes.</hint>
         <field>
           <dc-schema>datacite</dc-schema>
           <dc-element>geoLocation</dc-element>
-          <label>Ubicación geografica</label>
+          <label>Ubicación geográfica</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
         </field>
