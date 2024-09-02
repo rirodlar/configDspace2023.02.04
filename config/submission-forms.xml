@@ -545,7 +545,7 @@ it, please enter the types and the actual numbers or codes.</hint>
 
       <row>
         <field>
-          <dc-schema>datacite</dc-schema>
+          <dc-schema>dc</dc-schema>
           <dc-element>date</dc-element>
           <dc-qualifier>issued</dc-qualifier>
           <label>Fecha de publicación</label>
