@@ -674,7 +674,7 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Versión del recurso</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
-          <required>You must version del recurso.</required>
+          <required>Indicar versión del recurso</required>
           <hint>Enter vocabulario COAR version de recurso.</hint>
           <vocabulary>version_recurso</vocabulary>
         </field>
