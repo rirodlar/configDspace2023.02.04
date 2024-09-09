@@ -695,7 +695,7 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Identificador alternativo</label>
           <input-type value-pairs-name="common_identifiers_alt_usach">qualdrop_value</input-type>
 
-          <repeatable>false</repeatable>
+          <repeatable>true</repeatable>
         </field>
       </row>
 
