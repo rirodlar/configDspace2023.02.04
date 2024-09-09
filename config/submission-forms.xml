@@ -541,8 +541,6 @@ it, please enter the types and the actual numbers or codes.</hint>
         </field>
       </row>
 
-
-
       <row>
         <field>
           <dc-schema>dc</dc-schema>
@@ -695,7 +693,8 @@ it, please enter the types and the actual numbers or codes.</hint>
           <dc-schema>datacite</dc-schema>
           <dc-element>alternativeIdentifier</dc-element>
           <label>Identificador alternativo</label>
-          <input-type>onebox</input-type>
+          <input-type value-pairs-name="common_identifiers_alt_usach">qualdrop_value</input-type>
+
           <repeatable>false</repeatable>
         </field>
       </row>
@@ -2912,6 +2911,34 @@ it, please enter the types and the actual numbers or codes.</hint>
         <stored-value>urn</stored-value>
       </pair>
     </value-pairs>
+    <value-pairs value-pairs-name="common_identifiers_alt_usach" dc-term="common_identifiers_alt_usach">
+
+      <pair>
+        <displayed-value>Pubmed ID</displayed-value>
+        <stored-value>pmid</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>ARK</displayed-value>
+        <stored-value>ark</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>Handle</displayed-value>
+        <stored-value>handle</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>PURL</displayed-value>
+        <stored-value>purl</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>URL</displayed-value>
+        <stored-value>url</stored-value>
+      </pair>
+      <pair>
+        <displayed-value>URN</displayed-value>
+        <stored-value>urn</stored-value>
+      </pair>
+    </value-pairs>
+
     <value-pairs value-pairs-name="common_types" dc-term="common_types">
       <pair>
         <displayed-value>Animation</displayed-value>
