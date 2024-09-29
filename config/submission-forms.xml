@@ -508,7 +508,7 @@
     <form name="publication">
       <row>
         <field>
-          <dc-schema>datacite</dc-schema>
+          <dc-schema>dc</dc-schema>
           <dc-element>identifier</dc-element>
           <label>Identificador del recurso</label>
           <input-type value-pairs-name="common_identifiers_usach">qualdrop_value</input-type>
@@ -518,6 +518,19 @@
 it, please enter the types and the actual numbers or codes.</hint>
         </field>
       </row>
+
+      <row>
+        <field>
+          <dc-schema>datacite</dc-schema>
+          <dc-element>identifier</dc-element>
+          <label>Identificador</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required />
+          <hint>identificador del recurso.</hint>
+        </field>
+      </row>
+
       <row>
         <field>
           <dc-schema>dc</dc-schema>
