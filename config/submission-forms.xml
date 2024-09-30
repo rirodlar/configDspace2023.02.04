@@ -508,7 +508,7 @@
     <form name="publication">
       <row>
         <field>
-          <dc-schema>dc</dc-schema>
+          <dc-schema>datacite</dc-schema>
           <dc-element>identifier</dc-element>
           <label>Identificador del recurso</label>
           <input-type value-pairs-name="common_identifiers_usach">qualdrop_value</input-type>
