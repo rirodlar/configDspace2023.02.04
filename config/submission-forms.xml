@@ -873,7 +873,7 @@ it, please enter the types and the actual numbers or codes.</hint>
         </field>
       </row>
     </form>
-    <form name="publication_indexing">
+    <form name="publication_complementary">
       <row>
         <field>
           <dc-schema>dc</dc-schema>

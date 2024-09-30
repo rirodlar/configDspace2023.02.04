@@ -135,8 +135,8 @@
       <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
       <type>submission-form</type>
     </step-definition>
-    <step-definition id="publication_indexing" mandatory="false">
-      <heading>submit.progressbar.describe.publication_indexing</heading>
+    <step-definition id="publication_complementary" mandatory="false">
+      <heading>submit.progressbar.describe.publication_complementary</heading>
       <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
       <type>submission-form</type>
     </step-definition>
@@ -288,11 +288,12 @@
       <step id="journal" />
       <step id="upload" />
     </submission-process>
+
     <submission-process name="publication">
       <step id="collection" />
       <step id="extractionstep" />
       <step id="publication" />
-      <step id="publication_indexing" />
+      <step id="publication_complementary" />
       <step id="publication_bibliographic_details" />
       <step id="publication_references" />
       <step id="correction" />
@@ -303,7 +304,7 @@
     <submission-process name="publication-edit">
       <step id="extractionstep" />
       <step id="publication" />
-      <step id="publication_indexing" />
+      <step id="publication_complementary" />
       <step id="publication_bibliographic_details" />
       <step id="publication_references" />
       <step id="upload" />
