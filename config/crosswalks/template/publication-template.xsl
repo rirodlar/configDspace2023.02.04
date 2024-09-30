@@ -34,7 +34,7 @@
 					</fo:block>
 					
 					<xsl:call-template name="section-title">
-				    	<xsl:with-param name="label" select="'Publication basic information'" />
+				    	<xsl:with-param name="label" select="'Publication basic information1'" />
 			    	</xsl:call-template>
 			    	
 					<xsl:call-template name="print-values">
