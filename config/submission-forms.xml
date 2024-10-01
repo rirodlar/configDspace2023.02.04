@@ -581,6 +581,16 @@ it, please enter the types and the actual numbers or codes.</hint>
       <row>
         <field>
           <dc-schema>dc</dc-schema>
+          <dc-element>publisher</dc-element>
+          <label>Editorial</label>
+          <input-type>onebox</input-type>
+          <required />
+          <hint>Editorial.</hint>
+        </field>
+      </row>
+      <row>
+        <field>
+          <dc-schema>dc</dc-schema>
           <dc-element>contributor</dc-element>
           <dc-qualifier>editor</dc-qualifier>
           <label>Editores</label>
