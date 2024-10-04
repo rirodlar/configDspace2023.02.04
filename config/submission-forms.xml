@@ -519,17 +519,17 @@ it, please enter the types and the actual numbers or codes.</hint>
         </field>
       </row>
 
-      <row>
-        <field>
-          <dc-schema>datacite</dc-schema>
-          <dc-element>identifier</dc-element>
-          <label>Identificador</label>
-          <input-type>onebox</input-type>
-          <repeatable>false</repeatable>
-          <required />
-          <hint>identificador del recurso.</hint>
-        </field>
-      </row>
+<!--      <row>-->
+<!--        <field>-->
+<!--          <dc-schema>datacite</dc-schema>-->
+<!--          <dc-element>identifier</dc-element>-->
+<!--          <label>Identificador</label>-->
+<!--          <input-type>onebox</input-type>-->
+<!--          <repeatable>false</repeatable>-->
+<!--          <required />-->
+<!--          <hint>identificador del recurso.</hint>-->
+<!--        </field>-->
+<!--      </row>-->
 
       <row>
         <field>
@@ -569,6 +569,18 @@ it, please enter the types and the actual numbers or codes.</hint>
       <row>
         <field>
           <dc-schema>dc</dc-schema>
+          <dc-element>date</dc-element>
+          <dc-qualifier>embargo</dc-qualifier>
+          <label>Fecha de embargo</label>
+          <input-type>date</input-type>
+          <repeatable>false</repeatable>
+          <required></required>
+          <hint>Por favor, Ingresar una fecha de embargo .</hint>
+        </field>
+      </row>
+      <row>
+        <field>
+          <dc-schema>dc</dc-schema>
           <dc-element>contributor</dc-element>
           <dc-qualifier>author</dc-qualifier>
           <label>Creador</label>
@@ -584,8 +596,7 @@ it, please enter the types and the actual numbers or codes.</hint>
           <dc-element>publisher</dc-element>
           <label>Editorial</label>
           <input-type>onebox</input-type>
-          <required />
-          <hint>Editorial.</hint>
+          <hint>Ingresar editorial de la Revista</hint>
         </field>
       </row>
       <row>
@@ -889,7 +900,7 @@ it, please enter the types and the actual numbers or codes.</hint>
           <dc-schema>dc</dc-schema>
           <dc-element>language</dc-element>
           <dc-qualifier>iso</dc-qualifier>
-          <label>Language</label>
+          <label>Idioma</label>
           <input-type value-pairs-name="common_iso_languages">dropdown</input-type>
           <repeatable>false</repeatable>
           <required />
