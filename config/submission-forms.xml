@@ -688,18 +688,7 @@ it, please enter the types and the actual numbers or codes.</hint>
 
 
 
-      <row>
-        <field>
-          <dc-schema>datacite</dc-schema>
-          <dc-element>relatedIdentifier</dc-element>
-          <label>Identificador relacionado</label>
-          <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
-          <repeatable>true</repeatable>
-          <required />
-          <hint>If the item has any  relatedIdentifier numbers or codes associated with
-            it, please enter the types and the actual numbers or codes.</hint>
-        </field>
-      </row>
+
 
       <row>
         <field>
@@ -764,18 +753,7 @@ it, please enter the types and the actual numbers or codes.</hint>
 
 
 
-      <row>
-        <field>
-          <dc-schema>oaire</dc-schema>
-          <dc-element>version</dc-element>
-          <label>Versión del recurso</label>
-          <input-type>onebox</input-type>
-          <repeatable>false</repeatable>
-          <required>Indicar versión del recurso</required>
-          <hint>Enter vocabulario COAR version de recurso.</hint>
-          <vocabulary>version_recurso</vocabulary>
-        </field>
-      </row>
+
 
 
 
@@ -792,60 +770,15 @@ it, please enter the types and the actual numbers or codes.</hint>
 
 
 
-      <row>
-        <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>format</dc-element>
-          <label>Formato</label>
-          <input-type>onebox</input-type>
-          <repeatable>false</repeatable>
-        </field>
-      </row>
-      <row>
-        <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>source</dc-element>
-          <label>Fuente</label>
-          <input-type>onebox</input-type>
-        </field>
-      </row>
-      <row>
-        <field>
-          <dc-schema>oaire</dc-schema>
-          <dc-element>licenseCondition</dc-element>
-          <label>Condición de la licencia</label>
-          <input-type>onebox</input-type>
-        </field>
-      </row>
-      <row>
-        <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>coverage</dc-element>
-          <label>Cobertura</label>
-          <input-type>onebox</input-type>
-        </field>
-      </row>
 
 
-      <row>
-        <field>
-          <dc-schema>oaire</dc-schema>
-          <dc-element>citationTitle</dc-element>
-          <label>Título de la cita</label>
-          <input-type>onebox</input-type>
-          <repeatable>false</repeatable>
-        </field>
-      </row>
 
-      <row>
-        <field>
-          <dc-schema>oaire</dc-schema>
-          <dc-element>citationVolume</dc-element>
-          <label>Volumen de la cita</label>
-          <input-type>onebox</input-type>
-          <repeatable>false</repeatable>
-        </field>
-      </row>
+
+
+
+
+
+
 
       <row>
         <field>
@@ -855,6 +788,110 @@ it, please enter the types and the actual numbers or codes.</hint>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
           <required />
+        </field>
+      </row>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+    <form name="publication_complementary">
+
+      <!--datacite:alternateldentifier-->
+      <!--2-->
+      <row>
+        <field>
+          <dc-schema>datacite</dc-schema>
+          <dc-element>relatedIdentifier</dc-element>
+          <label>Identificador relacionado</label>
+          <input-type value-pairs-name="common_identifiers">qualdrop_value</input-type>
+          <repeatable>true</repeatable>
+          <required />
+          <hint>If the item has any  relatedIdentifier numbers or codes associated with
+            it, please enter the types and the actual numbers or codes.</hint>
+        </field>
+      </row>
+      <!--3-->
+      <row>
+        <field>
+          <dc-schema>dc</dc-schema>
+          <dc-element>format</dc-element>
+          <label>Formato</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+        </field>
+      </row>
+      <!--4-->
+      <row>
+        <field>
+          <dc-schema>dc</dc-schema>
+          <dc-element>source</dc-element>
+          <label>Fuente</label>
+          <input-type>onebox</input-type>
+        </field>
+      </row>
+      <!--5-->
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>licenseCondition</dc-element>
+          <label>Condición de la licencia</label>
+          <input-type>onebox</input-type>
+        </field>
+      </row>
+      <!--6-->
+      <row>
+        <field>
+          <dc-schema>dc</dc-schema>
+          <dc-element>coverage</dc-element>
+          <label>Cobertura</label>
+          <input-type>onebox</input-type>
+        </field>
+      </row>
+      <!--7-->
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>version</dc-element>
+          <label>Versión del recurso</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required>Indicar versión del recurso</required>
+          <hint>Enter vocabulario COAR version de recurso.</hint>
+          <vocabulary>version_recurso</vocabulary>
+        </field>
+      </row>
+      <!--8-->
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>citationTitle</dc-element>
+          <label>Título de la cita</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+        </field>
+      </row>
+      <!--9-->
+
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>citationVolume</dc-element>
+          <label>Volumen de la cita</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
         </field>
       </row>
 
@@ -888,8 +925,6 @@ it, please enter the types and the actual numbers or codes.</hint>
         </field>
       </row>
 
-
-
       <row>
         <field>
           <dc-schema>oaire</dc-schema>
@@ -899,6 +934,7 @@ it, please enter the types and the actual numbers or codes.</hint>
           <repeatable>false</repeatable>
         </field>
       </row>
+
 
       <row>
         <field>
@@ -939,8 +975,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <repeatable>false</repeatable>
         </field>
       </row>
-    </form>
-    <form name="publication_complementary">
 
       <row>
         <field>
@@ -953,6 +987,8 @@ it, please enter the types and the actual numbers or codes.</hint>
           <hint>Type the appropriate keyword or phrase and press Enter to add it.</hint>
         </field>
       </row>
+
+
       <row>
         <field>
           <dc-schema>datacite</dc-schema>
