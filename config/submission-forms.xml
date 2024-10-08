@@ -584,16 +584,17 @@ it, please enter the types and the actual numbers or codes.</hint>
         </field>
       </row>
       <!--    7-->
+
       <row>
         <field>
           <dc-schema>dc</dc-schema>
           <dc-element>contributor</dc-element>
-          <dc-qualifier>author</dc-qualifier>
-          <label>Authors</label>
+          <dc-qualifier>editor</dc-qualifier>
+          <label>Editores</label>
           <input-type>group</input-type>
           <repeatable>true</repeatable>
           <required />
-          <hint>Enter the names of the authors of this item.</hint>
+          <hint>Colaborador.</hint>
         </field>
       </row>
 
@@ -684,7 +685,7 @@ it, please enter the types and the actual numbers or codes.</hint>
         </field>
       </row>
 
-      <!--    15-->
+      <!--    FIN-->
 
 
 
@@ -706,57 +707,14 @@ it, please enter the types and the actual numbers or codes.</hint>
 
 
 
-      <row>
-        <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>contributor</dc-element>
-          <dc-qualifier>editor</dc-qualifier>
-          <label>Editores</label>
-          <input-type>group</input-type>
-          <repeatable>true</repeatable>
-          <required />
-          <hint>Ingresar editores de ésta publicación.</hint>
-        </field>
-      </row>
-      <row>
-        <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>type</dc-element>
-          <label>Tipo de recurso</label>
-          <input-type>onebox</input-type>
-          <repeatable>false</repeatable>
-<!--          <required>You must select a publication type</required>-->
-          <hint>Tipo de producción científica manifestada en el recurso .</hint>
-          <vocabulary>publication-coar-types</vocabulary>
-        </field>
-      </row>
 
 
 
 
+    </form>
+    <form name="publication_complementary">
 
-
-
-      <row>
-        <field>
-          <dc-schema>datacite</dc-schema>
-          <dc-element>date</dc-element>
-          <label>Fecha de publicación</label>
-          <input-type>date</input-type>
-          <repeatable>false</repeatable>
-          <required>fecha asociada con la creación o disponibilidad del recurso, se sugiere seguir el formato AAAA-MM-DD</required>
-        </field>
-      </row>
-
-
-
-
-
-
-
-
-
-
+      <!--datacite:alternateldentifier-->
       <row>
         <field>
           <dc-schema>datacite</dc-schema>
@@ -767,49 +725,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <repeatable>true</repeatable>
         </field>
       </row>
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <row>
-        <field>
-          <dc-schema>oaire</dc-schema>
-          <dc-element>citationIssue</dc-element>
-          <label>Número de la cita</label>
-          <input-type>onebox</input-type>
-          <repeatable>false</repeatable>
-          <required />
-        </field>
-      </row>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </form>
-    <form name="publication_complementary">
-
-      <!--datacite:alternateldentifier-->
       <!--2-->
       <row>
         <field>
@@ -885,6 +800,8 @@ it, please enter the types and the actual numbers or codes.</hint>
       </row>
       <!--9-->
 
+
+
       <row>
         <field>
           <dc-schema>oaire</dc-schema>
@@ -894,6 +811,18 @@ it, please enter the types and the actual numbers or codes.</hint>
           <repeatable>false</repeatable>
         </field>
       </row>
+
+      <row>
+        <field>
+          <dc-schema>oaire</dc-schema>
+          <dc-element>citationIssue</dc-element>
+          <label>Número de la cita</label>
+          <input-type>onebox</input-type>
+          <repeatable>false</repeatable>
+          <required />
+        </field>
+      </row>
+
 
       <row>
         <field>
@@ -924,6 +853,53 @@ it, please enter the types and the actual numbers or codes.</hint>
           <repeatable>false</repeatable>
         </field>
       </row>
+
+
+
+
+
+
+
+
+
+<!--      <row>-->
+<!--        <field>-->
+<!--          <dc-schema>dc</dc-schema>-->
+<!--          <dc-element>subject</dc-element>-->
+<!--          <label>Subject Keywords</label>-->
+<!--          <input-type>tag</input-type>-->
+<!--          <repeatable>true</repeatable>-->
+<!--          <required />-->
+<!--          <hint>Type the appropriate keyword or phrase and press Enter to add it.</hint>-->
+<!--        </field>-->
+<!--      </row>-->
+
+
+<!--      <row>-->
+<!--        <field>-->
+<!--          <dc-schema>datacite</dc-schema>-->
+<!--          <dc-element>subject</dc-element>-->
+<!--          <dc-qualifier>fos</dc-qualifier>-->
+<!--          <label>Fields of Science and Technology (OECD)</label>-->
+<!--          <input-type>onebox</input-type>-->
+<!--          <repeatable>true</repeatable>-->
+<!--          <required />-->
+<!--          <hint />-->
+<!--          <vocabulary closed="true">oecd</vocabulary>-->
+<!--        </field>-->
+<!--      </row>-->
+<!--      <row>-->
+<!--        <field>-->
+<!--          <dc-schema>dc</dc-schema>-->
+<!--          <dc-element>description</dc-element>-->
+<!--          <dc-qualifier>abstract</dc-qualifier>-->
+<!--          <label>Abstract</label>-->
+<!--          <input-type>textarea</input-type>-->
+<!--          <repeatable>false</repeatable>-->
+<!--          <required />-->
+<!--          <hint>Enter the abstract of the item.</hint>-->
+<!--        </field>-->
+<!--      </row>-->
 
       <row>
         <field>
@@ -973,45 +949,6 @@ it, please enter the types and the actual numbers or codes.</hint>
           <label>Audiencia</label>
           <input-type>onebox</input-type>
           <repeatable>false</repeatable>
-        </field>
-      </row>
-
-      <row>
-        <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>subject</dc-element>
-          <label>Subject Keywords</label>
-          <input-type>tag</input-type>
-          <repeatable>true</repeatable>
-          <required />
-          <hint>Type the appropriate keyword or phrase and press Enter to add it.</hint>
-        </field>
-      </row>
-
-
-      <row>
-        <field>
-          <dc-schema>datacite</dc-schema>
-          <dc-element>subject</dc-element>
-          <dc-qualifier>fos</dc-qualifier>
-          <label>Fields of Science and Technology (OECD)</label>
-          <input-type>onebox</input-type>
-          <repeatable>true</repeatable>
-          <required />
-          <hint />
-          <vocabulary closed="true">oecd</vocabulary>
-        </field>
-      </row>
-      <row>
-        <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>description</dc-element>
-          <dc-qualifier>abstract</dc-qualifier>
-          <label>Abstract</label>
-          <input-type>textarea</input-type>
-          <repeatable>false</repeatable>
-          <required />
-          <hint>Enter the abstract of the item.</hint>
         </field>
       </row>
     </form>
