@@ -140,11 +140,11 @@
       <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
       <type>submission-form</type>
     </step-definition>
-    <step-definition id="publication_bibliographic_details" mandatory="true">
-      <heading>submit.progressbar.describe.publication_bibliographic_details</heading>
-      <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
-      <type>submission-form</type>
-    </step-definition>
+<!--    <step-definition id="publication_bibliographic_details" mandatory="true">-->
+<!--      <heading>submit.progressbar.describe.publication_bibliographic_details</heading>-->
+<!--      <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>-->
+<!--      <type>submission-form</type>-->
+<!--    </step-definition>-->
     <step-definition id="publication_references" mandatory="false">
       <heading>submit.progressbar.describe.publication_references</heading>
       <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
@@ -294,7 +294,7 @@
       <step id="extractionstep" />
       <step id="publication" />
       <step id="publication_complementary" />
-      <step id="publication_bibliographic_details" />
+<!--      <step id="publication_bibliographic_details" />-->
       <step id="publication_references" />
       <step id="correction" />
       <step id="detect-duplicate" />
@@ -305,7 +305,7 @@
       <step id="extractionstep" />
       <step id="publication" />
       <step id="publication_complementary" />
-      <step id="publication_bibliographic_details" />
+<!--      <step id="publication_bibliographic_details" />-->
       <step id="publication_references" />
       <step id="upload" />
     </submission-process>
