@@ -1775,7 +1775,24 @@ it, please enter the types and the actual numbers or codes.</hint>
           <hint />
         </field>
       </row>
-      
+      <row>
+        <field>
+          <dc-schema>person</dc-schema>
+          <dc-element>jerarquia</dc-element>
+          <label>Jerarquia</label>
+          <input-type>onebox</input-type>
+          <hint/>
+        </field>
+      </row>
+      <row>
+        <field>
+          <dc-schema>person</dc-schema>
+          <dc-element>grado</dc-element>
+          <label>Grado</label>
+          <input-type>onebox</input-type>
+          <hint/>
+        </field>
+      </row>
       <row>
         <field>
           <dc-schema>person</dc-schema>
