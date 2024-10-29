@@ -22,7 +22,7 @@
     <name-map collection-entity-type="Journal"       submission-name="Journal"/>
     <name-map collection-entity-type="JournalVolume" submission-name="JournalVolume"/>
     <name-map collection-entity-type="JournalIssue"  submission-name="JournalIssue"/>
-    <name-map collection-entity-type="Tesis"         submission-name="Tesis"/>
+<!--    <name-map collection-entity-type="Tesis"         submission-name="Tesis"/>-->
 
     <!-- Sample Entities Collection configuration based on the demo Entities dataset available at:
          https://github.com/DSpace-Labs/AIP-Files/releases/tag/demo-entities-data
@@ -99,11 +99,11 @@
       <type>submission-form</type>
     </step-definition>
 
-    <step-definition id="tesis" mandatory="true">
-      <heading>submit.progressbar.describe.tesis</heading>
-      <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
-      <type>submission-form</type>
-    </step-definition>
+<!--    <step-definition id="tesis" mandatory="true">-->
+<!--      <heading>submit.progressbar.describe.tesis</heading>-->
+<!--      <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>-->
+<!--      <type>submission-form</type>-->
+<!--    </step-definition>-->
 
     <step-definition id="patent" mandatory="true">
       <heading>submit.progressbar.describe.patent</heading>
@@ -251,14 +251,14 @@
  <!--     <step id="license" /> -->
     </submission-process>
 
-    <submission-process name="tesis">
-      <step id="collection" />
-      <step id="tesis" />
-      <step id="correction" />
-      <step id="detect-duplicate" />
-      <step id="upload" />
-      <!--     <step id="license" /> -->
-    </submission-process>
+<!--    <submission-process name="tesis">-->
+<!--      <step id="collection" />-->
+<!--      <step id="tesis" />-->
+<!--      <step id="correction" />-->
+<!--      <step id="detect-duplicate" />-->
+<!--      <step id="upload" />-->
+<!--      &lt;!&ndash;     <step id="license" /> &ndash;&gt;-->
+<!--    </submission-process>-->
 
     <submission-process name="orgunit-edit">
       <step id="orgunit" />
