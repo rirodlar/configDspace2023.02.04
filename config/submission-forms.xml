@@ -660,13 +660,25 @@ it, please enter the types and the actual numbers or codes.</hint>
         </field>
       </row>
 
+            <row>
+              <field>
+                <dc-schema>dc</dc-schema>
+                <dc-element>subject</dc-element>
+                <label>Palabras Claves</label>
+                <input-type>tag</input-type>
+                <repeatable>true</repeatable>
+                <required />
+                <hint>Type the appropriate keyword or phrase and press Enter to add it.</hint>
+              </field>
+            </row>
+
       <!--    13-->
       <row>
         <field>
           <dc-schema>datacite</dc-schema>
           <dc-element>subject</dc-element>
           <dc-qualifier>fos</dc-qualifier>
-          <label>Materia</label>
+          <label>OECD</label>
           <input-type>onebox</input-type>
           <repeatable>true</repeatable>
           <required/>Ingresar materia, palabra clave, código de clasificación o frase clave que describe el recurso<required />
