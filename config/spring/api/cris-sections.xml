@@ -163,33 +163,33 @@
                     </property>
                 </bean>
             </list>
-              <list>
-                  <bean class="org.dspace.layout.CrisLayoutCountersComponent">
-                      <property name="style" value="col-md-12 py-4"/>
-                      <property name="counterSettingsList">
-                          <list>
-                              <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
-                                  <property name="discoveryConfigurationName" value="researchoutputs"/>
-                                  <property name="label" value="Datos"/>
-                                  <property name="icon" value="fas fa-magnifying-glass-chart fa-3x"/>
-                                  <property name="link" value="/explore/researchoutputs"/>
-                              </bean>
-                              <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
-                                  <property name="discoveryConfigurationName" value="orgunit"/>
-                                  <property name="label" value="Tesis"/>
-                                  <property name="icon" value="fas fa-graduation-cap fa-3x"/>
-                                  <property name="link" value="https://sic.vriic.usach.cl/search?configuration=orgunits"/>
-                              </bean>
-                              <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
-                                  <property name="discoveryConfigurationName" value="person"/>
-                                  <property name="label" value="Unidad Academica"/>
-                                  <property name="icon" value="fas fa-building-user fa-3x"/>
-                                  <property name="link" value="/explore/researcherprofiles"/>
-                              </bean>
-                          </list>
-                      </property>
-                  </bean>
-              </list>
+<!--              <list>-->
+<!--                  <bean class="org.dspace.layout.CrisLayoutCountersComponent">-->
+<!--                      <property name="style" value="col-md-12 py-4"/>-->
+<!--                      <property name="counterSettingsList">-->
+<!--                          <list>-->
+<!--                              <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">-->
+<!--                                  <property name="discoveryConfigurationName" value="researchoutputs"/>-->
+<!--                                  <property name="label" value="Datos"/>-->
+<!--                                  <property name="icon" value="fas fa-magnifying-glass-chart fa-3x"/>-->
+<!--                                  <property name="link" value="/explore/researchoutputs"/>-->
+<!--                              </bean>-->
+<!--                              <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">-->
+<!--                                  <property name="discoveryConfigurationName" value="orgunit"/>-->
+<!--                                  <property name="label" value="Tesis"/>-->
+<!--                                  <property name="icon" value="fas fa-graduation-cap fa-3x"/>-->
+<!--                                  <property name="link" value="https://sic.vriic.usach.cl/search?configuration=orgunits"/>-->
+<!--                              </bean>-->
+<!--                              <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">-->
+<!--                                  <property name="discoveryConfigurationName" value="person"/>-->
+<!--                                  <property name="label" value="Unidad Academica"/>-->
+<!--                                  <property name="icon" value="fas fa-building-user fa-3x"/>-->
+<!--                                  <property name="link" value="/explore/researcherprofiles"/>-->
+<!--                              </bean>-->
+<!--                          </list>-->
+<!--                      </property>-->
+<!--                  </bean>-->
+<!--              </list>-->
             <list>
                 <bean class="org.dspace.layout.CrisLayoutTopComponent">
                     <property name="discoveryConfigurationName" value="homePageTopItems" />
