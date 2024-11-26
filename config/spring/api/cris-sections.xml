@@ -171,13 +171,13 @@
                               <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
                                   <property name="discoveryConfigurationName" value="researchoutputs"/>
                                   <property name="label" value="Publicaciones"/>
-                                  <property name="icon" value="fas fa-magnifying-glass-chart fa-3x"/>
+                                  <property name="icon" value="fas fa-file-lines fa-3x"/>
                                   <property name="link" value="https://sic.vriic.usach.cl/collections/a65b7850-ee49-4212-9aab-3953200aa6c7"/>
                               </bean>
                               <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
                                   <property name="discoveryConfigurationName" value="orgunit"/>
                                   <property name="label" value="Datos de Investigación"/>
-                                  <property name="icon" value="fas fa-graduation-cap fa-3x"/>
+                                  <property name="icon" value="fas fa-magnifying-glass-chart fa-3x"/>
                                   <property name="link" value="https://sic.vriic.usach.cl/collections/efb50a2f-434c-4b7d-925f-11c025d51afb"/>
                               </bean>
                               <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
