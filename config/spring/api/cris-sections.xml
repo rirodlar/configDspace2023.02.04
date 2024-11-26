@@ -141,21 +141,21 @@
                         <list>
                             <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
                                 <property name="discoveryConfigurationName" value="person"/>
-                                <property name="label" value="rprofiles"/>
+                                <property name="label" value="Personal de investigación"/>
                                 <property name="icon" value="fas fa-users fa-3x"/>
                                 <property name="link" value="/explore/researcherprofiles"/>
                             </bean>
                             <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
                                 <property name="discoveryConfigurationName" value="project_funding"/>
-                                <property name="label" value="project_funding"/>
+                                <property name="label" value="Proyectos"/>
                                 <property name="icon" value="fas fa-lightbulb fa-3x"/>
                                 <property name="link" value="/explore/fundings_and_projects"/>
                             </bean>
                             <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
                                 <property name="discoveryConfigurationName" value="researchoutputs"/>
-                                <property name="label" value="publications"/>
+                                <property name="label" value="Unidades Académicas"/>
                                 <property name="icon" value="fas fa-book-open fa-3x"/>
-                                <property name="link" value="/explore/researchoutputs"/>
+                                <property name="link" value="https://sic.vriic.usach.cl/communities/0e9c610e-7e14-40f6-b782-36b5dbcc371a"/>
                             </bean>
 
 
@@ -170,21 +170,21 @@
                           <list>
                               <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
                                   <property name="discoveryConfigurationName" value="researchoutputs"/>
-                                  <property name="label" value="Datos"/>
+                                  <property name="label" value="Publicaciones"/>
                                   <property name="icon" value="fas fa-magnifying-glass-chart fa-3x"/>
-                                  <property name="link" value="/explore/researchoutputs"/>
+                                  <property name="link" value="https://sic.vriic.usach.cl/collections/a65b7850-ee49-4212-9aab-3953200aa6c7"/>
                               </bean>
                               <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
                                   <property name="discoveryConfigurationName" value="orgunit"/>
-                                  <property name="label" value="Tesis"/>
+                                  <property name="label" value="Datos de Investigación"/>
                                   <property name="icon" value="fas fa-graduation-cap fa-3x"/>
-                                  <property name="link" value="https://sic.vriic.usach.cl/search?configuration=orgunits"/>
+                                  <property name="link" value="https://sic.vriic.usach.cl/collections/efb50a2f-434c-4b7d-925f-11c025d51afb"/>
                               </bean>
                               <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
                                   <property name="discoveryConfigurationName" value="person"/>
-                                  <property name="label" value="Unidad Academica"/>
+                                  <property name="label" value="Divulgación Cientifica"/>
                                   <property name="icon" value="fas fa-building-user fa-3x"/>
-                                  <property name="link" value="https://sic.vriic.usach.cl/communities/0e9c610e-7e14-40f6-b782-36b5dbcc371a"/>
+                                  <property name="link" value="https://sic.vriic.usach.cl/collections/8c37f013-7816-4dc3-9603-573b3e6d3d88"/>
                               </bean>
                           </list>
                       </property>
