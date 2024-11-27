@@ -154,7 +154,7 @@
                             <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
                                 <property name="discoveryConfigurationName" value="researchoutputs"/>
                                 <property name="label" value="Unidades Académicas"/>
-                                <property name="icon" value="fas sitemap fa-3x"/>
+                                <property name="icon" value="fas fa-sitemap fa-3x"/>
                                 <property name="link" value="https://sic.vriic.usach.cl/communities/0e9c610e-7e14-40f6-b782-36b5dbcc371a"/>
                             </bean>
 
