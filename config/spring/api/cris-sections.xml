@@ -142,7 +142,7 @@
                             <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
                                 <property name="discoveryConfigurationName" value="person"/>
                                 <property name="label" value="Personal de investigación"/>
-                                <property name="icon" value="fas fa-users fa-3x"/>
+                                <property name="icon" value="fas fa-users-between-lines fa-3x"/>
                                 <property name="link" value="/explore/researcherprofiles"/>
                             </bean>
                             <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
@@ -171,7 +171,7 @@
                               <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
                                   <property name="discoveryConfigurationName" value="researchoutputs"/>
                                   <property name="label" value="Publicaciones"/>
-                                  <property name="icon" value="fas fa-file-lines fa-3x"/>
+                                  <property name="icon" value="fas fa-book-open fa-3x"/>
                                   <property name="link" value="https://sic.vriic.usach.cl/collections/a65b7850-ee49-4212-9aab-3953200aa6c7"/>
                               </bean>
                               <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
@@ -183,7 +183,7 @@
                               <bean class="org.dspace.layout.CrisLayoutCountersComponent.CounterSettings">
                                   <property name="discoveryConfigurationName" value="person"/>
                                   <property name="label" value="Divulgación Cientifica"/>
-                                  <property name="icon" value="fas fa-building-user fa-3x"/>
+                                  <property name="icon" value="fas fa-bullhorn fa-3x"/>
                                   <property name="link" value="https://sic.vriic.usach.cl/collections/8c37f013-7816-4dc3-9603-573b3e6d3d88"/>
                               </bean>
                           </list>
