@@ -1847,6 +1847,17 @@ it, please enter the types and the actual numbers or codes.</hint>
           <hint/>
         </field>
       </row>
+
+      <row>
+        <field>
+          <dc-schema>person</dc-schema>
+          <dc-element>researchLine</dc-element>
+          <label>Linea de Investigación</label>
+          <input-type>tag</input-type>
+          <repeatable>true</repeatable>
+          <hint/>
+        </field>
+      </row>
       
       <row>
         <field>
