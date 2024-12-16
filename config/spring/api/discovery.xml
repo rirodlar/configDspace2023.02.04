@@ -172,8 +172,8 @@
                 <!-- Person Related items -->
                 <entry key="RELATION.Person.projects" value-ref="relationInvestigatorProjectsConfiguration"/>
                 <entry key="RELATION.Person.researchoutputs" value-ref="relationAuthorResearchOutputsConfiguration"/>
-                <entry key="RELATION.Person.researchoutputsProduct" value-ref="relationAuthorResearchOutputsConfiguration2"/>
-                <entry key="RELATION.Person.researchoutputsPatent" value-ref="relationAuthorResearchOutputsConfiguration3"/>
+                <entry key="RELATION.Person.researchoutputsProduct" value-ref="relationAuthorResearchOutputsConfigurationProduct"/>
+                <entry key="RELATION.Person.researchoutputsPatent" value-ref="relationAuthorResearchOutputsConfigurationPatent"/>
                 <!-- OrgUnit Related items -->
                 <entry key="RELATION.OrgUnit.rpprojects" value-ref="relationOrgunitRPProjectConfiguration"/>
                 <entry key="RELATION.OrgUnit.publications" value-ref="relationOrgunitPublicationsConfiguration"/>
@@ -1334,7 +1334,7 @@
         </property>
     </bean>
 
-    <bean id="relationAuthorResearchOutputsConfiguration2" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
+    <bean id="relationAuthorResearchOutputsConfigurationProduct" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
@@ -1409,7 +1409,7 @@
         </property>
     </bean>
 
-    <bean id="relationAuthorResearchOutputsConfiguration3" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
+    <bean id="relationAuthorResearchOutputsConfigurationPatent" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
