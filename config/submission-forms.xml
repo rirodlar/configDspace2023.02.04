@@ -2052,17 +2052,17 @@ it, please enter the types and the actual numbers or codes.</hint>
           <hint />
         </field>
       </row>
-      <row>
-        <field>
-          <dc-schema>crisrp</dc-schema>
-          <dc-element>qualification</dc-element>
-          <label>Qualification(s)</label>
-          <input-type>inline-group</input-type>
-          <repeatable>true</repeatable>
-          <required />
-          <hint />
-        </field>
-      </row>
+<!--      <row>-->
+<!--        <field>-->
+<!--          <dc-schema>crisrp</dc-schema>-->
+<!--          <dc-element>qualification</dc-element>-->
+<!--          <label>Qualification(s)</label>-->
+<!--          <input-type>inline-group</input-type>-->
+<!--          <repeatable>true</repeatable>-->
+<!--          <required />-->
+<!--          <hint />-->
+<!--        </field>-->
+<!--      </row>-->
       <row>
         <field>
           <dc-schema>person</dc-schema>
