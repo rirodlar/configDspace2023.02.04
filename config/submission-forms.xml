@@ -1256,18 +1256,6 @@ it, please enter the types and the actual numbers or codes.</hint>
       <row>
         <field>
           <dc-schema>dc</dc-schema>
-          <dc-element>date</dc-element>
-          <dc-qualifier>issued</dc-qualifier>
-          <label>Fecha de publicación</label>
-          <input-type>date</input-type>
-          <repeatable>false</repeatable>
-          <required>Ingresar mínimamente año.</required>
-          <hint>Por favor, indicar fecha de publicación o distribución .</hint>
-        </field>
-      </row>
-      <row>
-        <field>
-          <dc-schema>dc</dc-schema>
           <dc-element>title</dc-element>
           <label>Title</label>
           <input-type>onebox</input-type>
