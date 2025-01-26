@@ -594,7 +594,7 @@ it, please enter the types and the actual numbers or codes.</hint>
           <input-type>group</input-type>
           <repeatable>true</repeatable>
           <required />
-          <hint>Colaborador.</hint>
+          <hint>Colaborador</hint>
         </field>
       </row>
 
@@ -1251,6 +1251,18 @@ it, please enter the types and the actual numbers or codes.</hint>
           <repeatable>true</repeatable>
           <required />
           <hint>El identificador es una cadena única que identifica un recurso.</hint>
+        </field>
+      </row>
+      <row>
+        <field>
+          <dc-schema>dc</dc-schema>
+          <dc-element>date</dc-element>
+          <dc-qualifier>issued</dc-qualifier>
+          <label>Fecha de publicación</label>
+          <input-type>date</input-type>
+          <repeatable>false</repeatable>
+          <required>Ingresar mínimamente año.</required>
+          <hint>Por favor, indicar fecha de publicación o distribución .</hint>
         </field>
       </row>
       <row>
