@@ -1865,8 +1865,8 @@
         <!--Which sidebar facets are to be displayed-->
         <property name="sidebarFacets">
             <list>
-                <ref bean="searchFilterJobtitle"/>
-                <ref bean="searchFilterKnowsLanguage"/>
+<!--                <ref bean="searchFilterJobtitle"/>-->
+<!--                <ref bean="searchFilterKnowsLanguage"/>-->
                 <ref bean="searchFilterPersonOrgUnit"/>
 <!--                <ref bean="searchFilterBirthdate"/>-->
             </list>
@@ -1877,7 +1877,7 @@
                 <ref bean="searchFilterFamilyName"/>
                 <ref bean="searchFilterGivenName"/>
                 <ref bean="searchFilterJobtitle"/>
-                <ref bean="searchFilterKnowsLanguage"/>
+<!--                <ref bean="searchFilterKnowsLanguage"/>-->
                 <ref bean="searchFilterPersonOrgUnit"/>
 <!--                <ref bean="searchFilterBirthdate"/>-->
             </list>
