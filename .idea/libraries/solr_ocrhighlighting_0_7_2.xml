@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="solr-ocrhighlighting-0.7.2">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/solr/ocr/lib/solr-ocrhighlighting-0.7.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
