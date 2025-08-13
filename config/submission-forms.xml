@@ -1289,17 +1289,17 @@ it, please enter the types and the actual numbers or codes.</hint>
         </field>
       </row>
 
-      <row>
-        <field>
-          <dc-schema>dc</dc-schema>
-          <dc-element>contributor</dc-element>
-          <label>colaborador</label>
-          <input-type>onebox</input-type>
-          <repeatable>true</repeatable>
-          <required />
-          <hint>Ingresar el nombre de las personas colaborador de este ítem.</hint>
-        </field>
-      </row>
+<!--      <row>-->
+<!--        <field>-->
+<!--          <dc-schema>dc</dc-schema>-->
+<!--          <dc-element>contributor</dc-element>-->
+<!--          <label>colaborador</label>-->
+<!--          <input-type>onebox</input-type>-->
+<!--          <repeatable>true</repeatable>-->
+<!--          <required />-->
+<!--          <hint>Ingresar el nombre de las personas colaborador de este ítem.</hint>-->
+<!--        </field>-->
+<!--      </row>-->
 
       <row>
         <field>
