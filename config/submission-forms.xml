@@ -3088,7 +3088,10 @@ it, please enter the types and the actual numbers or codes.</hint>
       </pair>
     </value-pairs>
     <value-pairs value-pairs-name="common_identifiers_alt_usach" dc-term="common_identifiers_alt_usach">
-
+      <pair>
+        <displayed-value>URI</displayed-value>
+        <stored-value>uri</stored-value>
+      </pair>
       <pair>
         <displayed-value>Pubmed ID</displayed-value>
         <stored-value>pmid</stored-value>
