@@ -3344,16 +3344,16 @@
         <property name="pageSize" value="10"/>
     </bean>
 
-    <bean id="searchFilterIsProjectOfOrgUnitRelation" class="org.dspace.discovery.configuration.DiscoverySearchFilter">
-        <property name="indexFieldName" value="isProjectOfOrgUnit"/>
-        <property name="metadataFields">
-            <list>
-                <value>relation.isProjectOfOrgUnit</value>
-            </list>
-        </property>
-        <property name="isOpenByDefault" value="false"/>
-        <property name="pageSize" value="10"/>
-    </bean>
+<!--    <bean id="searchFilterIsProjectOfOrgUnitRelation" class="org.dspace.discovery.configuration.DiscoverySearchFilter">-->
+<!--        <property name="indexFieldName" value="isProjectOfOrgUnit"/>-->
+<!--        <property name="metadataFields">-->
+<!--            <list>-->
+<!--                <value>relation.isProjectOfOrgUnit</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--        <property name="isOpenByDefault" value="false"/>-->
+<!--        <property name="pageSize" value="10"/>-->
+<!--    </bean>-->
 
     <bean id="searchFilterIsPublicationOfOrgUnitRelation"
           class="org.dspace.discovery.configuration.DiscoverySearchFilter">
