@@ -2087,24 +2087,6 @@
         <property name="spellCheckEnabled" value="true"/>
     </bean>
 
-    <bean id="searchFilterIsProjectOfOrgUnitRelation"
-          class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
-        <property name="indexFieldName" value="isProjectOfOrgUnit"/>
-        <property name="metadataFields">
-            <list>
-                <value>relation.isProjectOfOrgUnit</value>
-            </list>
-        </property>
-        <property name="type" value="authority"/>
-        <property name="facetLimit" value="10"/>
-        <property name="sortOrderSidebar" value="COUNT"/>
-        <property name="sortOrderFilterPage" value="COUNT"/>
-        <property name="isOpenByDefault" value="false"/>
-        <property name="pageSize" value="10"/>
-    </bean>
-
-
-
     <bean id="orgUnit" class="org.dspace.discovery.configuration.DiscoveryConfiguration"
           scope="prototype">
         <property name="id" value="orgUnit"/>
@@ -2115,7 +2097,6 @@
                 <ref bean="searchFilterOrganizationAddressCountry"/>
                 <ref bean="searchFilterOrganizationAddressLocality"/>
                 <ref bean="searchFilterOrganizationFoundingDate"/>
-
             </list>
         </property>
         <!--The search filters which can be used on the discovery search page-->
@@ -2125,7 +2106,7 @@
                 <ref bean="searchFilterOrganizationAddressCountry"/>
                 <ref bean="searchFilterOrganizationAddressLocality"/>
                 <ref bean="searchFilterOrganizationFoundingDate"/>
-                <!-- NUEVO -->
+
                 <ref bean="searchFilterIsProjectOfOrgUnitRelation"/>
             </list>
         </property>
@@ -3347,16 +3328,18 @@
         <property name="pageSize" value="10"/>
     </bean>
 
-<!--    <bean id="searchFilterIsProjectOfOrgUnitRelation" class="org.dspace.discovery.configuration.DiscoverySearchFilter">-->
-<!--        <property name="indexFieldName" value="isProjectOfOrgUnit"/>-->
-<!--        <property name="metadataFields">-->
-<!--            <list>-->
-<!--                <value>relation.isProjectOfOrgUnit</value>-->
-<!--            </list>-->
-<!--        </property>-->
-<!--        <property name="isOpenByDefault" value="false"/>-->
-<!--        <property name="pageSize" value="10"/>-->
-<!--    </bean>-->
+    <bean id="searchFilterIsProjectOfOrgUnitRelation" class="org.dspace.discovery.configuration.DiscoverySearchFilter">
+        <property name="indexFieldName" value="isProjectOfOrgUnit"/>
+        <property name="metadataFields">
+            <list>
+                <value>relation.isProjectOfOrgUnit</value>
+            </list>
+        </property>
+        <property name="isOpenByDefault" value="false"/>
+        <property name="pageSize" value="10"/>
+    </bean>
+
+
 
     <bean id="searchFilterIsPublicationOfOrgUnitRelation"
           class="org.dspace.discovery.configuration.DiscoverySearchFilter">
