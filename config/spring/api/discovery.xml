@@ -2097,13 +2097,12 @@
         </property>
         <property name="type" value="authority"/>
         <property name="facetLimit" value="10"/>
-        <!-- usar las propiedades correctas de ordenamiento -->
         <property name="sortOrderSidebar" value="COUNT"/>
         <property name="sortOrderFilterPage" value="COUNT"/>
-        <!-- opcional: abrir/cerrar y paginado -->
         <property name="isOpenByDefault" value="false"/>
         <property name="pageSize" value="10"/>
     </bean>
+
 
 
     <bean id="orgUnit" class="org.dspace.discovery.configuration.DiscoveryConfiguration"
