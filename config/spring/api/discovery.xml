@@ -2107,7 +2107,7 @@
                 <ref bean="searchFilterOrganizationAddressLocality"/>
                 <ref bean="searchFilterOrganizationFoundingDate"/>
 
-                <ref bean="searchFilterIsProjectOfOrgUnitRelation"/>
+<!--                <ref bean="searchFilterIsProjectOfOrgUnitRelation"/>-->
             </list>
         </property>
         <!--The sort filters for the discovery search-->
