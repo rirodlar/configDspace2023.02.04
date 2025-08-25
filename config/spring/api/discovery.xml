@@ -2097,7 +2097,12 @@
         </property>
         <property name="type" value="authority"/>
         <property name="facetLimit" value="10"/>
-        <property name="sortOrder" value="COUNT"/>
+        <!-- usar las propiedades correctas de ordenamiento -->
+        <property name="sortOrderSidebar" value="COUNT"/>
+        <property name="sortOrderFilterPage" value="COUNT"/>
+        <!-- opcional: abrir/cerrar y paginado -->
+        <property name="isOpenByDefault" value="false"/>
+        <property name="pageSize" value="10"/>
     </bean>
 
 
@@ -2111,8 +2116,7 @@
                 <ref bean="searchFilterOrganizationAddressCountry"/>
                 <ref bean="searchFilterOrganizationAddressLocality"/>
                 <ref bean="searchFilterOrganizationFoundingDate"/>
-                <!-- NUEVO -->
-                <ref bean="searchFilterIsProjectOfOrgUnitRelation"/>
+
             </list>
         </property>
         <!--The search filters which can be used on the discovery search page-->
