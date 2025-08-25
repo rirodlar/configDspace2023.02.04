@@ -2106,8 +2106,6 @@
                 <ref bean="searchFilterOrganizationAddressCountry"/>
                 <ref bean="searchFilterOrganizationAddressLocality"/>
                 <ref bean="searchFilterOrganizationFoundingDate"/>
-
-<!--                <ref bean="searchFilterIsProjectOfOrgUnitRelation"/>-->
             </list>
         </property>
         <!--The sort filters for the discovery search-->
@@ -3338,8 +3336,6 @@
         <property name="isOpenByDefault" value="false"/>
         <property name="pageSize" value="10"/>
     </bean>
-
-
 
     <bean id="searchFilterIsPublicationOfOrgUnitRelation"
           class="org.dspace.discovery.configuration.DiscoverySearchFilter">
