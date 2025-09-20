@@ -519,20 +519,19 @@
         </field>
       </row>
 
-<!--        <row>-->
-<!--            <field>-->
-<!--                <dc-schema>relation</dc-schema>-->
-<!--                <dc-element>orgunit</dc-element>-->
-<!--                <label>Unidad Organizacional</label>-->
 
-<!--                <input-type>relationship</input-type>-->
-<!--                <repeatable>true</repeatable>-->
-
-<!--                &lt;!&ndash; sin <required/>, para que sea opcional &ndash;&gt;-->
-<!--                <hint>Selecciona la unidad (Facultad/Departamento) responsable de la publicación.</hint>-->
-<!--            </field>-->
-<!--        </row>-->
-
+        <row>
+            <field>
+                <dc-schema>oairecerif</dc-schema>
+                <dc-element>author</dc-element>
+                <dc-qualifier>affiliation</dc-qualifier>
+                <label>Affiliation</label>
+                <input-type>onebox</input-type>
+                <repeatable>false</repeatable>
+                <required />
+                <hint>Enter the affiliation of the author as stated on the publication XXX.</hint>
+            </field>
+        </row>
 
       <!--     2-->
       <row>
