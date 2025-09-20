@@ -518,6 +518,8 @@
           <hint>Pista informativa.</hint>
         </field>
       </row>
+
+
       <!--     2-->
       <row>
         <field>
@@ -527,7 +529,7 @@
           <label>Creador</label>
           <input-type>group</input-type>
           <repeatable>true</repeatable>
-          <required />
+<!--          <required />-->
           <hint>Ingresar el nombre de las personas autoras de este ítem.</hint>
         </field>
       </row>
