@@ -520,6 +520,21 @@
       </row>
 
 
+
+        <row>
+            <field>
+                <dc-schema>dc</dc-schema>
+                <dc-element>contributor</dc-element>
+                <dc-qualifier>author</dc-qualifier>
+                <label>Author</label>
+                <input-type>onebox</input-type>
+                <repeatable>false</repeatable>
+                <!--          <required>You must enter at least the author.</required>-->
+                <hint>Enter the names of the authors of this item in the form Lastname, Firstname [i.e. Ricardo, Tania or Rodrigo, J].</hint>
+            </field>
+        </row>
+
+
         <row>
             <field>
                 <dc-schema>oairecerif</dc-schema>
