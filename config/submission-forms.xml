@@ -519,8 +519,6 @@
         </field>
       </row>
 
-
-
         <row>
             <field>
                 <dc-schema>dc</dc-schema>
@@ -529,11 +527,9 @@
                 <label>Author</label>
                 <input-type>onebox</input-type>
                 <repeatable>false</repeatable>
-                <!--          <required>You must enter at least the author.</required>-->
                 <hint>Enter the names of the authors of this item in the form Lastname, Firstname [i.e. Ricardo, Tania or Rodrigo, J].</hint>
             </field>
         </row>
-
 
         <row>
             <field>
@@ -545,6 +541,28 @@
                 <repeatable>false</repeatable>
                 <required />
                 <hint>Enter the affiliation of the author as stated on the publication XXX.</hint>
+            </field>
+        </row>
+
+        <row>
+            <field>
+                <dc-schema>relation</dc-schema>
+                <dc-element>isOrgUnitOfPublication</dc-element>
+                <label>Unidad Organizacional</label>
+                <input-type>relationship</input-type>
+                <repeatable>true</repeatable>
+                <hint>Selecciona la unidad (Facultad/Departamento) responsable de la publicación.</hint>
+            </field>
+        </row>
+
+        <row>
+            <field>
+                <dc-schema>relation</dc-schema>
+                <dc-element>orgunit</dc-element>
+                <label>Unidad Organizacional</label>
+                <input-type>relationship</input-type>
+                <repeatable>true</repeatable>
+                <hint>Selecciona la unidad (Facultad/Departamento) responsable de la publicación.</hint>
             </field>
         </row>
 
