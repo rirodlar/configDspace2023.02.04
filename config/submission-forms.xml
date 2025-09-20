@@ -519,6 +519,20 @@
         </field>
       </row>
 
+        <row>
+            <field>
+                <dc-schema>relation</dc-schema>
+                <dc-element>orgunit</dc-element>
+                <label>Unidad Organizacional</label>
+
+                <input-type>relationship</input-type>
+                <repeatable>true</repeatable>
+
+                <!-- sin <required/>, para que sea opcional -->
+                <hint>Selecciona la unidad (Facultad/Departamento) responsable de la publicación.</hint>
+            </field>
+        </row>
+
 
       <!--     2-->
       <row>
