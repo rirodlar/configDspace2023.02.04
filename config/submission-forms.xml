@@ -1607,16 +1607,7 @@ it, please enter the types and the actual numbers or codes...</hint>
         </field>
       </row>
 
-        <row>
-            <field>
-                <dc-schema>relation</dc-schema>
-                <dc-element>isOrgUnitOfPatent</dc-element>
-                <label>Unidad Organizacional</label>
-                <input-type>relationship</input-type>
-                <repeatable>true</repeatable>
-                <hint>Selecciona la unidad (Facultad/Departamento) titular o asociado a la protección.</hint>
-            </field>
-        </row>
+
 
       <row>
         <field>
