@@ -1,18 +1,8 @@
-<!--<?xml version="1.0" encoding="UTF-8"?>-->
-<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
-<!--       xmlns:util="http://www.springframework.org/schema/util"-->
-<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
-<!--       xsi:schemaLocation="-->
-<!--        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd-->
-<!--        http://www.springframework.org/schema/util  http://www.springframework.org/schema/util/spring-util.xsd">-->
-
-<!--    &lt;!&ndash; Tu autenticador externo (sin <property/>, la config viene de ConfigurationService) &ndash;&gt;-->
-<!--    <bean id="externalAuthMethod"-->
-<!--          class="com.usach.auth.ExternalApiAuthentication"/>-->
-
-<!--    &lt;!&ndash; Orden de autenticación: primero externo, luego password nativo &ndash;&gt;-->
-<!--    <util:list id="plugin.sequence.org.dspace.authenticate.AuthenticationMethod">-->
-<!--        <ref bean="externalAuthMethod"/>-->
-<!--        <ref bean="org.dspace.authenticate.PasswordAuthentication"/>-->
-<!--    </util:list>-->
-<!--</beans>-->
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+         http://www.springframework.org/schema/beans
+         https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- TODO: restaurar beans reales de autenticación externa -->
+</beans>
