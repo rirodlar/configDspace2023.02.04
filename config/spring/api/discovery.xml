@@ -194,6 +194,10 @@
                 <entry key="editCollection" value-ref="editCollectionConfiguration"/>
                 <entry key="lucky-search" value-ref="lucky"/>
                 <entry key="multilanguage-types" value-ref="multilanguage-types"/>
+
+                <entry key="RELATION.OrgUnit.rpprojects.internos" value-ref="relationOrgunitRPProjectInternoConfiguration"/>
+                <entry key="RELATION.OrgUnit.rpprojects.externos"  value-ref="relationOrgunitRPProjectExternoConfiguration"/>
+
             </map>
         </property>
         <property name="toIgnoreMetadataFields">
@@ -1711,6 +1715,56 @@
             <list>
                 <!--Only find related items. The placeholder {0} will be replaced with scope (UUID of item)-->
                 <value>dc.relation.project_authority:{0} AND entityType_keyword:Publication</value>
+                <value>-withdrawn:true AND -discoverable:false</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- rpprojects internos -->
+    <bean id="relationOrgunitRPProjectInternoConfiguration"
+          class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
+        <property name="searchSortConfiguration">
+            <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
+                <property name="sortFields">
+                    <list>
+                        <ref bean="sortByRPProjectsSelection"/>
+                        <ref bean="sortTitleAsc"/>
+                    </list>
+                </property>
+            </bean>
+        </property>
+
+        <property name="defaultFilterQueries">
+            <list>
+                <!-- JOIN OrgUnit -> Persons -> Projects (tu join original) -->
+                <value>{!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search}
+                    person.affiliation.name_authority:{0}</value>
+                <!-- filtro por tipo interno -->
+                <value>usach.typeProject:p_interno</value> <!-- o usach.typeProject_keyword:p_interno -->
+                <value>-withdrawn:true AND -discoverable:false</value>
+            </list>
+        </property>
+    </bean>
+
+    <!-- rpprojects externos -->
+    <bean id="relationOrgunitRPProjectExternoConfiguration"
+          class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
+        <property name="searchSortConfiguration">
+            <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
+                <property name="sortFields">
+                    <list>
+                        <ref bean="sortByRPProjectsSelection"/>
+                        <ref bean="sortTitleAsc"/>
+                    </list>
+                </property>
+            </bean>
+        </property>
+
+        <property name="defaultFilterQueries">
+            <list>
+                <value>{!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search}
+                    person.affiliation.name_authority:{0}</value>
+                <value>usach.typeProject:p_externo</value> <!-- o *_keyword -->
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
