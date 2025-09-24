@@ -175,11 +175,18 @@
                 <entry key="RELATION.Person.researchoutputsProduct" value-ref="relationAuthorResearchOutputsConfigurationProduct"/>
                 <entry key="RELATION.Person.researchoutputsPatent" value-ref="relationAuthorResearchOutputsConfigurationPatent"/>
                 <!-- OrgUnit Related items -->
+
                 <entry key="RELATION.OrgUnit.rpprojects" value-ref="relationOrgunitRPProjectConfiguration"/>
+<!--                <entry key="RELATION.OrgUnit.rpprojectsInternos" value-ref="relationOrgunitRPProjectInternoConfiguration"/>-->
+<!--                <entry key="RELATION.OrgUnit.rpprojectsExternos"  value-ref="relationOrgunitRPProjectExternoConfiguration"/>-->
+
                 <entry key="RELATION.OrgUnit.publications" value-ref="relationOrgunitPublicationsConfiguration"/>
                 <entry key="RELATION.OrgUnit.rppublications" value-ref="relationOrgunitRPPublicationsConfiguration"/>
                 <entry key="RELATION.OrgUnit.people" value-ref="relationOrgunitPersonsConfiguration"/>
+
                 <entry key="RELATION.OrgUnit.projects" value-ref="relationOrgunitProjectsConfiguration"/>
+
+
                 <entry key="RELATION.OrgUnit.organizations" value-ref="relationOrgunitOrgunitsConfiguration"/>
                 <!-- Project Related items -->
                 <entry key="RELATION.Project.projects" value-ref="relationProjectProjectsConfiguration"/>
@@ -195,8 +202,7 @@
                 <entry key="lucky-search" value-ref="lucky"/>
                 <entry key="multilanguage-types" value-ref="multilanguage-types"/>
 
-                <entry key="RELATION.OrgUnit.rpprojectsInternos" value-ref="relationOrgunitRPProjectInternoConfiguration"/>
-                <entry key="RELATION.OrgUnit.rpprojectsExternos"  value-ref="relationOrgunitRPProjectExternoConfiguration"/>
+
 
 
 
@@ -1723,8 +1729,7 @@
     </bean>
 
     <!-- rpprojects internos -->
-    <bean id="relationOrgunitRPProjectInternoConfiguration"
-          class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
+    <bean id="relationOrgunitRPProjectInternoConfiguration" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
         <property name="searchSortConfiguration">
             <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
                 <property name="sortFields">
