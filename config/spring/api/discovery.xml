@@ -175,18 +175,11 @@
                 <entry key="RELATION.Person.researchoutputsProduct" value-ref="relationAuthorResearchOutputsConfigurationProduct"/>
                 <entry key="RELATION.Person.researchoutputsPatent" value-ref="relationAuthorResearchOutputsConfigurationPatent"/>
                 <!-- OrgUnit Related items -->
-
                 <entry key="RELATION.OrgUnit.rpprojects" value-ref="relationOrgunitRPProjectConfiguration"/>
-<!--                <entry key="RELATION.OrgUnit.rpprojectsInternos" value-ref="relationOrgunitRPProjectInternoConfiguration"/>-->
-<!--                <entry key="RELATION.OrgUnit.rpprojectsExternos"  value-ref="relationOrgunitRPProjectExternoConfiguration"/>-->
-
                 <entry key="RELATION.OrgUnit.publications" value-ref="relationOrgunitPublicationsConfiguration"/>
                 <entry key="RELATION.OrgUnit.rppublications" value-ref="relationOrgunitRPPublicationsConfiguration"/>
                 <entry key="RELATION.OrgUnit.people" value-ref="relationOrgunitPersonsConfiguration"/>
-
                 <entry key="RELATION.OrgUnit.projects" value-ref="relationOrgunitProjectsConfiguration"/>
-
-
                 <entry key="RELATION.OrgUnit.organizations" value-ref="relationOrgunitOrgunitsConfiguration"/>
                 <!-- Project Related items -->
                 <entry key="RELATION.Project.projects" value-ref="relationProjectProjectsConfiguration"/>
@@ -201,11 +194,6 @@
                 <entry key="editCollection" value-ref="editCollectionConfiguration"/>
                 <entry key="lucky-search" value-ref="lucky"/>
                 <entry key="multilanguage-types" value-ref="multilanguage-types"/>
-
-
-
-
-
             </map>
         </property>
         <property name="toIgnoreMetadataFields">
@@ -1723,53 +1711,6 @@
             <list>
                 <!--Only find related items. The placeholder {0} will be replaced with scope (UUID of item)-->
                 <value>dc.relation.project_authority:{0} AND entityType_keyword:Publication</value>
-                <value>-withdrawn:true AND -discoverable:false</value>
-            </list>
-        </property>
-    </bean>
-
-    <!-- rpprojects internos -->
-    <bean id="relationOrgunitRPProjectInternoConfiguration" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
-        <property name="searchSortConfiguration">
-            <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
-                <property name="sortFields">
-                    <list>
-                        <ref bean="sortByRPProjectsSelection"/>
-                        <ref bean="sortTitleAsc"/>
-                    </list>
-                </property>
-            </bean>
-        </property>
-
-        <property name="defaultFilterQueries">
-            <list>
-                <!-- copiar EXACTO el patrón con comillas alrededor de { } -->
-                <value>'{'!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>
-                <!-- usar el campo _keyword -->
-                <value>usach.typeProject_keyword:p_interno</value>
-                <value>-withdrawn:true AND -discoverable:false</value>
-            </list>
-        </property>
-    </bean>
-
-    <!-- rpprojects externos -->
-    <bean id="relationOrgunitRPProjectExternoConfiguration"
-          class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
-        <property name="searchSortConfiguration">
-            <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
-                <property name="sortFields">
-                    <list>
-                        <ref bean="sortByRPProjectsSelection"/>
-                        <ref bean="sortTitleAsc"/>
-                    </list>
-                </property>
-            </bean>
-        </property>
-
-        <property name="defaultFilterQueries">
-            <list>
-                <value>'{'!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>
-                <value>usach.typeProject_keyword:p_externo</value>
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
