@@ -195,8 +195,10 @@
                 <entry key="lucky-search" value-ref="lucky"/>
                 <entry key="multilanguage-types" value-ref="multilanguage-types"/>
 
-                <entry key="RELATION.OrgUnit.rpprojects.internos" value-ref="relationOrgunitRPProjectInternoConfiguration"/>
-                <entry key="RELATION.OrgUnit.rpprojects.externos"  value-ref="relationOrgunitRPProjectExternoConfiguration"/>
+                <entry key="RELATION.OrgUnit.rpprojectsInternos" value-ref="relationOrgunitRPProjectInternoConfiguration"/>
+                <entry key="RELATION.OrgUnit.rpprojectsExternos"  value-ref="relationOrgunitRPProjectExternoConfiguration"/>
+
+
 
             </map>
         </property>
