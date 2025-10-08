@@ -195,6 +195,9 @@
                 <entry key="editCollection" value-ref="editCollectionConfiguration"/>
                 <entry key="lucky-search" value-ref="lucky"/>
                 <entry key="multilanguage-types" value-ref="multilanguage-types"/>
+
+                <entry key="RELATION.OrgUnit.rppatentsonly" value-ref="relationOrgunitRPPatentsOnlyConfiguration"/>
+
             </map>
         </property>
         <property name="toIgnoreMetadataFields">
@@ -1534,6 +1537,28 @@
             </list>
         </property>
     </bean>
+
+    <!-- patents authored by people affiliated to an orgunit (solo Patentes) -->
+    <bean id="relationOrgunitRPPatentsOnlyConfiguration" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
+        <property name="searchSortConfiguration">
+            <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
+                <property name="sortFields">
+                    <list>
+                        <ref bean="sortByRPPublicationsSelection" />
+                        <ref bean="sortTitleAsc" />
+                    </list>
+                </property>
+            </bean>
+        </property>
+        <property name="defaultFilterQueries">
+            <list>
+                <!-- Solo ítems tipo Patente vinculados al OrgUnit -->
+                <value>{!join from=search.resourceid to=author_authority fromIndex=${solr.multicorePrefix}search}person.affiliation.name_authority:{0} AND entityType_keyword:Patent</value>
+                <value>-withdrawn:true AND -discoverable:false</value>
+            </list>
+        </property>
+    </bean>
+
 
     <!-- publication authored by people affiliated to an orgunit -->
     <bean id="relationOrgunitRPPublicationsConfiguration" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
