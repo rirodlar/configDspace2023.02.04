@@ -130,4 +130,17 @@
         </rightCardinality>
         <copyToRight>true</copyToRight>
     </type>
+    <type>
+        <leftType>OrgUnit</leftType>
+        <rightType>Patent</rightType>
+        <leftwardType>isOrgUnitOfPatent</leftwardType>
+        <rightwardType>isPatentOfOrgUnit</rightwardType>
+        <leftCardinality>
+            <min>0</min>
+        </leftCardinality>
+        <rightCardinality>
+            <min>0</min>
+        </rightCardinality>
+        <copyToLeft>true</copyToLeft>
+    </type>
 </relationships>
