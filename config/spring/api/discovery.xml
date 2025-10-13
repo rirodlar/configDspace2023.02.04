@@ -1506,7 +1506,11 @@
         <property name="defaultFilterQueries">
             <list>
                 <!--Only find related items. The placeholder {0} will be replaced with scope (UUID of item)-->
-                <value>'{'!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>
+<!--                <value>'{'!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>-->
+<!--                <value>-withdrawn:true AND -discoverable:false</value>-->
+
+                <value>{!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search}person.affiliation.name_authority:{0}</value>
+                <value>entityType_keyword:Project</value>
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
