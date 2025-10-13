@@ -1554,8 +1554,12 @@
             <list>
                 <!-- Solo ítems tipo Patente vinculados al OrgUnit -->
 <!--                <value>'{'!join from=search.resourceid to=author_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0} AND entityType_keyword:Patent</value>-->
-                    <value>'{'!join from=search.resourceid to=author_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>
-                <value>-withdrawn:true AND -discoverable:false</value>
+<!--                    <value>'{'!join from=search.resourceid to=author_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>-->
+                    <value>'{'!join from=search.resourceid to=author_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0} AND entityType_keyword:Patent AND -withdrawn:true AND -discoverable:false</value>
+                <!--                   <value>(author_authority:{0} AND entityType_keyword:Patent) AND search.resourcetype:Item</value>-->
+
+
+<!--                <value>-withdrawn:true AND -discoverable:false</value>-->
             </list>
         </property>
     </bean>
