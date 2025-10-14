@@ -1291,6 +1291,19 @@ it, please enter the types and the actual numbers or codes...</hint>
         </field>
       </row>
 
+        <row>
+            <field>
+                <dc-schema>dc</dc-schema>
+                <dc-element>contributor</dc-element>
+                <dc-qualifier>author</dc-qualifier>
+                <label>Creador</label>
+                <input-type>group</input-type>
+                <repeatable>true</repeatable>
+                <!--          <required />-->
+                <hint>Ingresar el nombre de las personas autoras de este ítem.</hint>
+            </field>
+        </row>
+
 <!--      <row>-->
 <!--        <field>-->
 <!--          <dc-schema>dc</dc-schema>-->
