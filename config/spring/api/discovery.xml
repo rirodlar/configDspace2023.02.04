@@ -1755,7 +1755,7 @@
             <list>
                 <!--Only find related items. The placeholder {0} will be replaced with scope (UUID of item)-->
                 <value>dc.relation.project_authority:{0} AND entityType_keyword:Project</value>
-                <value>usach.typeProject_keyword:p_interno</value>-->
+                <value>usach.typeProject_keyword:p_interno</value>
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
