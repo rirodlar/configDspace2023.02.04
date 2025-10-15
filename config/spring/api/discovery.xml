@@ -184,7 +184,7 @@
 <!--                <entry key="RELATION.OrgUnit.rppatents" value-ref="relationOrgunitRPPatentsConfiguration"/>-->
                 <!-- Project Related items -->
                 <entry key="RELATION.Project.projects" value-ref="relationProjectProjectsConfiguration"/>
-                <entry key="RELATION.Project.projectsInterno" value-ref="relationProjectProjectsInternoConfiguration"/>
+                <entry key="RELATION.OrgUnit.projectsInterno" value-ref="relationProjectProjectsInternoConfiguration"/>
                 <entry key="RELATION.Project.fundings" value-ref="relationProjectFundingsConfiguration"/>
                 <entry key="RELATION.Project.researchoutputs" value-ref="relationProjectPublicationConfiguration"/>
                 <!-- Collection items -->
@@ -1754,7 +1754,10 @@
         <property name="defaultFilterQueries">
             <list>
                 <!--Only find related items. The placeholder {0} will be replaced with scope (UUID of item)-->
-                <value>dc.relation.project_authority:{0} AND entityType_keyword:Project</value>
+<!--                <value>dc.relation.project_authority:{0} AND entityType_keyword:Project</value>-->
+<!--                <value>usach.typeProject_keyword:p_interno</value>-->
+<!--                <value>-withdrawn:true AND -discoverable:false</value>-->
+                <value>involvedorganisation_authority:{0}</value>
                 <value>usach.typeProject_keyword:p_interno</value>
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
