@@ -184,7 +184,6 @@
 <!--                <entry key="RELATION.OrgUnit.rppatents" value-ref="relationOrgunitRPPatentsConfiguration"/>-->
                 <!-- Project Related items -->
                 <entry key="RELATION.Project.projects" value-ref="relationProjectProjectsConfiguration"/>
-                <entry key="RELATION.OrgUnit.projectsInterno" value-ref="relationProjectProjectsInternoConfiguration"/>
                 <entry key="RELATION.Project.fundings" value-ref="relationProjectFundingsConfiguration"/>
                 <entry key="RELATION.Project.researchoutputs" value-ref="relationProjectPublicationConfiguration"/>
                 <!-- Collection items -->
@@ -1488,86 +1487,44 @@
     </bean>
 
     <!-- project investigated by people affiliated to an orgunit -->
-<!--    <bean id="relationOrgunitRPProjectConfiguration" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">-->
-<!--        &lt;!&ndash;The sort filters for the discovery search&ndash;&gt;-->
-<!--        <property name="searchSortConfiguration">-->
-<!--            <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">-->
-<!--                &lt;!&ndash;<property name="defaultSort" ref="sortDateIssued"/>&ndash;&gt;-->
-<!--                &lt;!&ndash;DefaultSortOrder can either be desc or asc (desc is default)&ndash;&gt;-->
-<!--                <property name="sortFields">-->
-<!--                    <list>-->
-<!--                        <ref bean="sortByRPProjectsSelection" />-->
-<!--                        <ref bean="sortTitleAsc" />-->
-<!--                    </list>-->
-<!--                </property>-->
-<!--            </bean>-->
-<!--        </property>-->
-<!--        &lt;!&ndash;Any default filter queries, these filter queries will be used for all-->
-<!--                queries done by discoversuby for this configuration &ndash;&gt;-->
-<!--        <property name="defaultFilterQueries">-->
-<!--            <list>-->
-<!--                <value>'{'!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>-->
-<!--                <value>-withdrawn:true AND -discoverable:false</value>-->
-<!--            </list>-->
-<!--        </property>-->
-<!--    </bean>-->
-
-    <!-- Filtro/faceta para el metadato usach.typeProject -->
-    <bean id="typeProjectKeywordField"
-          class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
-        <!-- Nombre del campo en Solr -->
-        <property name="indexFieldName" value="usach.typeProject_keyword" />
-        <!-- Metadato de origen que alimenta ese campo -->
-        <property name="metadataFields">
-            <list>
-                <value>usach.typeProject</value>
-            </list>
-        </property>
-        <!-- (Opcional) límite de términos en la faceta -->
-        <property name="facetLimit" value="10" />
-    </bean>
-
-    <bean id="relationOrgunitRPProjectConfiguration"
-          class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
-
-        <!-- Configuración de orden (sorting) -->
+    <bean id="relationOrgunitRPProjectConfiguration" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
+        <!--The sort filters for the discovery search-->
         <property name="searchSortConfiguration">
             <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
+                <!--<property name="defaultSort" ref="sortDateIssued"/>-->
+                <!--DefaultSortOrder can either be desc or asc (desc is default)-->
                 <property name="sortFields">
                     <list>
-                        <ref bean="sortByRPProjectsSelection"/>
-                        <ref bean="sortTitleAsc"/>
+                        <ref bean="sortByRPProjectsSelection" />
+                        <ref bean="sortTitleAsc" />
                     </list>
                 </property>
             </bean>
         </property>
-
-        <!-- Filtros por defecto aplicados al resultado -->
+        <!--Any default filter queries, these filter queries will be used for all
+                queries done by discovery for this configuration -->
         <property name="defaultFilterQueries">
             <list>
-                <!-- Une OrgUnit con los Projects por el campo de autoridad -->
-                <value>
-                    {'!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search'}person.affiliation.name_authority:{0}
-                </value>
+                <!--Only find related items. The placeholder {0} will be replaced with scope (UUID of item)-->
+<!--                <value>'{'!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>-->
+<!--                <value>-withdrawn:true AND -discoverable:false</value>-->
 
-                <!-- Asegura que solo busque entidades Project -->
+<!--             <value> {!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search}person.affiliation.name_authority:{0}</value>-->
+<!--                <value>'{'!join from=search.resourceid to=author_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>-->
+<!--                <value>entityType_keyword:Project</value>-->
+<!--                <value>usach.typeProject_keyword:p_interno</value>-->
+<!--                <value>-withdrawn:true AND -discoverable:false</value>-->
+
+                <!-- Project vinculado al OrgUnit actual -->
+                <value>relation.orgunit.name_authority:{0}</value>
+
+                <!-- Solo ítems de tipo Project -->
                 <value>entityType_keyword:Project</value>
 
-                <!-- Filtra solo proyectos internos -->
-                <value>usach.typeProject_keyword:p_interno</value>
-
-                <!-- Excluye ítems retirados o no visibles -->
+                <!-- Visibilidad destino -->
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
-
-        <!-- Filtros adicionales disponibles en la UI (opcional) -->
-        <property name="searchFilters">
-            <list>
-                <ref bean="typeProjectKeywordField"/>
-            </list>
-        </property>
-
     </bean>
 
     <!-- publication sponsored by an orgunit -->
@@ -1642,6 +1599,7 @@
             <list>
                 <!--Only find related items. The placeholder {0} will be replaced with scope (UUID of item)-->
                 <value>'{'!join from=search.resourceid to=author_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>
+                <value>entityType_keyword:Publication</value>
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
@@ -1776,35 +1734,6 @@
         </property>
     </bean>
 
-    <bean id="relationProjectProjectsInternoConfiguration" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
-        <!--The sort filters for the discovery search-->
-        <property name="searchSortConfiguration">
-            <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
-                <!--<property name="defaultSort" ref="sortDateIssued"/>-->
-                <!--DefaultSortOrder can either be desc or asc (desc is default)-->
-                <property name="sortFields">
-                    <list>
-                        <ref bean="sortByProjectsSelection" />
-                        <ref bean="sortTitleAsc" />
-                    </list>
-                </property>
-            </bean>
-        </property>
-        <!--Any default filter queries, these filter queries will be used for all
-                queries done by discovery for this configuration -->
-        <property name="defaultFilterQueries">
-            <list>
-                <!--Only find related items. The placeholder {0} will be replaced with scope (UUID of item)-->
-<!--                <value>dc.relation.project_authority:{0} AND entityType_keyword:Project</value>-->
-<!--                <value>usach.typeProject_keyword:p_interno</value>-->
-<!--                <value>-withdrawn:true AND -discoverable:false</value>-->
-                <value>involvedorganisation_authority:{0}</value>
-                <value>usach.typeProject_keyword:p_interno</value>
-                <value>-withdrawn:true AND -discoverable:false</value>
-            </list>
-        </property>
-    </bean>
-
     <!-- fundings related to a project -->
     <bean id="relationProjectFundingsConfiguration" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
         <!--The sort filters for the discovery search-->
@@ -1826,7 +1755,6 @@
             <list>
                 <!--Only find related items. The placeholder {0} will be replaced with scope (UUID of item)-->
                 <value>dc.relation.project_authority:{0} AND entityType_keyword:Funding</value>
-
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
