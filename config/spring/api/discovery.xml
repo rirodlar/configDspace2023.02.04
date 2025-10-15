@@ -1503,11 +1503,11 @@
             </bean>
         </property>
         <!--Any default filter queries, these filter queries will be used for all
-                queries done by discovery for this configuration -->
+                queries done by discoversuby for this configuration -->
         <property name="defaultFilterQueries">
             <list>
                 <value>'{'!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>
-                <value>usach.typeProject_keyword:p_interno</value>
+<!--                <value>usach.typeProject_keyword:p_interno</value>-->
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
