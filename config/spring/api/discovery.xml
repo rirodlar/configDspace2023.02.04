@@ -1488,29 +1488,71 @@
     </bean>
 
     <!-- project investigated by people affiliated to an orgunit -->
-    <bean id="relationOrgunitRPProjectConfiguration" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
-        <!--The sort filters for the discovery search-->
+<!--    <bean id="relationOrgunitRPProjectConfiguration" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">-->
+<!--        &lt;!&ndash;The sort filters for the discovery search&ndash;&gt;-->
+<!--        <property name="searchSortConfiguration">-->
+<!--            <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">-->
+<!--                &lt;!&ndash;<property name="defaultSort" ref="sortDateIssued"/>&ndash;&gt;-->
+<!--                &lt;!&ndash;DefaultSortOrder can either be desc or asc (desc is default)&ndash;&gt;-->
+<!--                <property name="sortFields">-->
+<!--                    <list>-->
+<!--                        <ref bean="sortByRPProjectsSelection" />-->
+<!--                        <ref bean="sortTitleAsc" />-->
+<!--                    </list>-->
+<!--                </property>-->
+<!--            </bean>-->
+<!--        </property>-->
+<!--        &lt;!&ndash;Any default filter queries, these filter queries will be used for all-->
+<!--                queries done by discoversuby for this configuration &ndash;&gt;-->
+<!--        <property name="defaultFilterQueries">-->
+<!--            <list>-->
+<!--                <value>'{'!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>-->
+<!--                <value>-withdrawn:true AND -discoverable:false</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+    <bean id="relationOrgunitRPProjectConfiguration"
+          class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
+
+        <!-- Configuración de orden (sorting) -->
         <property name="searchSortConfiguration">
             <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
-                <!--<property name="defaultSort" ref="sortDateIssued"/>-->
-                <!--DefaultSortOrder can either be desc or asc (desc is default)-->
                 <property name="sortFields">
                     <list>
-                        <ref bean="sortByRPProjectsSelection" />
-                        <ref bean="sortTitleAsc" />
+                        <ref bean="sortByRPProjectsSelection"/>
+                        <ref bean="sortTitleAsc"/>
                     </list>
                 </property>
             </bean>
         </property>
-        <!--Any default filter queries, these filter queries will be used for all
-                queries done by discoversuby for this configuration -->
+
+        <!-- Filtros por defecto aplicados al resultado -->
         <property name="defaultFilterQueries">
             <list>
-                <value>'{'!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>
-<!--                <value>usach.typeProject_keyword:p_interno</value>-->
+                <!-- Une OrgUnit con los Projects por el campo de autoridad -->
+                <value>
+                    {'!join from=search.resourceid to=projectinvestigators_authority fromIndex=${solr.multicorePrefix}search'}person.affiliation.name_authority:{0}
+                </value>
+
+                <!-- Asegura que solo busque entidades Project -->
+                <value>entityType_keyword:Project</value>
+
+                <!-- Filtra solo proyectos internos -->
+                <value>usach.typeProject_keyword:p_interno</value>
+
+                <!-- Excluye ítems retirados o no visibles -->
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
+
+        <!-- Filtros adicionales disponibles en la UI (opcional) -->
+        <property name="searchFilters">
+            <list>
+                <ref bean="typeProjectKeywordField"/>
+            </list>
+        </property>
+
     </bean>
 
     <!-- publication sponsored by an orgunit -->
