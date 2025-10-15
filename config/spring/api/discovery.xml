@@ -1512,6 +1512,21 @@
 <!--        </property>-->
 <!--    </bean>-->
 
+    <!-- Filtro/faceta para el metadato usach.typeProject -->
+    <bean id="typeProjectKeywordField"
+          class="org.dspace.discovery.configuration.DiscoverySearchFilterFacet">
+        <!-- Nombre del campo en Solr -->
+        <property name="indexFieldName" value="usach.typeProject_keyword" />
+        <!-- Metadato de origen que alimenta ese campo -->
+        <property name="metadataFields">
+            <list>
+                <value>usach.typeProject</value>
+            </list>
+        </property>
+        <!-- (Opcional) límite de términos en la faceta -->
+        <property name="facetLimit" value="10" />
+    </bean>
+
     <bean id="relationOrgunitRPProjectConfiguration"
           class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
 
