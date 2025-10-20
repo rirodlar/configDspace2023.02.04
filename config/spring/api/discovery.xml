@@ -1660,7 +1660,7 @@
 <!--                <value>entityType_keyword:Product</value>-->
 
 <!--                &lt;!&ndash; Solo la colección específica &ndash;&gt;-->
-<!--                <value>location.coll:efb50a2f-434c-4b7d-925f-11c025d51afb</value>-->
+                <value>location.coll:efb50a2f-434c-4b7d-925f-11c025d51afb</value>
 
                 <!-- Excluir ítems retirados o no visibles -->
                 <value>-withdrawn:true AND -discoverable:false</value>
