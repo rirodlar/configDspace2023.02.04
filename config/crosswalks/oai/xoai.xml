@@ -844,38 +844,6 @@
             </Configuration>
         </CustomCondition>
 
-        <!-- Colección específica: 96eb1faf-170a-4297-a9ce-1a3592b8e960 -->
-        <CustomCondition id="collection_96eb1faf_condition">
-            <Class>org.dspace.xoai.filter.DSpaceAtLeastOneMetadataFilter</Class>
-            <Configuration>
-                <string name="field">location.coll</string>
-                <string name="operator">equal</string>
-                <string name="value">96eb1faf-170a-4297-a9ce-1a3592b8e960</string>
-            </Configuration>
-        </CustomCondition>
-
-        <!-- Solo por colección -->
-        <Filter id="collection_96eb1faf_filter">
-            <Definition>
-                <Custom ref="collection_96eb1faf_condition"/>
-            </Definition>
-        </Filter>
-
-        <!-- Colección + SOLO Publication -->
-        <Filter id="collection_96eb1faf_publication_filter">
-            <Definition>
-                <And>
-                    <LeftCondition>
-                        <Custom ref="collection_96eb1faf_condition"/>
-                    </LeftCondition>
-                    <RightCondition>
-                        <Custom ref="publicationSetFilter"/>
-                    </RightCondition>
-                </And>
-            </Definition>
-        </Filter>
-
-
     </Filters>
 
     <Sets>
@@ -942,16 +910,5 @@
             <!-- Just an alias or set a filter condition to expose only specific kind of items (dataset) -->
         </Set>
 
-        <Set id="colUsach14266Set">
-            <Spec>col_usach_14266</Spec>
-            <Name>Colección Datos de Investigación</Name>
-            <Filter ref="collection_96eb1faf_filter"/>
-        </Set>
-
-        <Set id="colUsach14266PublicationsSet">
-            <Spec>col_usach_14266_publications</Spec>
-            <Name>Datos de Investigación – Publications</Name>
-            <Filter ref="collection_96eb1faf_publication_filter"/>
-        </Set>
     </Sets>
 </Configuration>
