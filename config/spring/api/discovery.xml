@@ -1657,10 +1657,10 @@
                 <value>'{'!join from=search.resourceid to=author_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>
 
                 <!-- Limitar a tipo Product -->
-                <value>entityType_keyword:Product</value>
+<!--                <value>entityType_keyword:Product</value>-->
 
-                <!-- Solo la colección específica -->
-                <value>location.coll:efb50a2f-434c-4b7d-925f-11c025d51afb</value>
+<!--                &lt;!&ndash; Solo la colección específica &ndash;&gt;-->
+<!--                <value>location.coll:efb50a2f-434c-4b7d-925f-11c025d51afb</value>-->
 
                 <!-- Excluir ítems retirados o no visibles -->
                 <value>-withdrawn:true AND -discoverable:false</value>
