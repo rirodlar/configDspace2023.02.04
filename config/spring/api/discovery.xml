@@ -199,7 +199,7 @@
 
                 <entry key="RELATION.OrgUnit.rppatentsonly" value-ref="relationOrgunitRPPatentsOnlyConfiguration"/>
                 <entry key="RELATION.OrgUnit.rppublicationsTesis" value-ref="relationOrgunitRPPublicationsTesisConfiguration"/>
-                <entry key="RELATION.OrgUnit.DatosInvestigacion" value-ref="relationOrgunitRPPublicationsDatosInvestigaciononfiguration"/>
+                <entry key="RELATION.OrgUnit.datosInvestigacion" value-ref="relationOrgunitRPPublicationsDatosInvestigaciononfiguration"/>
             </map>
         </property>
         <property name="toIgnoreMetadataFields">
@@ -1602,6 +1602,7 @@
                 <!--Only find related items. The placeholder {0} will be replaced with scope (UUID of item)-->
                 <value>'{'!join from=search.resourceid to=author_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>
                 <value>entityType_keyword:Publication</value>
+                <value>location.coll:a65b7850-ee49-4212-9aab-3953200aa6c7</value>
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
