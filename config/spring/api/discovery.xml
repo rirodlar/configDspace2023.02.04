@@ -1667,6 +1667,7 @@
                 <value>-withdrawn:true AND -discoverable:false</value>
             </list>
         </property>
+    </bean>
 
     <bean id="relationOrgunitRPPublicationsDivulgacionCientificaConfiguration" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
         <!--The sort filters for the discovery search-->
