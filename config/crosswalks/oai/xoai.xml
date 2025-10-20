@@ -942,5 +942,16 @@
             <!-- Just an alias or set a filter condition to expose only specific kind of items (dataset) -->
         </Set>
 
+        <Set id="colUsach14266Set">
+            <Spec>col_usach_14266</Spec>
+            <Name>Colección Datos de Investigación</Name>
+            <Filter ref="collection_96eb1faf_filter"/>
+        </Set>
+
+        <Set id="colUsach14266PublicationsSet">
+            <Spec>col_usach_14266_publications</Spec>
+            <Name>Datos de Investigación – Publications</Name>
+            <Filter ref="collection_96eb1faf_publication_filter"/>
+        </Set>
     </Sets>
 </Configuration>
