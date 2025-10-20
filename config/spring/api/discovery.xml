@@ -199,7 +199,8 @@
 
                 <entry key="RELATION.OrgUnit.rppatentsonly" value-ref="relationOrgunitRPPatentsOnlyConfiguration"/>
                 <entry key="RELATION.OrgUnit.rppublicationsTesis" value-ref="relationOrgunitRPPublicationsTesisConfiguration"/>
-                <entry key="RELATION.OrgUnit.datosInvestigacion" value-ref="relationOrgunitRPPublicationsDatosInvestigaciononfiguration"/>
+                <entry key="RELATION.OrgUnit.datosInvestigacion" value-ref="relationOrgunitRPPublicationsDatosInvestigacionConfiguration"/>
+                <entry key="RELATION.OrgUnit.divulgacionCientifica" value-ref="relationOrgunitRPPublicationsDivulgacionCientificaConfiguration"/>
             </map>
         </property>
         <property name="toIgnoreMetadataFields">
@@ -1635,7 +1636,7 @@
         </property>
     </bean>
 
-    <bean id="relationOrgunitRPPublicationsDatosInvestigaciononfiguration" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
+    <bean id="relationOrgunitRPPublicationsDatosInvestigacionConfiguration" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
         <!--The sort filters for the discovery search-->
         <property name="searchSortConfiguration">
             <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
@@ -1661,6 +1662,38 @@
 
 <!--                &lt;!&ndash; Solo la colección específica &ndash;&gt;-->
                 <value>location.coll:efb50a2f-434c-4b7d-925f-11c025d51afb</value>
+
+                <!-- Excluir ítems retirados o no visibles -->
+                <value>-withdrawn:true AND -discoverable:false</value>
+            </list>
+        </property>
+
+    <bean id="relationOrgunitRPPublicationsDivulgacionCientificaConfiguration" class="org.dspace.discovery.configuration.DiscoveryRelatedItemConfiguration">
+        <!--The sort filters for the discovery search-->
+        <property name="searchSortConfiguration">
+            <bean class="org.dspace.discovery.configuration.DiscoverySortConfiguration">
+                <!--<property name="defaultSort" ref="sortDateIssued"/>-->
+                <!--DefaultSortOrder can either be desc or asc (desc is default)-->
+                <property name="sortFields">
+                    <list>
+                        <ref bean="sortByRPPublicationsSelection" />
+                        <ref bean="sortTitleAsc" />
+                    </list>
+                </property>
+            </bean>
+        </property>
+        <!--Any default filter queries, these filter queries will be used for all
+                queries done by discovery for this configuration -->
+        <property name="defaultFilterQueries">
+            <list>
+                <!-- Vincular productos según afiliación -->
+                <value>'{'!join from=search.resourceid to=author_authority fromIndex=${solr.multicorePrefix}search'}'person.affiliation.name_authority:{0}</value>
+
+                <!-- Limitar a tipo Product -->
+                <!--                <value>entityType_keyword:Product</value>-->
+
+                <!--                &lt;!&ndash; Solo la colección específica &ndash;&gt;-->
+                <value>location.coll:8c37f013-7816-4dc3-9603-573b3e6d3d88</value>
 
                 <!-- Excluir ítems retirados o no visibles -->
                 <value>-withdrawn:true AND -discoverable:false</value>
