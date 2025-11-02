@@ -1813,7 +1813,8 @@
                 <!-- Limita a ítems relacionados con el OrgUnit (el {0} será el UUID del scope) -->
 <!--                <value>involvedorganisation_authority:{0}</value>-->
 
-                <value>dc.relation.project_authority:{0}</value>
+                <value>relation.isOrgUnitOfProject:{0}</value>
+<!--                <value>dc.relation.project_authority:{0}</value>-->
                 <!-- Solo entidades Project -->
                 <value>entityType_keyword:Project</value>
 
