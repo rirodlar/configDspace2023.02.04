@@ -2320,9 +2320,8 @@ it, please enter the types and the actual numbers or codes...</hint>
                 <dc-element>contributor</dc-element>
                 <dc-qualifier>author</dc-qualifier>
                 <label>Creador</label>
-                <input-type>group</input-type>
+                <input-type>onebox</input-type>
                 <repeatable>true</repeatable>
-                <!--          <required />-->
                 <hint>Ingresar el nombre de las personas autoras de este ítem.</hint>
             </field>
         </row>
