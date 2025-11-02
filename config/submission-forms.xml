@@ -2320,11 +2320,24 @@ it, please enter the types and the actual numbers or codes...</hint>
                 <dc-element>contributor</dc-element>
                 <dc-qualifier>author</dc-qualifier>
                 <label>Creador</label>
-                <input-type>onebox</input-type>
+                <input-type>group</input-type>
                 <repeatable>true</repeatable>
                 <hint>Ingresar el nombre de las personas autoras de este ítem.</hint>
             </field>
         </row>
+
+<!--        <row>-->
+<!--            <field>-->
+<!--                <dc-schema>dc</dc-schema>-->
+<!--                <dc-element>contributor</dc-element>-->
+<!--                <dc-qualifier>author</dc-qualifier>-->
+<!--                <label>Creador</label>-->
+<!--                <input-type>group</input-type>-->
+<!--                <repeatable>true</repeatable>-->
+<!--                &lt;!&ndash;          <required />&ndash;&gt;-->
+<!--                <hint>Ingresar el nombre de las personas autoras de este ítem.</hint>-->
+<!--            </field>-->
+<!--        </row>-->
 
       <row>
         <field>
@@ -3010,6 +3023,35 @@ it, please enter the types and the actual numbers or codes...</hint>
         </field>
       </row>
     </form>
+
+      <form name="project-dc-contributor-author">
+          <row>
+              <field>
+                  <dc-schema>dc</dc-schema>
+                  <dc-element>contributor</dc-element>
+                  <dc-qualifier>author</dc-qualifier>
+                  <label>Autor/a</label>
+                  <input-type>onebox</input-type>
+                  <repeatable>false</repeatable>
+                  <required /> <!-- Si no quieres forzarlo, quita esta línea -->
+                  <hint>Apellido, Nombre (p. ej., Pérez, Ana)</hint>
+              </field>
+          </row>
+          <row>
+              <field>
+                  <dc-schema>oairecerif</dc-schema>
+                  <dc-element>author</dc-element>
+                  <dc-qualifier>affiliation</dc-qualifier>
+                  <label>Afiliación</label>
+                  <input-type>onebox</input-type>
+                  <repeatable>false</repeatable>
+                  <required />
+                  <hint>Afiliación institucional del autor/a</hint>
+              </field>
+          </row>
+      </form>
+
+
   </form-definitions>
   <form-value-pairs>
     <value-pairs value-pairs-name="patent_types" dc-term="patent_types">
