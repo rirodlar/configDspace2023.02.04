@@ -200,21 +200,40 @@
                             </xsl:call-template>
 
                             <xsl:for-each select="publications/publication">
-                                <fo:block font-size="10pt">
+                                <fo:block font-size="10pt" space-after="2mm">
+
+                                    <!-- Autores en formato APA: A., B., & C. -->
                                     <xsl:for-each select="authors/author">
-                                        <xsl:value-of select="current()" />
-                                        <xsl:if test="position() != last()"> and </xsl:if>
+                                        <xsl:value-of select="."/>
+                                        <xsl:choose>
+                                            <!-- Último autor: no agregamos nada -->
+                                            <xsl:when test="position() = last()"/>
+                                            <!-- Penúltimo autor: usamos ", & " -->
+                                            <xsl:when test="position() = last() - 1">
+                                                <xsl:text>, &amp; </xsl:text>
+                                            </xsl:when>
+                                            <!-- Resto: coma normal -->
+                                            <xsl:otherwise>
+                                                <xsl:text>, </xsl:text>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
                                     </xsl:for-each>
+
                                     <xsl:text> </xsl:text>
+
+                                    <!-- (Año). usando los primeros 4 caracteres de date-issued -->
                                     <xsl:if test="date-issued">
                                         <xsl:text>(</xsl:text>
-                                        <xsl:value-of select="date-issued" />
-                                        <xsl:text>)</xsl:text>
+                                        <xsl:value-of select="substring(normalize-space(date-issued), 1, 4)"/>
+                                        <xsl:text>). </xsl:text>
                                     </xsl:if>
-                                    <xsl:text>. </xsl:text>
-                                    <fo:inline font-style="italic" >
-                                        <xsl:value-of select="title" />
-                                    </fo:inline >
+
+                                    <!-- Título en cursiva (para esta prueba) -->
+                                    <fo:inline font-style="italic">
+                                        <xsl:value-of select="title"/>
+                                    </fo:inline>
+                                    <xsl:text>.</xsl:text>
+
                                 </fo:block>
                             </xsl:for-each>
 
