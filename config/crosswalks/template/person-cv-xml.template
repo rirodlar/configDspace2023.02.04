@@ -81,8 +81,9 @@
             <authors>
                 <author>@dc.contributor.author@</author>
             </authors>
-                 <!-- NUEVO: DOI -->
+               @dc.identifier.doi.start@
                     <doi>@dc.identifier.doi@</doi>
+                    @dc.identifier.doi.end@
         </publication>
         @relation.researchoutputs.end@
     </publications>
