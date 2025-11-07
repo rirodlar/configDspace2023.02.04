@@ -169,7 +169,7 @@
 	                    <xsl:if test="publications/publication">
 	
 	                        <xsl:call-template name="section-title">
-	                            <xsl:with-param name="label" select="'Publications'" />
+	                            <xsl:with-param name="label" select="'Publications (APA TEST)'" />
 	                        </xsl:call-template>
 	
 	                        <xsl:for-each select="publications/publication">
