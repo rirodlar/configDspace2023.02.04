@@ -169,7 +169,7 @@
 	                    <xsl:if test="publications/publication">
 	
 	                        <xsl:call-template name="section-title">
-	                            <xsl:with-param name="label" select="'Publications (APA TEST)'" />
+	                            <xsl:with-param name="label" select="'Publications'" />
 	                        </xsl:call-template>
 	
 	                        <xsl:for-each select="publications/publication">
@@ -192,6 +192,33 @@
 	                        </xsl:for-each>
 	
 	                    </xsl:if>
+
+                        <xsl:if test="publications/publication">
+
+                            <xsl:call-template name="section-title">
+                                <xsl:with-param name="label" select="'Publications (APA TEST)'" />
+                            </xsl:call-template>
+
+                            <xsl:for-each select="publications/publication">
+                                <fo:block font-size="10pt">
+                                    <xsl:for-each select="authors/author">
+                                        <xsl:value-of select="current()" />
+                                        <xsl:if test="position() != last()"> and </xsl:if>
+                                    </xsl:for-each>
+                                    <xsl:text> </xsl:text>
+                                    <xsl:if test="date-issued">
+                                        <xsl:text>(</xsl:text>
+                                        <xsl:value-of select="date-issued" />
+                                        <xsl:text>)</xsl:text>
+                                    </xsl:if>
+                                    <xsl:text>. </xsl:text>
+                                    <fo:inline font-style="italic" >
+                                        <xsl:value-of select="title" />
+                                    </fo:inline >
+                                </fo:block>
+                            </xsl:for-each>
+
+                        </xsl:if>
 	
 	                    <xsl:if test="( count(working-groups/working-group) &gt; 0 ) or ( count(interests/interest) &gt; 0 ) or ( count(knows-languages/language) &gt; 0 )">
 	
