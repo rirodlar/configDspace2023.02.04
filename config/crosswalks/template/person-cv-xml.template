@@ -73,20 +73,15 @@
     </knows-languages>
     <personal-picture>@virtual.bitstream.original.picture@</personal-picture>
     <personal-cv>@virtual.bitstream.ORIGINAL.*.pdf@</personal-cv>
-<publications>
-    @relation.researchoutputs.start@
-    <publication>
-        <title>@dc.title@</title>
-        <date-issued>@dc.date.issued@</date-issued>
-
-        <authors>
-            @dc.contributor.author.start@
-            <author>@dc.contributor.author@</author>
-            @dc.contributor.author.end@
-        </authors>
-
-        @dc.identifier.doi.start@<doi>@dc.identifier.doi@</doi>@dc.identifier.doi.end@
-    </publication>
-    @relation.researchoutputs.end@
-</publications>
+    <publications>
+        @relation.researchoutputs.start@
+        <publication>
+            <title>@dc.title@</title>
+            <date-issued>@dc.date.issued@</date-issued>
+            <authors>
+                <author>@dc.contributor.author@</author>
+            </authors>
+        </publication>
+        @relation.researchoutputs.end@
+    </publications>
 </person>
