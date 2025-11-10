@@ -364,28 +364,49 @@
     <xsl:template name="apa-author">
         <xsl:param name="full"/>
         <xsl:variable name="s" select="normalize-space($full)"/>
-        <!-- Surname = last token -->
-        <xsl:variable name="surnameRaw">
-            <xsl:call-template name="last-word">
-                <xsl:with-param name="s" select="$s"/>
-            </xsl:call-template>
-        </xsl:variable>
-        <xsl:variable name="surname">
-            <xsl:call-template name="cap-first">
-                <xsl:with-param name="w" select="normalize-space($surnameRaw)"/>
-            </xsl:call-template>
-        </xsl:variable>
-        <!-- Initials from all tokens except the last -->
-        <xsl:variable name="inis">
-            <xsl:call-template name="initials-except-last">
-                <xsl:with-param name="s" select="$s"/>
-            </xsl:call-template>
-        </xsl:variable>
-        <xsl:value-of select="normalize-space($surname)"/>
-        <xsl:if test="string-length(normalize-space($inis)) &gt; 0">
-            <xsl:text>, </xsl:text>
-            <xsl:value-of select="normalize-space($inis)"/>
-        </xsl:if>
+        <xsl:choose>
+            <!-- Case 1: Input like "Surname, Given Names" -->
+            <xsl:when test="contains($s, ',')">
+                <xsl:variable name="surnameRaw" select="normalize-space(substring-before($s, ','))"/>
+                <xsl:variable name="given" select="normalize-space(substring-after($s, ','))"/>
+                <!-- Preserve surname exactly as provided (accents/case/hyphens) -->
+                <xsl:value-of select="$surnameRaw"/>
+                <xsl:variable name="inis">
+                    <xsl:call-template name="initials-from">
+                        <xsl:with-param name="s" select="$given"/>
+                    </xsl:call-template>
+                </xsl:variable>
+                <xsl:if test="string-length(normalize-space($inis)) &gt; 0">
+                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="normalize-space($inis)"/>
+                </xsl:if>
+            </xsl:when>
+            <!-- Case 2: Input like "given names surname" -->
+            <xsl:otherwise>
+                <!-- Surname = last token (title-case each hyphen part) -->
+                <xsl:variable name="surnameRaw">
+                    <xsl:call-template name="last-word">
+                        <xsl:with-param name="s" select="$s"/>
+                    </xsl:call-template>
+                </xsl:variable>
+                <xsl:variable name="surname">
+                    <xsl:call-template name="cap-first-hyphenated">
+                        <xsl:with-param name="w" select="normalize-space($surnameRaw)"/>
+                    </xsl:call-template>
+                </xsl:variable>
+                <!-- Initials from all tokens except the last (handles hyphens) -->
+                <xsl:variable name="inis">
+                    <xsl:call-template name="initials-except-last">
+                        <xsl:with-param name="s" select="$s"/>
+                    </xsl:call-template>
+                </xsl:variable>
+                <xsl:value-of select="normalize-space($surname)"/>
+                <xsl:if test="string-length(normalize-space($inis)) &gt; 0">
+                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="normalize-space($inis)"/>
+                </xsl:if>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template name="last-word">
@@ -402,6 +423,34 @@
         </xsl:choose>
     </xsl:template>
 
+    <!-- Produce initials for all space-separated tokens in $s -->
+    <xsl:template name="initials-from">
+        <xsl:param name="s"/>
+        <xsl:variable name="t" select="normalize-space($s)"/>
+        <xsl:choose>
+            <xsl:when test="contains($t,' ')">
+                <xsl:variable name="first" select="substring-before($t,' ')"/>
+                <xsl:variable name="rest" select="substring-after($t,' ')"/>
+                <xsl:call-template name="emit-initial">
+                    <xsl:with-param name="w" select="$first"/>
+                </xsl:call-template>
+                <xsl:if test="string-length(normalize-space($rest)) &gt; 0">
+                    <xsl:text> </xsl:text>
+                    <xsl:call-template name="initials-from">
+                        <xsl:with-param name="s" select="$rest"/>
+                    </xsl:call-template>
+                </xsl:if>
+            </xsl:when>
+            <xsl:when test="string-length($t) &gt; 0">
+                <xsl:call-template name="emit-initial">
+                    <xsl:with-param name="w" select="$t"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:template>
+
+    <!-- Initials from all tokens except the last (for "given names surname" inputs) -->
     <xsl:template name="initials-except-last">
         <xsl:param name="s"/>
         <xsl:choose>
@@ -422,11 +471,52 @@
         </xsl:choose>
     </xsl:template>
 
+    <!-- Emit initial(s) for a token; if hyphenated, emit for each sub-token joined by '-' (e.g., "J.-P.") -->
     <xsl:template name="emit-initial">
         <xsl:param name="w"/>
-        <xsl:variable name="c1" select="substring(normalize-space($w),1,1)"/>
-        <xsl:value-of select="translate($c1,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
-        <xsl:text>.</xsl:text>
+        <xsl:variable name="word" select="normalize-space($w)"/>
+        <xsl:choose>
+            <xsl:when test="contains($word,'-')">
+                <xsl:variable name="first" select="substring-before($word,'-')"/>
+                <xsl:variable name="rest" select="substring-after($word,'-')"/>
+                <xsl:call-template name="emit-initial">
+                    <xsl:with-param name="w" select="$first"/>
+                </xsl:call-template>
+                <xsl:text>-</xsl:text>
+                <xsl:call-template name="emit-initial">
+                    <xsl:with-param name="w" select="$rest"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:variable name="c1" select="substring($word,1,1)"/>
+                <xsl:value-of select="translate($c1,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+                <xsl:text>.</xsl:text>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <!-- Capitalize first letter of each hyphen-separated part of a word -->
+    <xsl:template name="cap-first-hyphenated">
+        <xsl:param name="w"/>
+        <xsl:variable name="word" select="normalize-space($w)"/>
+        <xsl:choose>
+            <xsl:when test="contains($word,'-')">
+                <xsl:variable name="first" select="substring-before($word,'-')"/>
+                <xsl:variable name="rest" select="substring-after($word,'-')"/>
+                <xsl:call-template name="cap-first">
+                    <xsl:with-param name="w" select="$first"/>
+                </xsl:call-template>
+                <xsl:text>-</xsl:text>
+                <xsl:call-template name="cap-first-hyphenated">
+                    <xsl:with-param name="w" select="$rest"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:call-template name="cap-first">
+                    <xsl:with-param name="w" select="$word"/>
+                </xsl:call-template>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
 
     <xsl:template name="cap-first">
