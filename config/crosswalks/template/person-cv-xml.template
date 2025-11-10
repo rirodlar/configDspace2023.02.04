@@ -81,6 +81,7 @@
             <authors>
                 <author>@dc.contributor.author@</author>
             </authors>
+            <doi>@dc.identifier.doi@</doi>
         </publication>
         @relation.researchoutputs.end@
     </publications>

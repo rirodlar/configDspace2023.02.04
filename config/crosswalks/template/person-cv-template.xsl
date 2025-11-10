@@ -172,24 +172,48 @@
 	                            <xsl:with-param name="label" select="'Publications'" />
 	                        </xsl:call-template>
 	
-	                        <xsl:for-each select="publications/publication">
-	                            <fo:block font-size="10pt">
-	                                <xsl:for-each select="authors/author">
-	                                    <xsl:value-of select="current()" />
-	                                    <xsl:if test="position() != last()"> and </xsl:if>
-	                                </xsl:for-each>
-	                                <xsl:text> </xsl:text>
-	                                <xsl:if test="date-issued">
-	                                    <xsl:text>(</xsl:text>
-	                                    <xsl:value-of select="date-issued" />
-	                                    <xsl:text>)</xsl:text>
-	                                </xsl:if>
-	                                <xsl:text>. </xsl:text>
-	                                <fo:inline font-style="italic" >
-	                                    <xsl:value-of select="title" />
-	                                </fo:inline >
-	                            </fo:block>
-	                        </xsl:for-each>
+                         <xsl:for-each select="publications/publication">
+                             <fo:block font-size="10pt">
+                                 <xsl:for-each select="authors/author">
+                                     <xsl:value-of select="current()" />
+                                     <xsl:if test="position() != last()"> and </xsl:if>
+                                 </xsl:for-each>
+                                 <xsl:text> </xsl:text>
+                                 <xsl:if test="date-issued">
+                                     <xsl:text>(</xsl:text>
+                                     <xsl:value-of select="date-issued" />
+                                     <xsl:text>)</xsl:text>
+                                 </xsl:if>
+                                 <xsl:text>. </xsl:text>
+                                 <fo:inline font-style="italic" >
+                                     <xsl:value-of select="title" />
+                                 </fo:inline >
+                                 <xsl:if test="doi">
+                                     <xsl:text>. </xsl:text>
+                                     <fo:basic-link>
+                                         <xsl:attribute name="external-destination">
+                                             <xsl:choose>
+                                                 <xsl:when test="starts-with(normalize-space(doi),'10.')">
+                                                     <xsl:text>url(https://doi.org/</xsl:text><xsl:value-of select="normalize-space(doi)"/><xsl:text>)</xsl:text>
+                                                 </xsl:when>
+                                                 <xsl:otherwise>
+                                                     <xsl:text>url(</xsl:text><xsl:value-of select="normalize-space(doi)"/><xsl:text>)</xsl:text>
+                                                 </xsl:otherwise>
+                                             </xsl:choose>
+                                         </xsl:attribute>
+                                         <xsl:text>DOI: </xsl:text>
+                                         <xsl:choose>
+                                             <xsl:when test="starts-with(normalize-space(doi),'10.')">
+                                                 <xsl:text>https://doi.org/</xsl:text><xsl:value-of select="normalize-space(doi)"/>
+                                             </xsl:when>
+                                             <xsl:otherwise>
+                                                 <xsl:value-of select="normalize-space(doi)"/>
+                                             </xsl:otherwise>
+                                         </xsl:choose>
+                                     </fo:basic-link>
+                                 </xsl:if>
+                             </fo:block>
+                         </xsl:for-each>
 	
 	                    </xsl:if>
 
@@ -233,6 +257,32 @@
                                         <xsl:value-of select="title"/>
                                     </fo:inline>
                                     <xsl:text>.</xsl:text>
+
+                                    <!-- DOI (hipervínculo si está presente) -->
+                                    <xsl:if test="doi">
+                                        <xsl:text> </xsl:text>
+                                        <fo:basic-link>
+                                            <xsl:attribute name="external-destination">
+                                                <xsl:choose>
+                                                    <xsl:when test="starts-with(normalize-space(doi),'10.')">
+                                                        <xsl:text>url(https://doi.org/</xsl:text><xsl:value-of select="normalize-space(doi)"/><xsl:text>)</xsl:text>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:text>url(</xsl:text><xsl:value-of select="normalize-space(doi)"/><xsl:text>)</xsl:text>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                            </xsl:attribute>
+                                            <xsl:text>DOI: </xsl:text>
+                                            <xsl:choose>
+                                                <xsl:when test="starts-with(normalize-space(doi),'10.')">
+                                                    <xsl:text>https://doi.org/</xsl:text><xsl:value-of select="normalize-space(doi)"/>
+                                                </xsl:when>
+                                                <xsl:otherwise>
+                                                    <xsl:value-of select="normalize-space(doi)"/>
+                                                </xsl:otherwise>
+                                            </xsl:choose>
+                                        </fo:basic-link>
+                                    </xsl:if>
 
                                 </fo:block>
                             </xsl:for-each>
