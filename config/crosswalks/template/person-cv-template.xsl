@@ -166,77 +166,29 @@
 	
 	                    </xsl:if>
 	
-	                    <xsl:if test="publications/publication">
-	
-	                        <xsl:call-template name="section-title">
-	                            <xsl:with-param name="label" select="'Publications'" />
-	                        </xsl:call-template>
-	
-                         <xsl:for-each select="publications/publication">
-                             <fo:block font-size="10pt">
-                                 <xsl:for-each select="authors/author">
-                                     <xsl:value-of select="current()" />
-                                     <xsl:if test="position() != last()"> and </xsl:if>
-                                 </xsl:for-each>
-                                 <xsl:text> </xsl:text>
-                                 <xsl:if test="date-issued">
-                                     <xsl:text>(</xsl:text>
-                                     <xsl:value-of select="date-issued" />
-                                     <xsl:text>)</xsl:text>
-                                 </xsl:if>
-                                 <xsl:text>. </xsl:text>
-                                 <fo:inline font-style="italic" >
-                                     <xsl:value-of select="title" />
-                                 </fo:inline >
-                                 <xsl:if test="doi">
-                                     <xsl:text>. </xsl:text>
-                                     <fo:basic-link>
-                                         <xsl:attribute name="external-destination">
-                                             <xsl:choose>
-                                                 <xsl:when test="starts-with(normalize-space(doi),'10.')">
-                                                     <xsl:text>url(https://doi.org/</xsl:text><xsl:value-of select="normalize-space(doi)"/><xsl:text>)</xsl:text>
-                                                 </xsl:when>
-                                                 <xsl:otherwise>
-                                                     <xsl:text>url(</xsl:text><xsl:value-of select="normalize-space(doi)"/><xsl:text>)</xsl:text>
-                                                 </xsl:otherwise>
-                                             </xsl:choose>
-                                         </xsl:attribute>
-                                         <xsl:text>DOI: </xsl:text>
-                                         <xsl:choose>
-                                             <xsl:when test="starts-with(normalize-space(doi),'10.')">
-                                                 <xsl:text>https://doi.org/</xsl:text><xsl:value-of select="normalize-space(doi)"/>
-                                             </xsl:when>
-                                             <xsl:otherwise>
-                                                 <xsl:value-of select="normalize-space(doi)"/>
-                                             </xsl:otherwise>
-                                         </xsl:choose>
-                                     </fo:basic-link>
-                                 </xsl:if>
-                             </fo:block>
-                         </xsl:for-each>
-	
-	                    </xsl:if>
 
                         <xsl:if test="publications/publication">
 
                             <xsl:call-template name="section-title">
-                                <xsl:with-param name="label" select="'Publications (APA TEST)'" />
+                                <xsl:with-param name="label" select="'Publications (APA 7)'" />
                             </xsl:call-template>
 
                             <xsl:for-each select="publications/publication">
                                 <fo:block font-size="10pt" space-after="2mm">
 
-                                    <!-- Autores en formato APA: A., B., & C. -->
+                                    <!-- APA 7 Authors transformed from "rodrigo orellana" to "Orellana, R." -->
                                     <xsl:for-each select="authors/author">
-                                        <xsl:value-of select="."/>
+                                        <xsl:variable name="apaAuthor">
+                                            <xsl:call-template name="apa-author">
+                                                <xsl:with-param name="full" select="."/>
+                                            </xsl:call-template>
+                                        </xsl:variable>
+                                        <xsl:value-of select="normalize-space($apaAuthor)"/>
                                         <xsl:choose>
-                                            <!-- Último autor: no agregamos nada -->
                                             <xsl:when test="position() = last()"/>
-                                            <!-- Penúltimo autor: usamos ", & " -->
                                             <xsl:when test="position() = last() - 1">
                                                 <xsl:text>, &amp; </xsl:text>
                                             </xsl:when>
-                                            <!-- Resto: coma normal -->
                                             <xsl:otherwise>
                                                 <xsl:text>, </xsl:text>
                                             </xsl:otherwise>
@@ -245,22 +197,52 @@
 
                                     <xsl:text> </xsl:text>
 
-                                    <!-- (Año). usando los primeros 4 caracteres de date-issued -->
+                                    <!-- (Year). -->
                                     <xsl:if test="date-issued">
                                         <xsl:text>(</xsl:text>
                                         <xsl:value-of select="substring(normalize-space(date-issued), 1, 4)"/>
                                         <xsl:text>). </xsl:text>
                                     </xsl:if>
 
-                                    <!-- Título en cursiva (para esta prueba) -->
-                                    <fo:inline font-style="italic">
-                                        <xsl:value-of select="title"/>
-                                    </fo:inline>
-                                    <xsl:text>.</xsl:text>
+                                    <!-- Article title (sentence case left as-is) -->
+                                    <xsl:value-of select="title"/>
+                                    <xsl:text>. </xsl:text>
 
-                                    <!-- DOI (hipervínculo si está presente) -->
+                                    <!-- Journal Title, Volume(Issue), pages. -->
+                                    <xsl:if test="journal">
+                                        <fo:inline font-style="italic">
+                                            <xsl:value-of select="journal"/>
+                                        </fo:inline>
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+
+                                    <xsl:if test="volume">
+                                        <fo:inline font-style="italic">
+                                            <xsl:value-of select="volume"/>
+                                        </fo:inline>
+                                    </xsl:if>
+
+                                    <xsl:if test="issue">
+                                        <xsl:text>(</xsl:text>
+                                        <xsl:value-of select="issue"/>
+                                        <xsl:text>)</xsl:text>
+                                    </xsl:if>
+
+                                    <xsl:if test="volume or issue">
+                                        <xsl:text>, </xsl:text>
+                                    </xsl:if>
+
+                                    <xsl:if test="pages">
+                                        <xsl:value-of select="pages"/>
+                                        <xsl:text>. </xsl:text>
+                                    </xsl:if>
+
+                                    <xsl:if test="(journal or volume or issue) and not(pages)">
+                                        <xsl:text>. </xsl:text>
+                                    </xsl:if>
+
+                                    <!-- DOI hyperlink as URL -->
                                     <xsl:if test="doi">
-                                        <xsl:text> </xsl:text>
                                         <fo:basic-link>
                                             <xsl:attribute name="external-destination">
                                                 <xsl:choose>
@@ -272,7 +254,6 @@
                                                     </xsl:otherwise>
                                                 </xsl:choose>
                                             </xsl:attribute>
-                                            <xsl:text>DOI: </xsl:text>
                                             <xsl:choose>
                                                 <xsl:when test="starts-with(normalize-space(doi),'10.')">
                                                     <xsl:text>https://doi.org/</xsl:text><xsl:value-of select="normalize-space(doi)"/>
@@ -379,4 +360,80 @@
         </xsl:if>
     </xsl:template>
     
+    <!-- Helpers to format author names in APA 7 -->
+    <xsl:template name="apa-author">
+        <xsl:param name="full"/>
+        <xsl:variable name="s" select="normalize-space($full)"/>
+        <!-- Surname = last token -->
+        <xsl:variable name="surnameRaw">
+            <xsl:call-template name="last-word">
+                <xsl:with-param name="s" select="$s"/>
+            </xsl:call-template>
+        </xsl:variable>
+        <xsl:variable name="surname">
+            <xsl:call-template name="cap-first">
+                <xsl:with-param name="w" select="normalize-space($surnameRaw)"/>
+            </xsl:call-template>
+        </xsl:variable>
+        <!-- Initials from all tokens except the last -->
+        <xsl:variable name="inis">
+            <xsl:call-template name="initials-except-last">
+                <xsl:with-param name="s" select="$s"/>
+            </xsl:call-template>
+        </xsl:variable>
+        <xsl:value-of select="normalize-space($surname)"/>
+        <xsl:if test="string-length(normalize-space($inis)) &gt; 0">
+            <xsl:text>, </xsl:text>
+            <xsl:value-of select="normalize-space($inis)"/>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template name="last-word">
+        <xsl:param name="s"/>
+        <xsl:choose>
+            <xsl:when test="contains($s,' ')">
+                <xsl:call-template name="last-word">
+                    <xsl:with-param name="s" select="substring-after($s,' ')"/>
+                </xsl:call-template>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="$s"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+
+    <xsl:template name="initials-except-last">
+        <xsl:param name="s"/>
+        <xsl:choose>
+            <xsl:when test="contains($s,' ')">
+                <xsl:variable name="first" select="substring-before($s,' ')"/>
+                <xsl:variable name="rest" select="substring-after($s,' ')"/>
+                <xsl:call-template name="emit-initial">
+                    <xsl:with-param name="w" select="$first"/>
+                </xsl:call-template>
+                <xsl:if test="contains($rest,' ')">
+                    <xsl:text> </xsl:text>
+                    <xsl:call-template name="initials-except-last">
+                        <xsl:with-param name="s" select="$rest"/>
+                    </xsl:call-template>
+                </xsl:if>
+            </xsl:when>
+            <xsl:otherwise/>
+        </xsl:choose>
+    </xsl:template>
+
+    <xsl:template name="emit-initial">
+        <xsl:param name="w"/>
+        <xsl:variable name="c1" select="substring(normalize-space($w),1,1)"/>
+        <xsl:value-of select="translate($c1,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ')"/>
+        <xsl:text>.</xsl:text>
+    </xsl:template>
+
+    <xsl:template name="cap-first">
+        <xsl:param name="w"/>
+        <xsl:variable name="c1" select="substring($w,1,1)"/>
+        <xsl:variable name="rest" select="substring($w,2)"/>
+        <xsl:value-of select="concat(translate($c1,'abcdefghijklmnopqrstuvwxyz','ABCDEFGHIJKLMNOPQRSTUVWXYZ'), $rest)"/>
+    </xsl:template>
+
 </xsl:stylesheet>
