@@ -9,6 +9,9 @@
     <xsl:param name="imageDir" />
     <xsl:param name="fontFamily" />
     
+    <!-- Language parameter for conjunctions in author lists: 'es' or 'en' -->
+    <xsl:param name="lang" select="'es'"/>
+
     <xsl:template match="person">   
         <fo:root
             xmlns:fo="http://www.w3.org/1999/XSL/Format"
@@ -176,24 +179,63 @@
                             <xsl:for-each select="publications/publication">
                                 <fo:block font-size="10pt" space-after="2mm">
 
-                                    <!-- APA 7 Authors transformed from "rodrigo orellana" to "Orellana, R." -->
-                                    <xsl:for-each select="authors/author">
-                                        <xsl:variable name="apaAuthor">
-                                            <xsl:call-template name="apa-author">
-                                                <xsl:with-param name="full" select="."/>
-                                            </xsl:call-template>
-                                        </xsl:variable>
-                                        <xsl:value-of select="normalize-space($apaAuthor)"/>
-                                        <xsl:choose>
-                                            <xsl:when test="position() = last()"/>
-                                            <xsl:when test="position() = last() - 1">
-                                                <xsl:text>, &amp; </xsl:text>
-                                            </xsl:when>
-                                            <xsl:otherwise>
-                                                <xsl:text>, </xsl:text>
-                                            </xsl:otherwise>
-                                        </xsl:choose>
-                                    </xsl:for-each>
+                                    <!-- APA 7 Authors with language-aware conjunction and +20 rule -->
+                                    <xsl:variable name="authorCount" select="count(authors/author)"/>
+                                    <xsl:choose>
+                                        <!-- Case: more than 20 authors → first 19, ellipsis, last author (no conjunction) -->
+                                        <xsl:when test="$authorCount &gt; 20">
+                                            <!-- First 19 authors -->
+                                            <xsl:for-each select="authors/author[position() &lt;= 19]">
+                                                <xsl:variable name="apaAuthor">
+                                                    <xsl:call-template name="apa-author">
+                                                        <xsl:with-param name="full" select="."/>
+                                                    </xsl:call-template>
+                                                </xsl:variable>
+                                                <xsl:value-of select="normalize-space($apaAuthor)"/>
+                                                <xsl:if test="position() != last()">
+                                                    <xsl:text>, </xsl:text>
+                                                </xsl:if>
+                                            </xsl:for-each>
+                                            <!-- Ellipsis and last author -->
+                                            <xsl:text>, …, </xsl:text>
+                                            <xsl:for-each select="authors/author[position() = last()]">
+                                                <xsl:variable name="apaAuthor">
+                                                    <xsl:call-template name="apa-author">
+                                                        <xsl:with-param name="full" select="."/>
+                                                    </xsl:call-template>
+                                                </xsl:variable>
+                                                <xsl:value-of select="normalize-space($apaAuthor)"/>
+                                            </xsl:for-each>
+                                        </xsl:when>
+                                        <!-- Case: up to 20 authors → include all; use lang-specific conjunction before last -->
+                                        <xsl:otherwise>
+                                            <xsl:for-each select="authors/author">
+                                                <xsl:variable name="apaAuthor">
+                                                    <xsl:call-template name="apa-author">
+                                                        <xsl:with-param name="full" select="."/>
+                                                    </xsl:call-template>
+                                                </xsl:variable>
+                                                <xsl:value-of select="normalize-space($apaAuthor)"/>
+                                                <xsl:choose>
+                                                    <xsl:when test="position() = last()"/>
+                                                    <xsl:when test="position() = last() - 1">
+                                                        <xsl:text>, </xsl:text>
+                                                        <xsl:choose>
+                                                            <xsl:when test="$lang = 'en'">
+                                                                <xsl:text>&amp; </xsl:text>
+                                                            </xsl:when>
+                                                            <xsl:otherwise>
+                                                                <xsl:text>y </xsl:text>
+                                                            </xsl:otherwise>
+                                                        </xsl:choose>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:text>, </xsl:text>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                            </xsl:for-each>
+                                        </xsl:otherwise>
+                                    </xsl:choose>
 
                                     <xsl:text> </xsl:text>
 
