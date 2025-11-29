@@ -255,12 +255,12 @@
                                         <fo:inline font-style="italic">
                                             <xsl:value-of select="journal"/>
                                         </fo:inline>
-                                        <xsl:text>, </xsl:text>
+                                        <xsl:text>,, </xsl:text>
                                     </xsl:if>
 
-                                    <xsl:if test="volume">
+                                    <xsl:if test="citationVolume">
                                         <fo:inline font-style="italic">
-                                            <xsl:value-of select="volume"/>
+                                            <xsl:value-of select="citationVolume"/>
                                         </fo:inline>
                                     </xsl:if>
 
