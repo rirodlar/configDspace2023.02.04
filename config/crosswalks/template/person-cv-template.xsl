@@ -255,15 +255,12 @@
                                         <fo:inline font-style="italic">
                                             <xsl:value-of select="journal"/>
                                         </fo:inline>
-                                        <!-- Solo agrega coma si hay más información después (volumen, número o páginas) -->
-                                        <xsl:if test="volume or issue or pages">
-                                            <xsl:text>, </xsl:text>
-                                        </xsl:if>
+                                        <xsl:text>,, </xsl:text>
                                     </xsl:if>
 
-                                    <xsl:if test="volume">
+                                    <xsl:if test="citationVolume">
                                         <fo:inline font-style="italic">
-                                            <xsl:value-of select="volume"/>
+                                            <xsl:value-of select="citationVolume"/>
                                         </fo:inline>
                                     </xsl:if>
 
