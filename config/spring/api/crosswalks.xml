@@ -22,7 +22,6 @@
 				<entry key="publication-datacite-xml" value-ref="referCrosswalkPublicationDataciteXml"></entry>
 
 				<!-- Keep only person-cv-pdf export option. The other person* formats are commented out to hide them from UI -->
-
 				<!-- <entry key="person-xml" value-ref="referCrosswalkPersonXml"></entry> -->
 				<!-- <entry key="person-cerif-xml" value-ref="referCrosswalkPersonCerifXml"></entry> -->
 				<!-- <entry key="person-json" value-ref="referCrosswalkPersonJson"></entry> -->
