@@ -21,16 +21,14 @@
 				<entry key="publication-chicago" value-ref="cslItemDataCrosswalkChicago"></entry>
 				<entry key="publication-datacite-xml" value-ref="referCrosswalkPublicationDataciteXml"></entry>
 
-				<!-- Keep only person-cv-pdf export option. The other person* formats are commented out to hide them from UI -->
-
-				<!-- <entry key="person-xml" value-ref="referCrosswalkPersonXml"></entry> -->
-				<!-- <entry key="person-cerif-xml" value-ref="referCrosswalkPersonCerifXml"></entry> -->
-				<!-- <entry key="person-json" value-ref="referCrosswalkPersonJson"></entry> -->
-				<!-- <entry key="person-pdf" value-ref="pdfCrosswalkPerson"></entry> -->
+				<entry key="person-xml" value-ref="referCrosswalkPersonXml"></entry>
+				<entry key="person-cerif-xml" value-ref="referCrosswalkPersonCerifXml"></entry>
+				<entry key="person-json" value-ref="referCrosswalkPersonJson"></entry>
+				<entry key="person-pdf" value-ref="pdfCrosswalkPerson"></entry>
 				<entry key="person-cv-pdf" value-ref="pdfCrosswalkPersonCv"></entry>
-				<!-- <entry key="person-rtf" value-ref="rtfCrosswalkPerson"></entry> -->
-				<!-- <entry key="person-csv" value-ref="csvCrosswalkPerson"></entry> -->
-				<!-- <entry key="person-xls" value-ref="xlsCrosswalkPerson"></entry> -->
+				<entry key="person-rtf" value-ref="rtfCrosswalkPerson"></entry>
+				<entry key="person-csv" value-ref="csvCrosswalkPerson"></entry>
+				<entry key="person-xls" value-ref="xlsCrosswalkPerson"></entry>
 
 				<entry key="project-cerif-xml" value-ref="referCrosswalkProjectCerifXml"></entry>
 				<entry key="project-json" value-ref="referCrosswalkProjectJson"></entry>
