@@ -78,11 +78,13 @@
       <processing-class>org.dspace.app.rest.submit.step.LicenseStep</processing-class>
       <type>license</type>
     </step-definition>
+
     <step-definition id="product" mandatory="true">
       <heading>submit.progressbar.describe.product</heading>
       <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
       <type>submission-form</type>
     </step-definition>
+
     <step-definition id="product_indexing" mandatory="true">
       <heading>submit.progressbar.describe.product_indexing</heading>
       <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
@@ -93,6 +95,14 @@
       <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
       <type>submission-form</type>
     </step-definition>
+
+      <step-definition id="jobstep" mandatory="true">
+          <heading>submit.progressbar.describe.jobStep</heading>
+          <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+          <type>submission-form</type>
+      </step-definition>
+
+
     <step-definition id="orgunit" mandatory="true">
       <heading>submit.progressbar.describe.orgunit</heading>
       <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
@@ -216,11 +226,7 @@
       <type>identifiers</type>
     </step-definition>
 
-      <step-definition id="jobstep" mandatory="true">
-          <heading>submit.progressbar.describe.jobStep</heading>
-          <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
-          <type>submission-form</type>
-      </step-definition>
+
 
 
 
