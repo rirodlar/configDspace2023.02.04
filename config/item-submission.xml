@@ -390,6 +390,9 @@
       <step id="correction" />
       <step id="detect-duplicate" />
       <step id="upload" />
+      <!-- Pasos añadidos para alinearse con el flujo de otras entidades y evitar 400 en /workflowitems -->
+      <step id="itemAccessConditions" />
+      <step id="cclicense" />
       <!-- <step id="license" /> -->
     </submission-process>
       <submission-process name="job-edit">
