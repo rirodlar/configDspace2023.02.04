@@ -3051,6 +3051,20 @@ it, please enter the types and the actual numbers or codes...</hint>
           </row>
       </form>
 
+      <form name="jobstep">
+          <row>
+              <field>
+                  <dc-schema>dc</dc-schema>
+                  <dc-element>title</dc-element>
+                  <label>Nom de la fonction</label>
+                  <input-type>onebox</input-type>
+                  <hint>Veuillez entrer le nom de la fonction</hint>
+              </field>
+          </row>
+      </form>
+
+
+
 
   </form-definitions>
   <form-value-pairs>

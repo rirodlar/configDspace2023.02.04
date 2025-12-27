@@ -215,6 +215,15 @@
       <processing-class>org.dspace.app.rest.submit.step.ShowIdentifiersStep</processing-class>
       <type>identifiers</type>
     </step-definition>
+
+      <step-definition id="jobstep" mandatory="true">
+          <heading>submit.progressbar.describe.jobStep</heading>
+          <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+          <type>submission-form</type>
+      </step-definition>
+
+
+
   </step-definitions>
   <submission-definitions>
     <submission-process name="product">
@@ -369,4 +378,6 @@
       <step id="upload" />
     </submission-process>
   </submission-definitions>
+
+
 </item-submission>
