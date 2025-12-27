@@ -22,6 +22,7 @@
     <name-map collection-entity-type="Journal"       submission-name="Journal"/>
     <name-map collection-entity-type="JournalVolume" submission-name="JournalVolume"/>
     <name-map collection-entity-type="JournalIssue"  submission-name="JournalIssue"/>
+    <name-map collection-entity-type="Job"           submission-name="Job"/>
 <!--    <name-map collection-entity-type="Tesis"         submission-name="Tesis"/>-->
 
     <!-- Sample Entities Collection configuration based on the demo Entities dataset available at:
@@ -382,6 +383,14 @@
     <submission-process name="funding-edit">
       <step id="funding" />
       <step id="upload" />
+    </submission-process>
+    <submission-process name="Job">
+      <step id="collection" />
+      <step id="jobstep" />
+      <step id="correction" />
+      <step id="detect-duplicate" />
+      <step id="upload" />
+      <!-- <step id="license" /> -->
     </submission-process>
       <submission-process name="job-edit">
           <step id="jobstep" />
