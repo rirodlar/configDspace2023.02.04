@@ -153,6 +153,28 @@
 
     <Loggers>
 
+        <!-- DEBUG detallado para el API REST y depósito/workflow -->
+        <Logger name='org.dspace.app.rest'
+                level='DEBUG'
+                additivity='false'>
+            <AppenderRef ref='A1'/>
+        </Logger>
+        <Logger name='org.dspace.app.rest.repository'
+                level='DEBUG'
+                additivity='false'>
+            <AppenderRef ref='A1'/>
+        </Logger>
+        <Logger name='org.dspace.workflow'
+                level='DEBUG'
+                additivity='false'>
+            <AppenderRef ref='A1'/>
+        </Logger>
+        <Logger name='org.dspace.submit'
+                level='DEBUG'
+                additivity='false'>
+            <AppenderRef ref='A1'/>
+        </Logger>
+
         <!-- Most parts of DSpace -->
         <Logger name='org.dspace'
                 level='${loglevel.dspace}'
