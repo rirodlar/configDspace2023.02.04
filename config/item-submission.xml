@@ -23,7 +23,7 @@
     <name-map collection-entity-type="JournalVolume" submission-name="JournalVolume"/>
     <name-map collection-entity-type="JournalIssue"  submission-name="JournalIssue"/>
     <name-map collection-entity-type="Job"           submission-name="Job"/>
-<!--    <name-map collection-entity-type="Tesis"         submission-name="Tesis"/>-->
+    <name-map collection-entity-type="Tesis"         submission-name="Tesis"/>
 
     <!-- Sample Entities Collection configuration based on the demo Entities dataset available at:
          https://github.com/DSpace-Labs/AIP-Files/releases/tag/demo-entities-data
@@ -99,6 +99,13 @@
 
       <step-definition id="jobstep" mandatory="true">
           <heading>submit.progressbar.describe.jobStep</heading>
+          <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
+          <type>submission-form</type>
+      </step-definition>
+
+      <!-- Step para Tesis -->
+      <step-definition id="tesisstep" mandatory="true">
+          <heading>submit.progressbar.describe.tesisStep</heading>
           <processing-class>org.dspace.app.rest.submit.step.DescribeStep</processing-class>
           <type>submission-form</type>
       </step-definition>
@@ -398,6 +405,22 @@
       <submission-process name="job-edit">
           <step id="jobstep" />
           <step id="upload" />
+      </submission-process>
+
+      <!-- Definiciones de envío para la entidad Tesis -->
+      <submission-process name="tesis">
+        <step id="collection" />
+        <step id="tesisstep" />
+        <step id="correction" />
+        <step id="detect-duplicate" />
+        <step id="upload" />
+        <step id="itemAccessConditions" />
+        <step id="cclicense" />
+        <!-- <step id="license" /> -->
+      </submission-process>
+      <submission-process name="tesis-edit">
+        <step id="tesisstep" />
+        <step id="upload" />
       </submission-process>
   </submission-definitions>
 

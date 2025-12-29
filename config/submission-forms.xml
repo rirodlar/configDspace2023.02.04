@@ -3063,6 +3063,19 @@ it, please enter the types and the actual numbers or codes...</hint>
           </row>
       </form>
 
+      <!-- Formulario mínimo para la entidad Tesis -->
+      <form name="tesisstep">
+          <row>
+              <field>
+                  <dc-schema>dc</dc-schema>
+                  <dc-element>title</dc-element>
+                  <label>Título de la tesis</label>
+                  <input-type>onebox</input-type>
+                  <hint>Ingrese el título de la tesis</hint>
+              </field>
+          </row>
+      </form>
+
 
 
 
